@@ -8,11 +8,6 @@ import {useSpring} from 'react-spring';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
 export default function HowToPlay() {
-    const props = useSpring({
-        opacity: 1,
-        transform: 'scale(1)',
-        from: { opacity: 0, transform: 'scale(0.85)' },
-      });
 
     const steps = [
         {
@@ -37,6 +32,7 @@ export default function HowToPlay() {
 
     return (
         <Box 
+        id='howtoplay'
         sx={{
             textAlign: 'center',
             position: 'relative',
@@ -47,6 +43,7 @@ export default function HowToPlay() {
             background: 'linear-gradient(160deg, rgba(33,17,41,1) 0%, rgba(11,14,17,1) 37%, rgba(255,192,0,0.2) 63%, rgba(11,14,17,1) 100%)',
             backgroundSize: '100% 100%',
             minHeight: '600px',
+            maxHeight: '100vh'
         }}
         >
             <ScrollAnimation animateIn='fadeIn'
@@ -353,7 +350,7 @@ export default function HowToPlay() {
                     </Grid>
                     
                 </ScrollAnimation>
-                <Typography sx={{
+                {/* <Typography sx={{
                     fontFamily: 'Montserrat',
                     fontSize: {sm: '24px', md: '34px'},
                     fontWeight: 500,
@@ -371,11 +368,10 @@ export default function HowToPlay() {
                     },
                 }}>
                     <span>Want to know more?&nbsp;</span>
-                    {/* CHUA GAN LINK */}
                     <Link href='unset' target="_blank">
                         <span><u>Click here</u></span>
                     </Link>
-                </Typography>
+                </Typography> */}
                 </Stack>
 
             </ScrollAnimation>

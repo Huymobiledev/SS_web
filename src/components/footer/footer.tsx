@@ -5,8 +5,6 @@ import Image from "next/image";
 import { useTranslation } from "react-i18next";
 import { DiscordSvgIcon, FacebookSvgIcon, TeleSvgIcon, XSvgIcon, YoutubeSvgIcon } from "../icons/socials";
 import router from 'next/router';
-import { noHeaderUrl } from "../header/header";
-import { checkUrl, getBackgroundColor } from "@/utils";
 import LanguageItem from "./languageItem";
 import Link from "next/link";
 
@@ -14,23 +12,23 @@ export default function Footer() {
     const { t } = useTranslation()
 
     const discord = {
-        pic: 'assets/icons/Group 819.svg',
-        link: ''
+        pic: 'assets/icons/community/discord-round-black-icon.svg',
+        link: 'https://discord.com/invite/KjpWj4ce2P'
     }
 
     const facebook = {
-        pic: 'assets/icons/Group 820.svg',
-        link: ''
+        pic: 'assets/icons/community/facebook-round-color-icon.svg',
+        link: 'https://www.facebook.com/SingSingGlobal'
     }
 
     const x = {
-        pic: 'assets/icons/Group 821.svg',
-        link: ''
+        pic: 'assets/icons/community/x-social-media-round-icon.svg',
+        link: 'https://twitter.com/singsingglobal'
     }
 
     const telegram = {
-        pic: 'assets/icons/Group 822.svg',
-        link: ''
+        pic: 'assets/icons/community/telegram-black-icon.svg',
+        link: 'https://t.me/singsingchannel'
     }
 
     const community = [discord, facebook, x, telegram]
@@ -53,32 +51,34 @@ export default function Footer() {
                 <Grid container sx={{
                     width: '90%', 
                     maxWidth: '1270px', 
-                    justifyContent: 'space-around', 
+                    justifyContent: 'space-evenly', 
                     alignItems:'center', 
-                    m: 'auto', 
+                    m: 'auto',
+                    maxHeight: '90vh',
+                    display: 'flex'
                     }}>
                     <Grid item xs={12} sm={5.5} md={2.5}>
                         <Box sx={{
                             width: '100%',
-                            display: 'grid',
-                            gridTemplateRows: '60px 100px',
+                            display: 'flex',
+                            // display: 'grid',
+                            // gridTemplateRows: '60px 100px',
                             'img': {
                                 width: '174px',
                                 m: {
                                     xs: 'auto',
                                     sm: 0
-                                }
+                                },
                             },
-                            height: '160px',
                             justifyContent: {
                                 xs: 'center',
                                 sm: 'left'
                             },
-                            mb: 2
+                            my: 3
 
                         }}>
                                 <img src='assets/icons/logo_singsing.svg'/>                                
-                                <Typography variant="body1" sx={{
+                                {/* <Typography variant="body1" sx={{
                                     //styleName: Mont L14;
                                     fontFamily: 'Montserrat',
                                     fontSize: '14px',
@@ -94,14 +94,14 @@ export default function Footer() {
                                     CT Hub 2 Singapore (338729)
                                     <br/>
                                     © SingSing 2021
-                                </Typography>
+                                </Typography> */}
                         </Box>
                     </Grid>
                     <Grid item xs={12} sm={5.5} md={2.5}>
                     <Box sx={{
                             width: '100%',
-                            display: 'grid',
-                            gridTemplateRows: '60px 100px',
+                            // display: 'grid',
+                            // gridTemplateRows: '60px 100px',
                             'img': {
                                 width: '174px',
                                 m: {
@@ -109,12 +109,12 @@ export default function Footer() {
                                     sm: 0
                                 }
                             },
-                            height: '160px',
                             justifyContent: {
                                 xs: 'center',
                                 sm: 'left'
                             },
-                            mb: 2
+                            mb: 3,
+                            
 
                         }}>
                                 <Typography variant="h1" sx={{
@@ -125,6 +125,8 @@ export default function Footer() {
                                     lineHeight: '22px',
                                     letterSpacing: '0px',
                                     textAlign: {xs: 'center', sm: 'left'},
+                                    width: '100%',
+                                    mb: 2
                                 }}>
                                     About Us
                                 </Typography>
@@ -136,18 +138,30 @@ export default function Footer() {
                                     lineHeight: '22px',
                                     letterSpacing: '0px',
                                     textAlign: {xs: 'center', sm: 'left'},
+                                    my: 'auto',
+                                    'span': {
+                                        userSelect: 'none',
+                                        cursor: 'pointer',
+                                        transition: 'color 0.3s, filter 0.3s',
+                                        ':hover' : {
+                                            color: '#B226C5',
+                                            filter: 'brightness(2)',
+                                            
+                                        }
+                                    }
                                 }}>
-                                    Home
+                                    <span onClick={() => {document.getElementById('howtoplay')?.scrollIntoView({ behavior: 'smooth',})}}>How To Play</span>
                                     <br/>
-                                    About Us
-                                    <br/>
+                                    <span onClick={() => {document.getElementById('ourteam')?.scrollIntoView({ behavior: 'smooth',})}}>Our Team</span>
+                                    
+                                    {/* <br/>
                                     Terms
                                     <br/>
-                                    Privacy Policy
+                                    Privacy Policy */}
                                 </Typography>
                         </Box>
                     </Grid>
-                    <Grid item xs={12} sm={5.5} md={2.5}>
+                    {/* <Grid item xs={12} sm={5.5} md={2.5}>
                     <Box sx={{
                             width: '100%',
                             display: 'grid',
@@ -192,26 +206,52 @@ export default function Footer() {
                                     How to buy and sell
                                     <br/>
                                     How to transfer NFT
-                                </Typography>
+                                </Typography> 
                         </Box>
-                    </Grid>
+                    </Grid> */}
                     <Grid item xs={12} sm={5.5} md={2.5} sx={{
                         
                     }}>
-                        <Stack direction={'row'} sx={{
+                        <Grid container sx={{
                             width: '100%',
                             justifyContent: 'space-evenly',
                             maxWidth: '258px',
-                            m: 'auto'
+                            alignItems: 'center',
+                            m: 'auto',
+                            'img' : {
+                                width: '48px',
+                                m: 'auto',
+                                borderRadius: '10px',
+                                transition: 'transform .4s, filter .5s',
+                                ':hover' : {
+                                    transform: 'scale(1.2)',
+                                    filter: 'brightness(0.7)',
+                                    
+                                   
+                                },
+                            }
                         }}>
                         {community.map((button, index)=>{
                             return(
-                                <Link href={button.link} target="_blank" key={index}>
-                                    <img src={button.pic}/>
-                                </Link>
+                                <Grid item xs={3} sx={{
+                                    display: 'flex',
+                                    justifyContent: 'center',
+                                        alignItems: 'center',
+                                    
+                                    height: '50px',
+                                    borderRadius: '50%',
+                                    'img' : {
+                                        width: '50px'
+                                    }
+                                }
+                            }>
+                                    <Link href={button.link} target="_blank" key={index}>
+                                        <img src={button.pic}></img>
+                                    </Link>
+                                </Grid>
                             )
                         })}
-                        </Stack>
+                        </Grid>
                     </Grid>
                 </Grid>
            </Box>

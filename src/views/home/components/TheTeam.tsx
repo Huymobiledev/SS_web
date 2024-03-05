@@ -58,7 +58,7 @@ useEffect(() => {
 
     return (
         <Fragment>
-            <Box
+            <Box id={'ourteam'}
                 sx={{
                 textAlign: 'center',
                 alignItems: 'center',

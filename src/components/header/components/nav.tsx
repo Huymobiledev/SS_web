@@ -8,17 +8,23 @@ const handleClick = (event: any) => {
         let index = parseInt(event.target.id)
         let target = dataMenu[index]
 
-        let targettedElement = document.getElementById(`${target.lable}`)
-        console.log(index)
+        let targettedElement = document.getElementById(`${target.lable.toLowerCase().replaceAll(' ','')}`)
 
-        switch (index) {
-            case 5:
-                window.open('https://twitter.com/FansipanLabs', '_blank')
+        console.log(target.lable.toLowerCase().replaceAll(' ',''))
+
+        switch (target.lable) {
+            case 'WHITE PAPER':
+                window.open('https://singsing.gitbook.io/singsing/welcome/singsing-summary', '_blank')
+                break
+            case 'LINK TREE':
+                window.open('https://linktr.ee/singsing.net', '_blank')
                 break
             default:
                 targettedElement?.scrollIntoView({ behavior: 'smooth', block:'center' ,inline: 'start'})
         }
     }
+
+
 
 export const dataMenu = [
     {
@@ -29,10 +35,10 @@ export const dataMenu = [
         lable: 'WHITE PAPER',
         link: handleClick
     },
-    {
-        lable: 'MARKET PLACE',
-        link: handleClick
-    },
+    // {
+    //     lable: 'MARKET PLACE',
+    //     link: () => {}
+    // },
     {
         lable: 'LINK TREE',
         link: handleClick
@@ -77,7 +83,7 @@ export default function Nav(props: any) {
                                                 transform: 'scale(1.1)'
                                             },
                                 }}
-                            >
+                            >       
                                     <Button
                                         id={`${index}`}
                                         onClick={item.link}
@@ -95,11 +101,11 @@ export default function Nav(props: any) {
                                             textAlign: 'left',
                                             color: 'white'
                                         }}
-                                    >
-                                        {t(item.lable)}
-                                    </Typography>
-                                </Button>
-                                {index != 3 && 
+                                        >
+                                            {t(item.lable)}
+                                        </Typography>
+                                    </Button>
+                                {index != (dataMenu.length - 1) && 
                                 <img src='assets/icons/Frame 7.svg'/>
                             }
                             </Box>

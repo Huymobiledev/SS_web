@@ -1,4 +1,5 @@
 import { Box, Container, Typography, Stack, Grid } from "@mui/material";
+import Link from "next/link";
 import { Fragment, useEffect, useState } from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 
@@ -8,22 +9,59 @@ import ScrollAnimation from "react-animate-on-scroll";
 export default function Partners(props: any) {
     const { data } = props
 
+
     const strongBackers = [
-        '/assets/images/strongbackers/Frame 49.png',
-        '/assets/images/strongbackers/Frame 50.png',
-        '/assets/images/strongbackers/Frame 51.png',
-        '/assets/images/strongbackers/Frame 52.png',
-        '/assets/images/strongbackers/Frame 53.png',
-        '/assets/images/strongbackers/Frame 54.png',
+        {
+            pic: '/assets/images/strongbackers/Frame 49.png',
+            url: 'https://www.hubglobal.io/'
+        },
+        {
+            pic: '/assets/images/strongbackers/Frame 50.png',
+            url: 'https://kyber.network/'
+        },
+        {
+            pic: '/assets/images/strongbackers/Frame 51.png',
+            url: 'https://tomochain.com/'
+        },
+        {
+            pic: '/assets/images/strongbackers/Frame 52.png',
+            url: 'https://funverse.capital/'
+        },
+        {
+            pic: '/assets/images/strongbackers/Frame 53.png',
+            url: 'https://funverse.capital/'
+        },
+        {
+            pic: '/assets/images/strongbackers/Frame 54.png',
+            url: 'https://funverse.capital/'
+        },
     ]
 
     const partners = [
-        '/assets/images/partners/Frame 49.png',
-        '/assets/images/partners/Frame 50.png',
-        '/assets/images/partners/Frame 51.png',
-        '/assets/images/partners/Frame 52.png',
-        '/assets/images/partners/Frame 59.png',
-        '/assets/images/partners/Frame 60.png',
+        {
+            pic: '/assets/images/partners/Frame 49.png',
+            url: 'https://okara.vn/'
+        },
+        {
+            pic: '/assets/images/partners/Frame 50.png',
+            url: 'http://www.vcpmc.org/'
+        },
+        {
+            pic: '/assets/images/partners/Frame 51.png',
+            url: 'https://aiacademy.edu.vn/home'
+        },
+        {
+            pic: '/assets/images/partners/Frame 52.png',
+            url: 'https://www.verichains.io/'
+        },
+        {
+            pic: '/assets/images/partners/Frame 59.png',
+            url: 'https://aws.amazon.com/'
+        },
+        {
+            pic: '/assets/images/partners/Frame 60.png',
+            url: 'https://mcv.com.vn/'
+        },
     ]
 
     return (
@@ -80,7 +118,10 @@ export default function Partners(props: any) {
                                 width: '100%',
                                 mb: 2
                             }}>
-                                <img src={backer}/>
+                                <Link href={backer.url} target="_blank">
+                                    <img src={backer.pic}/>
+                                </Link>
+                                
                             </Grid>
                         )
                     })}
@@ -115,12 +156,15 @@ export default function Partners(props: any) {
                         mb: 2
                     }
                 }}>
-                    {partners.map((backer, index) => {
+                    {partners.map((partner, index) => {
                         return (
                             <Grid key={index} item xs={6} sm={4} sx={{
                                 width: '100%'
                             }}>
-                                <img src={backer}/>
+                                <Link href={partner.url} target='_blank'>
+                                    <img src={partner.pic}/>
+                                </Link>
+                                
                             </Grid>
                         )
                     })}
