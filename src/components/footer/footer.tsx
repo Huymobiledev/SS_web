@@ -233,7 +233,7 @@ export default function Footer() {
                         }}>
                         {community.map((button, index)=>{
                             return(
-                                <Grid item xs={3} sx={{
+                                <Grid key={index} item xs={3} sx={{
                                     display: 'flex',
                                     justifyContent: 'center',
                                         alignItems: 'center',
