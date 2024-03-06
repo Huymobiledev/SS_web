@@ -1,7 +1,7 @@
 module.exports = {
   apps: [
     {
-      name: "cctpa.network",
+      name: "singsing.com-v2",
       script: "npm",
       args: "start",
       env: {
