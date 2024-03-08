@@ -48,15 +48,15 @@ export default function HowToPlay() {
         >
             <ScrollAnimation animateIn='fadeIn'
                 animateOut='fadeOut' animateOnce={true}>
-                <Stack gap={10} my={2} sx={{width: '100%'}}>
+                <Stack gap={9} my={2} sx={{width: '100%'}}>
 
                 <Typography sx={{
                     fontFamily: 'Montserrat',
                     fontSize: {
                         xs: '40px', 
                         sm: '64px', 
-                        md: '90px', 
-                        lg: '114px',
+                        md: '95px', 
+                        lg: '100px',
                         xl: '128px'
                     },
                     fontWeight: 800,
@@ -69,7 +69,7 @@ export default function HowToPlay() {
                 }}>
                     HOW TO PLAY
                 </Typography>
-                <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
+                <ScrollAnimation animateIn="fadeIn">
                     <Grid container sx={{
                         width: {xs: '50vw' ,md: '80vw', xl: '100vw'},
                         maxWidth: '1400px',

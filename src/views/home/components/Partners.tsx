@@ -12,10 +12,6 @@ export default function Partners(props: any) {
 
     const strongBackers = [
         {
-            pic: '/assets/images/strongbackers/Frame 49.png',
-            url: 'https://www.hubglobal.io/'
-        },
-        {
             pic: '/assets/images/strongbackers/Frame 50.png',
             url: 'https://kyber.network/'
         },
@@ -24,43 +20,49 @@ export default function Partners(props: any) {
             url: 'https://tomochain.com/'
         },
         {
+            pic: '/assets/images/strongbackers/Frame 49.png',
+            url: 'https://www.hubglobal.io/'
+        },
+        {
             pic: '/assets/images/strongbackers/Frame 52.png',
             url: 'https://funverse.capital/'
         },
         {
-            pic: '/assets/images/strongbackers/Frame 53.png',
-            url: 'https://funverse.capital/'
-        },
-        {
             pic: '/assets/images/strongbackers/Frame 54.png',
-            url: 'https://funverse.capital/'
+            url: 'https://capital.viabtc.com/'
         },
     ]
 
     const partners = [
         {
-            pic: '/assets/images/partners/Frame 49.png',
             url: 'https://okara.vn/'
         },
         {
-            pic: '/assets/images/partners/Frame 50.png',
-            url: 'http://www.vcpmc.org/'
-        },
-        {
-            pic: '/assets/images/partners/Frame 51.png',
             url: 'https://aiacademy.edu.vn/home'
         },
         {
-            pic: '/assets/images/partners/Frame 52.png',
-            url: 'https://www.verichains.io/'
+            url: 'https://www.oav.edu.in/'
         },
         {
-            pic: '/assets/images/partners/Frame 59.png',
+            url: 'https://www.aag.org/'
+        },
+        {
+            url: 'https://www.avax.network/'
+        },
+        {
             url: 'https://aws.amazon.com/'
         },
         {
-            pic: '/assets/images/partners/Frame 60.png',
-            url: 'https://mcv.com.vn/'
+            url: 'https://www.yieldguild.io/'
+        },
+        {
+            url: 'http://www.coins.ph/'
+        },
+        {
+            url: 'https://metaone.gg/'
+        },
+        {
+            url: 'https://app.saakuru.com/'
         },
     ]
 
@@ -72,16 +74,11 @@ export default function Partners(props: any) {
             alignItems: 'center',
             mb: '20px',
             justifyContent:'center',
-            background: {
-                sm: `url(/assets/background/bg-howtoplay.png) no-repeat`, 
-                xs: `url(/assets/background/bg-m-howtoplay.png)`
-            },
             backgroundSize: '100% 100%',
             width: '100%',
-            backgroundPositionX: 100
         }}>
             <ScrollAnimation animateIn='fadeIn'
-                animateOut='fadeOut' animateOnce={true}>
+                animateOnce={true}>
                 <Stack direction={'column'} gap={10} sx={{my: 5}}>
                 <Typography variant="h1" sx={{
                     //styleName: Header-AllCap;
@@ -89,22 +86,19 @@ export default function Partners(props: any) {
                     fontSize: {
                         xs: '40px', 
                         sm: '64px', 
-                        md: '90px', 
-                        lg: '114px',
-                        xl: '128px'
                     },
                     fontWeight: 800,
                     lineHeight: {xs: '40px', md: '108px'},
                     letterSpacing: '0em',
                     textAlign: 'center',
-                    color: 'white',
+                    color: 'black',
                 }}>
-                    STRONG BACKERS
+                    INVESTOR
                 </Typography>
                 <Grid container sx={{
                     width: '100%',
                     maxWidth: '1040px',
-                    justifyContent: 'space-between',
+                    justifyContent: 'space-evenly',
                     alignItems: 'center',
                     m: 'auto',
 
@@ -114,9 +108,22 @@ export default function Partners(props: any) {
                 }}>
                     {strongBackers.map((backer, index) => {
                         return (
-                            <Grid key={index} item xs={6} sm={4} sx={{
-                                width: '100%',
-                                mb: 2
+                            <Grid key={index} item xs={5.8} sm={2.3} sx={{
+                                width: '250px',
+                                height: '90px',
+                                backgroundColor: 'white',
+                                objectFit: 'contain',
+                                borderRadius: '15px',
+                                display: 'flex',
+                                justifyContent: 'center',
+                                alignItems: 'center',
+                                mb: 2,
+                                boxShadow: '5px 5px 10px 0px rgba(0,0,0,0.48)',
+                                transition: 'filter 0.3s',
+                                ':hover' : {
+                                    filter: 'brightness(0.9)',
+                                    
+                                }
                             }}>
                                 <Link href={backer.url} target="_blank">
                                     <img src={backer.pic}/>
@@ -132,39 +139,52 @@ export default function Partners(props: any) {
                     fontSize: {
                         xs: '40px', 
                         sm: '64px', 
-                        md: '90px', 
-                        lg: '114px',
-                        xl: '128px'
                     },
                     fontWeight: 800,
                     lineHeight: {xs: '40px', md: '108px'},
                     letterSpacing: '0em',
                     textAlign: 'center',
-                    color: 'white',
+                    color: 'black',
                 }}>
                     PARTNERS
                 </Typography>
                 <Grid container sx={{
                     width: '100%',
-                    maxWidth: '1040px',
-                    justifyContent: 'space-between',
+                    maxWidth: '2000px',
+                    justifyContent: 'space-evenly',
                     alignItems: 'center',
                     m: 'auto',
 
                     'img' : {
-                        width: '100%',
-                        mb: 2
+                        width: '90%',
                     }
                 }}>
                     {partners.map((partner, index) => {
                         return (
-                            <Grid key={index} item xs={6} sm={4} sx={{
-                                width: '100%'
+                            <Grid key={index} item xs={5.8} md={2.2} xl={1.1} sx={{
+                                width: '250px',
+                                height: '90px',
+                                backgroundColor: 'white',
+                                objectFit: 'cover',
+                                borderRadius: '15px',
+                                display: 'flex',
+                                justifyContent: 'center',
+                                alignItems: 'center',
+                                mb: 2,
+                                boxShadow: '5px 5px 10px 0px rgba(0,0,0,0.48)',
+                                transition: 'filter 0.3s',
+                                ':hover' : {
+                                    filter: 'brightness(0.9)',
+                                    
+                                },
+                                overflow: 'hidden'
                             }}>
+                                <Box >
+
+                                </Box>
                                 <Link href={partner.url} target='_blank'>
-                                    <img src={partner.pic}/>
-                                </Link>
-                                
+                                    <img src={`assets/images/partners/Funverse Captial 1-${index}.png`}/>
+                                </Link> 
                             </Grid>
                         )
                     })}
