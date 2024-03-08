@@ -1,12 +1,12 @@
 module.exports = {
   apps: [
     {
-      name: "cctpa.network",
+      name: "singsing.com-v2",
       script: "npm",
       args: "start",
       env: {
         NODE_ENV: "development",
-        PORT: 3001,
+        PORT: 8401,
        
       },
     },
