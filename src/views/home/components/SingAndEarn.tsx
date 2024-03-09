@@ -163,7 +163,7 @@ export default function SingAndEarn(props: any) {
                             
                         }}>
                             <Button className="arrow" sx={{width: '100%'}} onClick={()=>{setPicIndex(picIndex -1)}}>
-                                <img src='assets/icons/Polygon 2.svg' style={{transform: 'rotate(180deg)'}}/>
+                                <img src='assets/icons/Polygon_2.svg' style={{transform: 'rotate(180deg)'}}/>
                             </Button>
                         </Grid>
                         <Grid item xs={6} sx={{
@@ -238,7 +238,7 @@ export default function SingAndEarn(props: any) {
                             height: '100%'
                         }}>
                             <Button className="arrow" sx={{width: '100%'}} onClick={()=>{setPicIndex(picIndex + 1)}}>
-                                <img src='assets/icons/Polygon 2.svg' style={{}}/>
+                                <img src='assets/icons/Polygon_2.svg' style={{}}/>
                             </Button>
                                                       
                         </Grid>
@@ -269,7 +269,7 @@ export default function SingAndEarn(props: any) {
                             my: 'auto'
                         }}>
                             
-                            <img className='bigscreenArrow' src='assets/icons/Polygon 2.svg'/>
+                            <img className='bigscreenArrow' src='assets/icons/Polygon_2.svg'/>
                         </Grid>
                         <Grid item md={1.7} sx={{
                             display: {
@@ -296,7 +296,7 @@ export default function SingAndEarn(props: any) {
                             },
                             my: 'auto'
                         }}>
-                            <img className='bigscreenArrow' src='assets/icons/Polygon 2.svg'/>
+                            <img className='bigscreenArrow' src='assets/icons/Polygon_2.svg'/>
                         </Grid>
                         <Grid item md={1.7} sx={{
                             display: {
@@ -323,7 +323,7 @@ export default function SingAndEarn(props: any) {
                             },
                             my: 'auto'
                         }}>
-                            <img className='bigscreenArrow' src='assets/icons/Polygon 2.svg'/>
+                            <img className='bigscreenArrow' src='assets/icons/Polygon_2.svg'/>
                         </Grid>
                         <Grid item md={1.7} sx={{
                             display: {
