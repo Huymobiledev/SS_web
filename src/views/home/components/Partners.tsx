@@ -12,23 +12,23 @@ export default function Partners(props: any) {
 
     const strongBackers = [
         {
-            pic: '/assets/images/strongbackers/Frame 50.png',
+            pic: '/assets/images/strongbackers/Frame50.png',
             url: 'https://kyber.network/'
         },
         {
-            pic: '/assets/images/strongbackers/Frame 51.png',
+            pic: '/assets/images/strongbackers/Frame51.png',
             url: 'https://tomochain.com/'
         },
         {
-            pic: '/assets/images/strongbackers/Frame 49.png',
+            pic: '/assets/images/strongbackers/Frame49.png',
             url: 'https://www.hubglobal.io/'
         },
         {
-            pic: '/assets/images/strongbackers/Frame 52.png',
+            pic: '/assets/images/strongbackers/Frame52.png',
             url: 'https://funverse.capital/'
         },
         {
-            pic: '/assets/images/strongbackers/Frame 54.png',
+            pic: '/assets/images/strongbackers/Frame54.png',
             url: 'https://capital.viabtc.com/'
         },
     ]
@@ -183,7 +183,7 @@ export default function Partners(props: any) {
 
                                 </Box>
                                 <Link href={partner.url} target='_blank'>
-                                    <img src={`assets/images/partners/Funverse Captial 1-${index}.png`}/>
+                                    <img src={`assets/images/partners/Funverse_Captial_1-${index}.png`}/>
                                 </Link> 
                             </Grid>
                         )

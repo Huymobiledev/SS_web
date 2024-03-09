@@ -1,5 +1,6 @@
 import { Box, CircularProgress, Container, LinearProgress } from "@mui/material";
 import { RealcoinGreenIcon } from "../icons/logo";
+import Image from "next/image";
 
 export default function LoadingFullPage() {
     return (

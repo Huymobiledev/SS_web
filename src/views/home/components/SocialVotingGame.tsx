@@ -6,6 +6,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 import {CSSTransition, TransitionGroup} from 'react-transition-group';
+import Image from 'next/image'
 
 export default function SocialVotingGame(props: any) {
     const [picIndex, setPicIndex] = useState(0)
@@ -161,7 +162,7 @@ export default function SocialVotingGame(props: any) {
                             
                         }}>
                             <Button className="arrow" sx={{width: '100%'}} onClick={()=>{setPicIndex(picIndex -1)}}>
-                                <img src='assets/icons/Polygon 2.svg' style={{transform: 'rotate(180deg)'}}/>
+                                <img alt='' src='assets/icons/Polygon_2.svg' style={{transform: 'rotate(180deg)'}}/>
                             </Button>
                         </Grid>
                         <Grid item xs={6} sx={{
@@ -205,7 +206,7 @@ export default function SocialVotingGame(props: any) {
                                 <TransitionGroup>
 
 
-                                        <img src={steps[picIndex].pic} className="current" alt="Current" />
+                                        <img alt='' src={steps[picIndex].pic} className="current"/>
 
                                 
                                 </TransitionGroup>
@@ -239,7 +240,7 @@ export default function SocialVotingGame(props: any) {
                             height: '100%'
                         }}>
                             <Button className="arrow" sx={{width: '100%'}} onClick={()=>{setPicIndex(picIndex + 1)}}>
-                                <img src='assets/icons/Polygon 2.svg' style={{}}/>
+                                <img alt='' src='assets/icons/Polygon_2.svg' style={{}}/>
                             </Button>
                                                       
                         </Grid>
@@ -255,7 +256,7 @@ export default function SocialVotingGame(props: any) {
                             }}>
                                 1
                             </Box>
-                            <img className="bigscreen" src='assets/images/socialvotinggame/step1.png'/>
+                            <img alt='' className="bigscreen" src='assets/images/socialvotinggame/step1.png'/>
                             <Typography className='bigscreenDetail' sx={{
                                 
                             }}>
@@ -270,7 +271,7 @@ export default function SocialVotingGame(props: any) {
                             my: 'auto'
                         }}>
                             
-                            <img className='bigscreenArrow' src='assets/icons/Polygon 2.svg'/>
+                            <img alt='' className='bigscreenArrow' src='assets/icons/Polygon_2.svg'/>
                         </Grid>
                         <Grid item md={1.7} sx={{
                             display: {
@@ -283,7 +284,7 @@ export default function SocialVotingGame(props: any) {
                             }}>
                                 2
                             </Box>
-                            <img className="bigscreen" src='assets/images/socialvotinggame/step2.png'/>
+                            <img alt='' className="bigscreen" src='assets/images/socialvotinggame/step2.png'/>
                             <Typography className='bigscreenDetail' sx={{
                                 
                             }}>
@@ -297,7 +298,7 @@ export default function SocialVotingGame(props: any) {
                             },
                             my: 'auto'
                         }}>
-                            <img className='bigscreenArrow' src='assets/icons/Polygon 2.svg'/>
+                            <img alt='' className='bigscreenArrow' src='assets/icons/Polygon_2.svg'/>
                         </Grid>
                         <Grid item md={1.7} sx={{
                             display: {
@@ -310,11 +311,11 @@ export default function SocialVotingGame(props: any) {
                             }}>
                                 3
                             </Box>
-                            <img className="bigscreen" src='assets/images/socialvotinggame/step3.png'/>
+                            <img alt='' className="bigscreen" src='assets/images/socialvotinggame/step3.png'/>
                             <Typography className='bigscreenDetail' sx={{
                                 
                             }}>
-                            SHARE THE SINGER'S VOTING LINK TO X TO ENCOURAGE VOTING
+                            SHARE THE SINGER&apos;S VOTING LINK TO X TO ENCOURAGE VOTING
                             </Typography>
                         </Grid>
                         <Grid item md={1.7} sx={{
@@ -324,7 +325,7 @@ export default function SocialVotingGame(props: any) {
                             },
                             my: 'auto'
                         }}>
-                            <img className='bigscreenArrow' src='assets/icons/Polygon 2.svg'/>
+                            <img alt='' className='bigscreenArrow' src='assets/icons/Polygon_2.svg'/>
                         </Grid>
                         <Grid item md={1.7} sx={{
                             display: {
@@ -339,7 +340,7 @@ export default function SocialVotingGame(props: any) {
                             }}>
                                 4
                             </Box>
-                            <img className="bigscreen" src='assets/images/socialvotinggame/step4.png'/>
+                            <img alt='' className="bigscreen" src='assets/images/socialvotinggame/step4.png'/>
                             <Typography className='bigscreenDetail' sx={{
                                 
                             }}>

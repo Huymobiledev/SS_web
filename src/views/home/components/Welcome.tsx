@@ -65,6 +65,7 @@ export default function Welcome(props: any) {
                     position: 'relative',
                     maxWidth: '1600px',
                     mx: 'auto',
+                    zIndex: 7
                 }}>
                     <Grid item xs={10} sm={0} sx={{
                         display: {
@@ -74,14 +75,14 @@ export default function Welcome(props: any) {
                         justifyContent: 'center', 
                         alignItems: 'center'
                         }}>
-                        <img className="smallscreen" src='assets/images/welcome/web3 singing platform.png' style={{zIndex: 2}}/>
-                        <img className="smallscreen" src='assets/images/welcome/Note music 3.png' style={{width: '40px', position: 'absolute', transform: 'translateY(300%) scale(1.3)'}}/>
-                        <img className="smallscreen" src='assets/images/welcome/Note music 4.png' style={{width: '40px', position: 'absolute', transform: 'translateY(400%)'}}/>
+                        <img className="smallscreen" src='assets/images/welcome/web3_singing_platform.png' style={{zIndex: 11}}/>
+                        <img className="smallscreen" src='assets/images/welcome/note_music_3.png' style={{width: '40px', position: 'absolute', transform: 'translateY(300%) scale(1.3)'}}/>
+                        <img className="smallscreen" src='assets/images/welcome/note_music_4.png' style={{width: '40px', position: 'absolute', transform: 'translateY(400%)'}}/>
 
                     </Grid>
                     <Grid item xs={5} sm={2}>
-                        <img className="bigscreen" src='assets/images/welcome/Singer 1.png' style={{transform: 'translateY(30%)'}}/>
-                        <img className="smallscreen" src='assets/images/welcome/Singer 1 m.png' style={{width: '100%'}}/>
+                        <img className="bigscreen" src='assets/images/welcome/Singer_1.png' style={{transform: 'translateY(30%)'}}/>
+                        <img className="smallscreen" src='assets/images/welcome/Singer_1_m.png' style={{width: '100%'}}/>
                     </Grid>
                     <Grid item xs={0} sm={5} sx={{
                         display: {
@@ -93,11 +94,11 @@ export default function Welcome(props: any) {
                         alignItems: 'center'
                         }}>
                         <img className="bigscreen" src='assets/images/welcome/mic.png' style={{width: '140%', transform: 'translateY(-20%)'}}/>
-                        <img className="bigscreen" src='assets/images/welcome/web3 singing platform.png' style={{position: 'absolute', width: '80%', transform: 'translateY(55%)'}}/>
+                        <img className="bigscreen" src='assets/images/welcome/web3_singing_platform.png' style={{position: 'absolute', width: '80%', transform: 'translateY(55%)', zIndex: 11}}/>
                     </Grid>
                     <Grid item xs={5} sm={2}>
-                        <img className="bigscreen" src='assets/images/welcome/Singer 2.png' style={{transform: 'translateY(30%)'}}/>
-                        <img className="smallscreen" src='assets/images/welcome/Singer 2 m.png' style={{width: '100%'}}/>
+                        <img className="bigscreen" src='assets/images/welcome/Singer_2.png' style={{transform: 'translateY(30%)'}}/>
+                        <img className="smallscreen" src='assets/images/welcome/Singer_2_m.png' style={{width: '100%'}}/>
                     </Grid>
                     <Grid container sx={
                     {width: '100%', 
@@ -130,7 +131,7 @@ export default function Welcome(props: any) {
                     },
                     userSelect: 'none',
                     
-                    zIndex: 2
+                    zIndex: 10
                     }}>
                         <Grid item sm={3} className="btnLR" sx={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
                             <Link href='https://apps.apple.com/app/singsing-network/id1611106632' target='_blank'>
@@ -203,7 +204,6 @@ export default function Welcome(props: any) {
                  */}
                 <Box sx={{
                     width: '100$',
-                   
                     position: 'absolute',
                     bottom: {
                         xs: 'calc(-10px - 5%)',
@@ -215,25 +215,25 @@ export default function Welcome(props: any) {
                     
                     
                 }}>
-                    <img src='assets/images/welcome/coin bottom.png' className="bigscreen" style={{
+                    <img src='assets/images/welcome/coin_bottom.png' className="bigscreen" style={{
                         }}/>
-                    <img src='assets/images/welcome/coin bottom m.png' className="smallscreen"/>
+                    <img src='assets/images/welcome/coin_bottom_m.png' className="smallscreen"/>
                 </Box>
-                    <img src='assets/images/welcome/coin top 2.png' className="bigscreen" style={{
+                    <img src='assets/images/welcome/coin_top_2.png' className="bigscreen" style={{
                         width: '40%',
                         left: 0,
                         top: '60px',
                         position: 'absolute',
                         zIndex: 1
                         }}/>
-                    <img src='assets/images/welcome/coin top 1.png' className="bigscreen" style={{
+                    <img src='assets/images/welcome/coin_top_1.png' className="bigscreen" style={{
                         width: '40%',
                         right: 0,
                         top: '60px',
                         position: 'absolute',
                         zIndex: 1
                         }}/>
-                    <img src='assets/images/welcome/coin top m.png' className="smallscreen" style={{
+                    <img src='assets/images/welcome/coin_top_m.png' className="smallscreen" style={{
                         width: '100%',
                         top: '60px',
                         position: 'absolute',
@@ -241,12 +241,14 @@ export default function Welcome(props: any) {
                         filter: 'brightness(.7)'
                     }}/>
                 <Box sx={{
-                     height: '100px', // Set the desired height
-                    background: 'linear-gradient(to top, #781513, transparent 10%)',
+                    width: '100%',
                     position: 'absolute',
-                    bottom: 0
+                    height: '10vh',
+                    zIndex: 1
                 }}>
+                    <img src='assets/images/welcome/peopledance.png'/>
                 </Box>
+                
             </Box>
             
         </Box>

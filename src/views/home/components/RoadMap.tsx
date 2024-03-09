@@ -1,5 +1,6 @@
 import { Button, Grid, Stack, Typography } from "@mui/material";
 import { Box, positions } from "@mui/system";
+import Image from "next/image";
 import { useState, useRef } from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 import { useSpring, animated } from 'react-spring';
@@ -54,7 +55,9 @@ export default function RoadMap () {
                 bottom: {
                     md: '5%',
                     xl: '10%'
-                }
+                }, 
+                width: '80%',
+                mx: 0, pd: 0,
             }}>
                 <ul>
                     <li>
@@ -224,7 +227,9 @@ export default function RoadMap () {
             overflow:'hidden',
 
             'ul' : {
-                pl: {xs: 0, md: 3}
+                xs: {
+                },
+        
             },
 
             '.masterContainer' : {
@@ -306,7 +311,7 @@ export default function RoadMap () {
                 fontFamily: 'Montserrat',
                 fontSize: {xs: '14px',md: '13px' ,lg: '16px' ,xl: '20px'},
                 fontWeight: '500',
-                lineHeight: {xs: '50px', md: '22px', lg: '26px' ,xl: '40px'},
+                lineHeight: {xs: '30px', md: '22px', lg: '26px' ,xl: '40px'},
                 letterSpacing: '0em',
                 position: 'absolute',
                 color: 'black',
@@ -377,9 +382,9 @@ export default function RoadMap () {
             <line x1="-1" y1="9" x2="2490" y2="9.00022" stroke="#898989" stroke-width="2" stroke-dasharray="13 34"/>
             </svg>
 
-            <Box sx={{width: '100%', zIndex: 10, justifyContent: 'center', alignItems: 'center'}}>
+            <Box sx={{width: '100%', zIndex: 10, justifyContent: 'center', alignItems: 'center', display: {xs: 'flex', md: 'none'}}}>
                 
-                <Box sx={{width: '100%', display: 'flex', justifyContent: 'center'}}>
+                <Box sx={{width: '100%', display: 'flex', justifyContent: 'center', top: 0, position: 'absolute'}}>
                 <Box className='yearm'> 
                         <span>
 
@@ -390,10 +395,15 @@ export default function RoadMap () {
                         <span>
                         {ms[picIndex].place}
                         </span>
+                        <span>
+                        {ms[picIndex].detail}
+                        </span>
                         
                         
 
                     </Box>
+                
+                    
                 </Box>
             </Box>
             </Box>
@@ -411,40 +421,43 @@ export default function RoadMap () {
                 top: 4
                 }}>
 
-                    <Box style={{width: '10px', height: '10px', backgroundColor: 'white', display: 'flex', borderRadius: '50%', justifyContent: 'center', alignItems: 'center', }}>
-                        {picIndex == 0 && <animated.div style={{width: '5px', height: '5px', backgroundColor: '#B226C5', borderRadius: '50%', transform: springProps.transform}}>
+                    <Box style={{width: '10px', height: '10px', backgroundColor: picIndex == 0? '#FBBC04' : '#93E2A8', display: 'flex', borderRadius: '50%', justifyContent: 'center', alignItems: 'center', transform: picIndex == 0 ? 'scale(1.5)' : 'unset',}}  >
+                        
 
-                        </animated.div>}
+                        
                     </Box>
-                    <Box style={{width: '10px', height: '10px', backgroundColor: 'white', display: 'flex', borderRadius: '50%', justifyContent: 'center', alignItems: 'center', }}>
-                        {picIndex == 1 && <animated.div style={{width: '5px', height: '5px', backgroundColor: '#B226C5', borderRadius: '50%', transform: springProps.transform}}>
+                    <Box style={{width: '10px', height: '10px', backgroundColor: picIndex == 1? '#FBBC04' : '#93E2A8', display: 'flex', borderRadius: '50%', justifyContent: 'center', alignItems: 'center', transform: picIndex == 1 ? 'scale(1.5)' : 'unset',}}  >
+                        
 
-                        </animated.div>}
+                        
                     </Box>
-                    <Box style={{width: '10px', height: '10px', backgroundColor: 'white', display: 'flex', borderRadius: '50%', justifyContent: 'center', alignItems: 'center', }}>
-                        {picIndex == 2 && <animated.div style={{width: '5px', height: '5px', backgroundColor: '#B226C5', borderRadius: '50%', transform: springProps.transform}}>
+                    <Box style={{width: '10px', height: '10px', backgroundColor: picIndex == 2? '#FBBC04' : '#93E2A8', display: 'flex', borderRadius: '50%', justifyContent: 'center', alignItems: 'center', transform: picIndex == 2 ? 'scale(1.5)' : 'unset',}}  >
+                        
 
-                        </animated.div>}
+                        
                     </Box>
-                    <Box style={{width: '10px', height: '10px', backgroundColor: 'white', display: 'flex', borderRadius: '50%', justifyContent: 'center', alignItems: 'center', }}>
-                        {picIndex == 3 && <animated.div style={{width: '5px', height: '5px', backgroundColor: '#B226C5', borderRadius: '50%', transform: springProps.transform}}>
+                    <Box style={{width: '10px', height: '10px', backgroundColor: picIndex == 3? '#FBBC04' : '#93E2A8', display: 'flex', borderRadius: '50%', justifyContent: 'center', alignItems: 'center', transform: picIndex == 3 ? 'scale(1.5)' : 'unset',}}  >
+                        
 
-                        </animated.div>}
+                        
                     </Box>
-                    <Box style={{width: '10px', height: '10px', backgroundColor: 'white', display: 'flex', borderRadius: '50%', justifyContent: 'center', alignItems: 'center', }}>
-                        {picIndex == 4 && <animated.div style={{width: '5px', height: '5px', backgroundColor: '#B226C5', borderRadius: '50%', transform: springProps.transform}}>
+                    <Box style={{width: '10px', height: '10px', backgroundColor: picIndex == 4? '#FBBC04' : '#93E2A8', display: 'flex', borderRadius: '50%', justifyContent: 'center', alignItems: 'center', transform: picIndex == 4 ? 'scale(1.5)' : 'unset',}}  >
+                        
 
-                        </animated.div>}
+                        
                     </Box>
-                    <Box style={{width: '10px', height: '10px', backgroundColor: 'white', display: 'flex', borderRadius: '50%', justifyContent: 'center', alignItems: 'center', }}>
-                        {picIndex == 5 && <animated.div style={{width: '5px', height: '5px', backgroundColor: '#B226C5', borderRadius: '50%', transform: springProps.transform}}>
+                    <Box style={{width: '10px', height: '10px', backgroundColor: picIndex == 5? '#FBBC04' : '#93E2A8', display: 'flex', borderRadius: '50%', justifyContent: 'center', alignItems: 'center', transform: picIndex == 5  ? 'scale(1.5)' : 'unset',}}  >
+                        
 
-                        </animated.div>}
+                        
                     </Box>
                 
             </Stack>
 
-            {ms[picIndex].detail}
+            <Box sx={{display: {xs: 'flex', md: 'none'}, width: '100%', position: 'absolute', bottom: '40vh'}}>
+            
+            </Box>
+            
         
             <Grid container className="masterContainer" sx={{
 
@@ -495,8 +508,7 @@ export default function RoadMap () {
                         {ms[1].detail}
                 </Grid>
                 <Grid item md={1.9} className="smallContainer lowerMiddle">
-                
-                <img src='assets/images/roadmap/singer.png' style={{width: '100%', position: 'absolute', opacity: 0.8}}/>
+                <img alt='' src='assets/images/roadmap/singer.png' style={{width: '100%', position: 'absolute', opacity: 0.8}}/>
                 <Box className='circleBig'>
                 <Box className='year'>
                     

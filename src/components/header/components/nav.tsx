@@ -1,4 +1,5 @@
 import { Box, Stack, Typography, Button } from "@mui/material";
+import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { Fragment } from "react";
@@ -106,7 +107,7 @@ export default function Nav(props: any) {
                                         </Typography>
                                     </Button>
                                 {index != (dataMenu.length - 1) && 
-                                <img src='assets/icons/Frame 7.svg'/>
+                                <img alt='none' src='assets/icons/Frame_7.svg'/>
                             }
                             </Box>
                             

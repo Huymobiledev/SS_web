@@ -103,7 +103,7 @@ useEffect(() => {
                                         justifyContent: 'center',
                                         pb: '2px',                                        
                                     }}>
-                                        <img src={`assets/images/team2/20220816-SingSing-AppMockupMobile-MicBuy 1-${index}.png`}/>
+                                        <img src={`assets/images/team2/20220816-SingSing-AppMockupMobile-MicBuy-1-${index}.png`}/>
                                         <Typography variant='h1' sx={{
                                             fontFamily: 'Montserrat',
                                             fontSize: {xs: '16px',md: '20px'},

@@ -76,7 +76,7 @@ export default function Header() {
         <Fragment>
             <Box
                 sx={{
-                    background: '#0B0E11',
+                    background: 'linear-gradient(90deg, #841917 0%, #BD2E2C 100%)',
                     position: 'fixed',
                     zIndex: 1000,
                     top: 0,
@@ -193,7 +193,8 @@ export default function Header() {
                         width: '50vw',
                         maxWidth: '200px',
                         zIndex: 999,
-                        backgroundColor: '#FB471E'
+                        background: 'linear-gradient(90deg, #841917 0%, #BD2E2C 100%)',
+
                     }
                 }}
                 
