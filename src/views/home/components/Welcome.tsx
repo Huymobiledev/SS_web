@@ -10,6 +10,7 @@ import { useAppSelector } from "@/hooks/hooks";
 import { appConfigSelector } from "@/slices/appConfigSlice";
 import router from 'next/router';
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Welcome(props: any) {
 
@@ -215,28 +216,28 @@ export default function Welcome(props: any) {
                         lg: 'calc(-150px - 15%)'
                 },
                     objectFit: 'contain',
-                    
+                    zIndex: 2
                     
                 }}>
-                    <img src='/assets/images/welcome/coin_bottom.png' className="bigscreen" style={{
+                    <img alt='' src='/assets/images/welcome/cb.png' className="bigscreen" style={{
                         }}/>
-                    <img src='/assets/images/welcome/coin_bottom_m.png' className="smallscreen"/>
+                    <img src='/assets/images/welcome/cbm.png' className="smallscreen"/>
                 </Box>
-                    <img src='/assets/images/welcome/coin_top_2.png' className="bigscreen" style={{
+                    <img src='/assets/images/welcome/ct2.png' className="bigscreen" style={{
                         width: '40%',
                         left: 0,
                         top: '60px',
                         position: 'absolute',
                         zIndex: 1
                         }}/>
-                    <img src='/assets/images/welcome/coin_top_1.png' className="bigscreen" style={{
+                    <img src='/assets/images/welcome/ct1.png' className="bigscreen" style={{
                         width: '40%',
                         right: 0,
                         top: '60px',
                         position: 'absolute',
                         zIndex: 1
                         }}/>
-                    <img src='/assets/images/welcome/coin_top_m.png' className="smallscreen" style={{
+                    <img src='/assets/images/welcome/ctm.png' className="smallscreen" style={{
                         width: '100%',
                         top: '60px',
                         position: 'absolute',
@@ -247,7 +248,13 @@ export default function Welcome(props: any) {
                     width: '100%',
                     position: 'absolute',
                     height: '10vh',
-                    zIndex: 1
+                    zIndex: 0.1,
+                    minWidth: '1000px',
+                    bottom: {
+                        xs: 140,
+                        md: 200,
+                        xl: 400
+                    }
                 }}>
                     <img src='/assets/images/welcome/peopledance.png'/>
                 </Box>

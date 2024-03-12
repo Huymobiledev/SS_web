@@ -7,8 +7,6 @@ import Partners from "./components/Partners";
 import Tokenomic from "./components/Tokenomic";
 import ScrollAnimation from "react-animate-on-scroll";
 // import { getHomeContentAPI } from "@/api/home";
-import { useRouter } from "next/router";
-import HowToPlay from "./components/HowToPlay";
 import SingAndEarn from "./components/SingAndEarn";
 import SocialVotingGame from "./components/SocialVotingGame";
 import Web3SingingPlatform1 from "./components/Web3SingingPlatform1";
