@@ -12,6 +12,7 @@ import SocialVotingGame from "./components/SocialVotingGame";
 import Web3SingingPlatform1 from "./components/Web3SingingPlatform1";
 import Web3SingingPlatform2 from "./components/Web3SingingPlatform2";
 import RoadMap from "./components/RoadMap";
+import { MobileDownload } from "./components/mobileDownload";
 
 export default function ViewHomePage(props: any) {
     const { t } = useTranslation()
@@ -20,6 +21,7 @@ export default function ViewHomePage(props: any) {
         <Fragment>
             <Stack direction={'column'} width={'100%'} gap={10} alignItems={'center'} sx={{backgroundColor: '#white', overflowX: 'hidden'}}>
                 <Welcome/>
+                <MobileDownload/>
                 <Web3SingingPlatform1/>
                 <Web3SingingPlatform2/>
                 <SocialVotingGame/>
