@@ -237,7 +237,7 @@ export default function Welcome(props: any) {
                         position: 'absolute',
                         zIndex: 1
                         }}/>
-                    <img src='/assets/background/Ctm.png' className="smallscreen" style={{
+                    <img src='/assets/background/CTM.png' className="smallscreen" style={{
                         width: '100%',
                         top: '60px',
                         position: 'absolute',
