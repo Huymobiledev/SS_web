@@ -219,25 +219,25 @@ export default function Welcome(props: any) {
                     zIndex: 2
                     
                 }}>
-                    <img alt='' src='/assets/images/welcome/CB.png' className="bigscreen" style={{
+                    <img alt='' src='/assets/background/CB.png' className="bigscreen" style={{
                         }}/>
-                    <img src='/assets/images/welcome/CBM.png' className="smallscreen"/>
+                    <img src='/assets/background/CBM.png' className="smallscreen"/>
                 </Box>
-                    <img src='/assets/images/welcome/CT2.png' className="bigscreen" style={{
+                    <img src='/assets/background/CT2.png' className="bigscreen" style={{
                         width: '40%',
                         left: 0,
                         top: '60px',
                         position: 'absolute',
                         zIndex: 1
                         }}/>
-                    <img src='/assets/images/welcome/CT1.png' className="bigscreen" style={{
+                    <img src='/assets/background/CT1.png' className="bigscreen" style={{
                         width: '40%',
                         right: 0,
                         top: '60px',
                         position: 'absolute',
                         zIndex: 1
                         }}/>
-                    <img src='/assets/images/welcome/CTM.png' className="smallscreen" style={{
+                    <img src='/assets/background/Ctm.png' className="smallscreen" style={{
                         width: '100%',
                         top: '60px',
                         position: 'absolute',
