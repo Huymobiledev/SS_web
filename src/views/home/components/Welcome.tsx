@@ -77,8 +77,8 @@ export default function Welcome(props: any) {
                         alignItems: 'center'
                         }}>
                         <img className="smallscreen" src='/assets/images/welcome/web3_singing_platform.png' style={{zIndex: 11}}/>
-                        <img className="smallscreen" src='/assets/images/welcome/note_music_3.png' style={{width: '40px', position: 'absolute', transform: 'translateY(300%) scale(1.3)'}}/>
-                        <img className="smallscreen" src='/assets/images/welcome/note_music_4.png' style={{width: '40px', position: 'absolute', transform: 'translateY(400%)'}}/>
+                        <img className="smallscreen" src='/assets/images/welcome/NM3.png' style={{width: '40px', position: 'absolute', transform: 'translateY(300%) scale(1.3)'}}/>
+                        <img className="smallscreen" src='/assets/images/welcome/NM4.png' style={{width: '40px', position: 'absolute', transform: 'translateY(400%)'}}/>
 
                     </Grid>
                     <Grid item xs={5} sm={2}>
