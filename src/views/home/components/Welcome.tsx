@@ -94,7 +94,7 @@ export default function Welcome(props: any) {
                         position: 'relative',
                         justifyContent: 'center',
                         alignItems: 'center',
-                        mb: 5
+                        mb: 2
                         }}>
                         <img className="bigscreen" src='assets/images/welcome/mic.png' style={{width: '140%', transform: 'translateY(-20%)'}}/>
                         <img className="bigscreen" src='assets/images/welcome/web3_singing_platform.png' style={{position: 'absolute', width: '80%', transform: 'translateY(20%)', zIndex: 11}}/>
