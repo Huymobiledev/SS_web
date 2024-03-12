@@ -75,14 +75,14 @@ export default function Welcome(props: any) {
                         justifyContent: 'center', 
                         alignItems: 'center'
                         }}>
-                        <img className="smallscreen" src='assets/images/welcome/web3_singing_platform.png' style={{zIndex: 11}}/>
-                        <img className="smallscreen" src='assets/images/welcome/note_music_3.png' style={{width: '40px', position: 'absolute', transform: 'translateY(300%) scale(1.3)'}}/>
-                        <img className="smallscreen" src='assets/images/welcome/note_music_4.png' style={{width: '40px', position: 'absolute', transform: 'translateY(400%)'}}/>
+                        <img className="smallscreen" src='/assets/images/welcome/web3_singing_platform.png' style={{zIndex: 11}}/>
+                        <img className="smallscreen" src='/assets/images/welcome/note_music_3.png' style={{width: '40px', position: 'absolute', transform: 'translateY(300%) scale(1.3)'}}/>
+                        <img className="smallscreen" src='/assets/images/welcome/note_music_4.png' style={{width: '40px', position: 'absolute', transform: 'translateY(400%)'}}/>
 
                     </Grid>
                     <Grid item xs={5} sm={2}>
-                        <img className="bigscreen" src='assets/images/welcome/Singer_1.png' style={{transform: 'translateY(30%)'}}/>
-                        <img className="smallscreen" src='assets/images/welcome/Singer_1_m.png' style={{width: '100%'}}/>
+                        <img className="bigscreen" src='/assets/images/welcome/Singer_1.png' style={{transform: 'translateY(30%)'}}/>
+                        <img className="smallscreen" src='/assets/images/welcome/Singer_1_m.png' style={{width: '100%'}}/>
                     </Grid>
                     <Grid item xs={0} sm={5} sx={{
                         display: {
@@ -96,12 +96,12 @@ export default function Welcome(props: any) {
                         alignItems: 'center',
                         mb: 2
                         }}>
-                        <img className="bigscreen" src='assets/images/welcome/mic.png' style={{width: '140%', transform: 'translateY(-20%)'}}/>
-                        <img className="bigscreen" src='assets/images/welcome/web3_singing_platform.png' style={{position: 'absolute', width: '80%', transform: 'translateY(20%)', zIndex: 11}}/>
+                        <img className="bigscreen" src='/assets/images/welcome/mic.png' style={{width: '140%', transform: 'translateY(-20%)'}}/>
+                        <img className="bigscreen" src='/assets/images/welcome/web3_singing_platform.png' style={{position: 'absolute', width: '80%', transform: 'translateY(20%)', zIndex: 11}}/>
                     </Grid>
                     <Grid item xs={5} sm={2}>
-                        <img className="bigscreen" src='assets/images/welcome/Singer_2.png' style={{transform: 'translateY(30%)'}}/>
-                        <img className="smallscreen" src='assets/images/welcome/Singer_2_m.png' style={{width: '100%'}}/>
+                        <img className="bigscreen" src='/assets/images/welcome/Singer_2.png' style={{transform: 'translateY(30%)'}}/>
+                        <img className="smallscreen" src='/assets/images/welcome/Singer_2_m.png' style={{width: '100%'}}/>
                     </Grid>
                     <Grid container sx={
                     {width: '100%', 
@@ -138,20 +138,20 @@ export default function Welcome(props: any) {
                     }}>
                         <Grid item sm={3} className="btnLR" sx={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
                             <Link href='https://apps.apple.com/app/singsing-network/id1611106632' target='_blank'>
-                                <img src='assets/images/welcome/appstore.png' style={{width: '100%'}}/>
+                                <img src='/assets/images/welcome/appstore.png' style={{width: '100%'}}/>
                             </Link>
                                 
                             
                         </Grid>
                         <Grid item sm={3} className="btn">
                             <Link href='https://app.singsing.net/vi' target='_blank'>
-                                <img src='assets/images/welcome/dapp.png' style={{width: '100%'}}/>
+                                <img src='/assets/images/welcome/dapp.png' style={{width: '100%'}}/>
                             </Link>
                             
                         </Grid>
                         <Grid item sm={3} className="btnLR" sx={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
                             <Link href='https://play.google.com/store/apps/details?id=net.singsing.app&pli=1' target='_blank'>
-                                <img src='assets/images/welcome/ggplay.png' style={{width: '100%'}}/>
+                                <img src='/assets/images/welcome/ggplay.png' style={{width: '100%'}}/>
                             </Link>
                         </Grid>
                     </Grid>
@@ -187,20 +187,20 @@ export default function Welcome(props: any) {
                     }}>
                         <Grid item sm={3} className="btnLR" sx={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
                             <Link href='https://apps.apple.com/app/singsing-network/id1611106632' target='_blank'>
-                                <img src='assets/images/welcome/appstore.png' style={{width: '70%'}}/>
+                                <img src='/assets/images/welcome/appstore.png' style={{width: '70%'}}/>
                             </Link>
                                 
                             
                         </Grid>
                         <Grid item sm={3} className="btn">
                             <Link href='https://app.singsing.net/vi' target='_blank'>
-                                <img src='assets/images/welcome/dapp.png' style={{width: '100%'}}/>
+                                <img src='/assets/images/welcome/dapp.png' style={{width: '100%'}}/>
                             </Link>
                             
                         </Grid>
                         <Grid item sm={3} className="btnLR" sx={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
                             <Link href='https://play.google.com/store/apps/details?id=net.singsing.app&pli=1' target='_blank'>
-                                <img src='assets/images/welcome/ggplay.png' style={{width: '70%'}}/>
+                                <img src='/assets/images/welcome/ggplay.png' style={{width: '70%'}}/>
                             </Link>
                         </Grid>
                     </Grid>
@@ -218,25 +218,25 @@ export default function Welcome(props: any) {
                     
                     
                 }}>
-                    <img src='assets/images/welcome/coin_bottom.png' className="bigscreen" style={{
+                    <img src='/assets/images/welcome/coin_bottom.png' className="bigscreen" style={{
                         }}/>
-                    <img src='assets/images/welcome/coin_bottom_m.png' className="smallscreen"/>
+                    <img src='/assets/images/welcome/coin_bottom_m.png' className="smallscreen"/>
                 </Box>
-                    <img src='assets/images/welcome/coin_top_2.png' className="bigscreen" style={{
+                    <img src='/assets/images/welcome/coin_top_2.png' className="bigscreen" style={{
                         width: '40%',
                         left: 0,
                         top: '60px',
                         position: 'absolute',
                         zIndex: 1
                         }}/>
-                    <img src='assets/images/welcome/coin_top_1.png' className="bigscreen" style={{
+                    <img src='/assets/images/welcome/coin_top_1.png' className="bigscreen" style={{
                         width: '40%',
                         right: 0,
                         top: '60px',
                         position: 'absolute',
                         zIndex: 1
                         }}/>
-                    <img src='assets/images/welcome/coin_top_m.png' className="smallscreen" style={{
+                    <img src='/assets/images/welcome/coin_top_m.png' className="smallscreen" style={{
                         width: '100%',
                         top: '60px',
                         position: 'absolute',
@@ -249,7 +249,7 @@ export default function Welcome(props: any) {
                     height: '10vh',
                     zIndex: 1
                 }}>
-                    <img src='assets/images/welcome/peopledance.png'/>
+                    <img src='/assets/images/welcome/peopledance.png'/>
                 </Box>
                 
             </Box>
