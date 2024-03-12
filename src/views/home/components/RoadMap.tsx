@@ -105,7 +105,7 @@ export default function RoadMap () {
                         Indonesia big event with AAG
                     </li>
                     <li>
-                        IDO
+                        Q2
                     </li>
                 </ul>
             </Typography>
@@ -117,11 +117,13 @@ export default function RoadMap () {
             <Typography className="detail" sx={{
                 top: {
                     md: '0',
-                    xl: '3%'
+                    xl: '1%'
                 },
+
             }}>
-                
+
                 <ul>
+                    <b>
                     <li>
                         Fansipan subnet launch
                     </li>
@@ -131,6 +133,7 @@ export default function RoadMap () {
                     <li>
                     B2B platform dev
                     </li>
+                    </b>
                 </ul>
                 
             </Typography>

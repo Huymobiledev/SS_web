@@ -99,7 +99,8 @@ export default function Web3SingingPlatform2(props: any) {
                             objectFit: 'contain',
                             MaxWidth: '228px',
                             height: '462px',
-                            width: '99%'
+                            width: '99%',
+                            maxWidth: '161px'
                         }, 
                         height: '550px',
                         '.bigscreenDetail' : {
@@ -137,8 +138,8 @@ export default function Web3SingingPlatform2(props: any) {
                         },
                         display: 'flex',
                         '.bigscreenArrow' : {
-                            width: '30%',
-
+                            width: '100%',
+                        
                             
                         },
                         '.arrow' : {
@@ -147,9 +148,6 @@ export default function Web3SingingPlatform2(props: any) {
                             },
                             height: '100%'
                         }
-                        
-                        
-                        
                     }}>
                         <Grid item xs={1.7}  sx={{
                             my: 'auto',
@@ -276,7 +274,7 @@ export default function Web3SingingPlatform2(props: any) {
                                                       
                         </Grid>
 
-                        <Grid item md={1.7} sx={{
+                        <Grid item md={2.5} sx={{
                             display: {
                                 xs: 'none',
                                 md: 'unset'
@@ -288,13 +286,21 @@ export default function Web3SingingPlatform2(props: any) {
                                 1
                             </Box>
                             <img className="bigscreen" src='assets/images/web3singingplatform2/step1.png'/>
+                            <Box sx={{
+                                width: '100%',
+                                background: 'radial-gradient(50% 50% at 50% 50%, #00000070 0%, rgba(0, 0, 0, 0) 100%)',
+                                height: '17px',
+                                mt: -15,
+                                mb: 2
+                                
+                            }}></Box>
                             <Typography className='bigscreenDetail' sx={{
                                 
                             }}>
                             
                             </Typography>
                         </Grid>
-                        <Grid item md={1.7} sx={{
+                        <Grid item md={0.5} sx={{
                             display: {
                                 xs: 'none',
                                 md: 'unset'
@@ -304,7 +310,7 @@ export default function Web3SingingPlatform2(props: any) {
                             
                             <img className='bigscreenArrow' src='assets/icons/Polygon_2.svg'/>
                         </Grid>
-                        <Grid item md={1.7} sx={{
+                        <Grid item md={2.5} sx={{
                             display: {
                                 xs: 'none',
                                 md: 'unset'
@@ -316,13 +322,21 @@ export default function Web3SingingPlatform2(props: any) {
                                 2
                             </Box>
                             <img className="bigscreen" src='assets/images/web3singingplatform2/step2.png'/>
+                            <Box sx={{
+                                width: '100%',
+                                background: 'radial-gradient(50% 50% at 50% 50%, #00000070 0%, rgba(0, 0, 0, 0) 100%)',
+                                height: '17px',
+                                mt: -7,
+                                mb: 2
+                                
+                            }}></Box>
                             <Typography className='bigscreenDetail' sx={{
                                 
                             }}>
                             SING A SONG
                             </Typography>
                         </Grid>
-                        <Grid item md={1.7} sx={{
+                        <Grid item md={0.5} sx={{
                             display: {
                                 xs: 'none',
                                 md: 'unset'
@@ -331,7 +345,7 @@ export default function Web3SingingPlatform2(props: any) {
                         }}>
                             <img className='bigscreenArrow' src='assets/icons/Polygon_2.svg'/>
                         </Grid>
-                        <Grid item md={1.7} sx={{
+                        <Grid item md={2.5} sx={{
                             display: {
                                 xs: 'none',
                                 md: 'unset'
@@ -343,13 +357,21 @@ export default function Web3SingingPlatform2(props: any) {
                                 3
                             </Box>
                             <img className="bigscreen" src='assets/images/web3singingplatform2/step3.png'/>
+                            <Box sx={{
+                                width: '100%',
+                                background: 'radial-gradient(50% 50% at 50% 50%, #00000070 0%, rgba(0, 0, 0, 0) 100%)',
+                                height: '17px',
+                                mt: -15,
+                                mb: 2
+                                
+                            }}></Box>
                             <Typography className='bigscreenDetail' sx={{
                                 
                             }}>
                             share on X to get more bonus based on successful referral count
                             </Typography>
                         </Grid>
-                        <Grid item md={1.7} sx={{
+                        <Grid item md={0.5} sx={{
                             display: {
                                 xs: 'none',
                                 md: 'unset'
@@ -358,7 +380,7 @@ export default function Web3SingingPlatform2(props: any) {
                         }}>
                             <img className='bigscreenArrow' src='assets/icons/Polygon_2.svg'/>
                         </Grid>
-                        <Grid item md={1.7} sx={{
+                        <Grid item md={2.5} sx={{
                             display: {
                                 xs: 'none',
                                 md: 'unset'
@@ -372,6 +394,14 @@ export default function Web3SingingPlatform2(props: any) {
                                 4
                             </Box>
                             <img className="bigscreen" src='assets/images/web3singingplatform2/step4.png'/>
+                            <Box sx={{
+                                width: '100%',
+                                background: 'radial-gradient(50% 50% at 50% 50%, #00000070 0%, rgba(0, 0, 0, 0) 100%)',
+                                height: '17px',
+                                mt: -7,
+                                mb: 2
+                                
+                            }}></Box>
                             <Typography className='bigscreenDetail' sx={{
                                 
                             }}>

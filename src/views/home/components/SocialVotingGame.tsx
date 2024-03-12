@@ -110,7 +110,6 @@ export default function SocialVotingGame(props: any) {
                             lineHeight: {md: '24px', lg: '32px' ,xl: '41px'},
                             textAlign: 'center',
                             color: 'black',
-                            width: '100%',
                         },
                         '.detail' : {
                             //styleName: Title;
@@ -136,9 +135,8 @@ export default function SocialVotingGame(props: any) {
                         },
                         display: 'flex',
                         '.bigscreenArrow' : {
-                            width: '30%',
+                            width: '100%',
 
-                            
                         },
                         '.arrow' : {
                             'img' : {
@@ -245,7 +243,7 @@ export default function SocialVotingGame(props: any) {
                                                       
                         </Grid>
 
-                        <Grid item md={1.7} sx={{
+                        <Grid item md={2.5} sx={{
                             display: {
                                 xs: 'none',
                                 md: 'unset'
@@ -257,13 +255,22 @@ export default function SocialVotingGame(props: any) {
                                 1
                             </Box>
                             <img alt='' className="bigscreen" src='assets/images/socialvotinggame/step1.png'/>
+                            <Box sx={{
+                                width: '100%',
+                                background: 'radial-gradient(50% 50% at 50% 50%, #00000070 0%, rgba(0, 0, 0, 0) 100%)',
+                                height: '17px',
+                                mt: -7,
+                                mb: 2
+                            }}>
+
+                            </Box>
                             <Typography className='bigscreenDetail' sx={{
                                 
                             }}>
                             VOTING USING SING TOKEN
                             </Typography>
                         </Grid>
-                        <Grid item md={1.7} sx={{
+                        <Grid item md={0.5} sx={{
                             display: {
                                 xs: 'none',
                                 md: 'unset'
@@ -273,7 +280,7 @@ export default function SocialVotingGame(props: any) {
                             
                             <img alt='' className='bigscreenArrow' src='assets/icons/Polygon_2.svg'/>
                         </Grid>
-                        <Grid item md={1.7} sx={{
+                        <Grid item md={2.5} sx={{
                             display: {
                                 xs: 'none',
                                 md: 'unset'
@@ -285,13 +292,23 @@ export default function SocialVotingGame(props: any) {
                                 2
                             </Box>
                             <img alt='' className="bigscreen" src='assets/images/socialvotinggame/step2.png'/>
+                            <Box sx={{
+                                width: '100%',
+                                background: 'radial-gradient(50% 50% at 50% 50%, #00000070 0%, rgba(0, 0, 0, 0) 100%)',
+                                height: '17px',
+                                mt: -7,
+                                mb: 2
+                                
+                            }}>
+
+                            </Box>
                             <Typography className='bigscreenDetail' sx={{
                                 
                             }}>
                             VOTE FOR YOUR SINGER
                             </Typography>
                         </Grid>
-                        <Grid item md={1.7} sx={{
+                        <Grid item md={0.5} sx={{
                             display: {
                                 xs: 'none',
                                 md: 'unset'
@@ -300,7 +317,7 @@ export default function SocialVotingGame(props: any) {
                         }}>
                             <img alt='' className='bigscreenArrow' src='assets/icons/Polygon_2.svg'/>
                         </Grid>
-                        <Grid item md={1.7} sx={{
+                        <Grid item md={2.5} sx={{
                             display: {
                                 xs: 'none',
                                 md: 'unset'
@@ -312,13 +329,24 @@ export default function SocialVotingGame(props: any) {
                                 3
                             </Box>
                             <img alt='' className="bigscreen" src='assets/images/socialvotinggame/step3.png'/>
+                            <Box sx={{
+                                width: '100%',
+                                background: 'radial-gradient(50% 50% at 50% 50%, #00000070 0%, rgba(0, 0, 0, 0) 100%)',
+                                height: '17px',
+                                mt: -7,
+                                mb: 2
+                                
+                            }}>
+
+                            </Box>
                             <Typography className='bigscreenDetail' sx={{
+                         
                                 
                             }}>
                             SHARE THE SINGER&apos;S VOTING LINK TO X TO ENCOURAGE VOTING
                             </Typography>
                         </Grid>
-                        <Grid item md={1.7} sx={{
+                        <Grid item md={0.5} sx={{
                             display: {
                                 xs: 'none',
                                 md: 'unset'
@@ -327,7 +355,7 @@ export default function SocialVotingGame(props: any) {
                         }}>
                             <img alt='' className='bigscreenArrow' src='assets/icons/Polygon_2.svg'/>
                         </Grid>
-                        <Grid item md={1.7} sx={{
+                        <Grid item md={2.5} sx={{
                             display: {
                                 xs: 'none',
                                 md: 'unset'
@@ -341,6 +369,16 @@ export default function SocialVotingGame(props: any) {
                                 4
                             </Box>
                             <img alt='' className="bigscreen" src='assets/images/socialvotinggame/step4.png'/>
+                            <Box sx={{
+                                width: '100%',
+                                background: 'radial-gradient(50% 50% at 50% 50%, #00000070 0%, rgba(0, 0, 0, 0) 100%)',
+                                height: '17px',
+                                mt: -7,
+                                mb: 2
+                                
+                            }}>
+
+                            </Box>
                             <Typography className='bigscreenDetail' sx={{
                                 
                             }}>

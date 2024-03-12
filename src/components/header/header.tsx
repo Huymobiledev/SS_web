@@ -123,7 +123,7 @@ export default function Header() {
                                     
                                 >
                                     <Link href='/'>
-                                        <img src={isDark ? '/assets/icons/logo.svg' : "/assets/icons/logo.svg"} alt='logo' />
+                                        <img src='assets/icons/logo-white.svg' alt='logo' />
                                     </Link>
                                     
                                 </Box>                            

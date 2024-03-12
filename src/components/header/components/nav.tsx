@@ -106,9 +106,7 @@ export default function Nav(props: any) {
                                             {t(item.lable)}
                                         </Typography>
                                     </Button>
-                                {index != (dataMenu.length - 1) && 
-                                <img alt='none' src='assets/icons/Frame_7.svg'/>
-                            }
+                                
                             </Box>
                             
                         </div>

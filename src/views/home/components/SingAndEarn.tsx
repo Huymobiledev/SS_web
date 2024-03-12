@@ -46,7 +46,7 @@ export default function SingAndEarn(props: any) {
       };
 
     return (
-        <Box
+        <Box id='howtoplay'
             sx={{
                 width: '100%',
                 textAlign: 'center',
@@ -255,6 +255,14 @@ export default function SingAndEarn(props: any) {
                                 1
                             </Box>
                             <img className="bigscreen" src='assets/images/singandearn/step1.png'/>
+                            <Box sx={{
+                                width: '100%',
+                                background: 'radial-gradient(50% 50% at 50% 50%, #00000070 0%, rgba(0, 0, 0, 0) 100%)',
+                                height: '17px',
+                                mt: -7,
+                                mb: 2
+                                
+                            }}></Box>
                             <Typography className='bigscreenDetail' sx={{
                                 
                             }}>
@@ -283,6 +291,14 @@ export default function SingAndEarn(props: any) {
                                 2
                             </Box>
                             <img className="bigscreen" src='assets/images/singandearn/step2.png'/>
+                            <Box sx={{
+                                width: '100%',
+                                background: 'radial-gradient(50% 50% at 50% 50%, #00000070 0%, rgba(0, 0, 0, 0) 100%)',
+                                height: '17px',
+                                mt: -7,
+                                mb: 2
+                                
+                            }}></Box>
                             <Typography className='bigscreenDetail' sx={{
                                 
                             }}>
@@ -310,11 +326,20 @@ export default function SingAndEarn(props: any) {
                                 3
                             </Box>
                             <img className="bigscreen" src='assets/images/singandearn/step3.png'/>
+                            <Box sx={{
+                                width: '100%',
+                                background: 'radial-gradient(50% 50% at 50% 50%, #00000070 0%, rgba(0, 0, 0, 0) 100%)',
+                                height: '17px',
+                                mt: -7,
+                                mb: 2
+                                
+                            }}></Box>
                             <Typography className='bigscreenDetail' sx={{
                                 
                             }}>
                             AI SCORING
                             </Typography>
+                            
                         </Grid>
                         <Grid item md={1.7} sx={{
                             display: {
@@ -339,6 +364,14 @@ export default function SingAndEarn(props: any) {
                                 4
                             </Box>
                             <img className="bigscreen" src='assets/images/singandearn/step4.png'/>
+                            <Box sx={{
+                                width: '100%',
+                                background: 'radial-gradient(50% 50% at 50% 50%, #00000070 0%, rgba(0, 0, 0, 0) 100%)',
+                                height: '17px',
+                                mt: -7,
+                                mb: 2
+                                
+                            }}></Box>
                             <Typography className='bigscreenDetail' sx={{
                                 
                             }}>
