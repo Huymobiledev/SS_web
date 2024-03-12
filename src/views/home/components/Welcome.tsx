@@ -96,7 +96,7 @@ export default function Welcome(props: any) {
                         alignItems: 'center',
                         mb: 5
                         }}>
-                        <img className="bigscreen" src='assets/images/welcome/mic.png' style={{width: '140%', transform: 'translateY(-40%)'}}/>
+                        <img className="bigscreen" src='assets/images/welcome/mic.png' style={{width: '140%', transform: 'translateY(-20%)'}}/>
                         <img className="bigscreen" src='assets/images/welcome/web3_singing_platform.png' style={{position: 'absolute', width: '80%', transform: 'translateY(20%)', zIndex: 11}}/>
                     </Grid>
                     <Grid item xs={5} sm={2}>
