@@ -23,9 +23,7 @@ export function MobileDownload() {
                 <Link href='https://apps.apple.com/app/singsing-network/id1611106632' target='_blank'>
                     <img src='/assets/images/welcome/appstore.png' style={{width: '100%'}}/>
                 </Link>
-                    
-                
-        
+
                 <Link href='https://app.singsing.net/vi' target='_blank'>
                     <img src='/assets/images/welcome/dapp.png' style={{width: '100%'}}/>
                 </Link>

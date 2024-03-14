@@ -137,7 +137,7 @@ export default function Header() {
                                     sx={{
                                         display: isBg ? 'flex' : 'none',
                                         position: 'fixed',
-                                        background: '#af26bf',
+                                        background: '#951f1d',
                                         boxShadow: '0px 0px 20px 0px rgba(0, 0, 0, 0.25)',
                                         borderRadius: '50%',
                                         width: 36,
@@ -147,7 +147,7 @@ export default function Header() {
                                         bottom: 10,
                                         right: 10,
                                         ':hover': {
-                                            background: '#b040bd'
+                                            background: '#ac5c54'
                                         },
                                         'img' : {
                                             width: 16,

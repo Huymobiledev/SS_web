@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import { ButtonGreen } from "@/components/button";
 import ScrollAnimation from "react-animate-on-scroll";
 import { Typography, Grid, Button } from "@mui/material";
+import Link from "next/link";
 
 export default function TheTeam(props: any) {
     const { t } = useTranslation()
@@ -19,27 +20,27 @@ useEffect(() => {
         {
             name: 'PHUNG TIEN CONG',
             pos: 'Co-Founder',
-            url: ''
+            url: 'https://www.linkedin.com/in/phungtiencong/'
         },
         {
             name: 'HARRY PHAM',
             pos: 'Co-Founder | CEO',
-            url: ''
+            url: 'https://www.linkedin.com/in/ha-pham49/'
         },
         {
             name: 'HAI NGUYEN',
             pos: 'COO',
-            url: ''
+            url: 'https://www.linkedin.com/in/thanh-hai-nguyen-9388892/'
         },
         {
             name: 'LONG VUONG',
             pos: 'Advisor',
-            url: ''
+            url: 'https://www.linkedin.com/in/longvuong22/'
         },
         {
             name: 'LOI LUU',
             pos: 'Investor',
-            url: ''
+            url: 'https://www.linkedin.com/in/loiluu/'
         },
     ]
 
@@ -133,17 +134,18 @@ useEffect(() => {
                                             </span>
                                             
                                         </Typography>
+                                        <Link href={member.url} target='_blank'>
                                         <Button sx={{
                                             width: '150px',
                                             height: '50px',
-                                            backgroundColor: '#B226C5',
+                                            backgroundColor: '#0a66c2',
                                             borderRadius: '50px',
                                             minWidth: '150px',
                                             transition: 'transform 0.3s, filter 0.3s',
                                             ':hover' : {
                                                 transform: 'scale(1.2)',
-                                                filter: 'brightnes(10)',
-                                                backgroundColor: '#B226C5',
+                                                filter: 'brightnes(5)',
+                                                backgroundColor: '#4ca4fc',
                                             },
                                             display: 'flex',
                                             mx: 'auto',
@@ -162,6 +164,8 @@ useEffect(() => {
                                             LinkedIn
 
                                         </Button>
+                                        </Link>
+                                        
                                     </Box>
                                 </Grid>
                             )

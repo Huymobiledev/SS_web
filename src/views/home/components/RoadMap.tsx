@@ -104,9 +104,7 @@ export default function RoadMap () {
                     <li>
                         Indonesia big event with AAG
                     </li>
-                    <li>
-                        Q2
-                    </li>
+                   
                 </ul>
             </Typography>
         },
@@ -116,12 +114,9 @@ export default function RoadMap () {
             detail: 
             <Typography className="detail" sx={{
                 top: {
-                    md: '0',
-                    xl: '1%'
+                    md: -5
                 },
-
             }}>
-
                 <ul>
                     <b>
                     <li>
@@ -132,6 +127,9 @@ export default function RoadMap () {
                     </li>
                     <li>
                     B2B platform dev
+                    </li>
+                    <li>
+                    IDO
                     </li>
                     </b>
                 </ul>
@@ -191,14 +189,15 @@ export default function RoadMap () {
         <Box sx={{
             width: '100%',
             overflow: 'hidden',
-            display: 'flex',
+            display: {xs: 'none', md: 'flex'},
             alignItems: {xs: 'unset', md: 'center'},
             position: 'relative',
             '.road' : {
                 position: 'absolute',
                 
             },
-            justifyContent: 'center'
+            justifyContent: 'center',
+        
         }}>
             <Stack direction={'column'} gap={5} sx={{width: '100%', mt: 5}}>
             <Typography variant="h1" sx={{
@@ -217,251 +216,165 @@ export default function RoadMap () {
                 }}>
                     ROADMAP
                 </Typography>
-        <Box
-             onTouchStart={handleTouchStart}
-             onTouchMove={handleTouchMove}
-             onTouchEnd={handleTouchEnd}
-        sx={{
-            width: '100%',
-            position: 'relative',
-            alignItems: 'center',
-            display: 'flex',
-            justifyContent: 'space-evenly',
-            overflow:'hidden',
-
-            'ul' : {
-                xs: {
-                },
-        
-            },
-
-            '.masterContainer' : {
-                width: '80%', 
-                height: '90vh',
-                display: {xs: 'none', md: 'flex'},
-                justifyContent: 'space-evenly',
-                alignItems: 'center',
-                maxWidth: '1920px',
-                maxHeight: '660px',
-                minWidth: '1000px'
-            },
-
-            '.smallContainer' : {
-                height: '100%',
-                zIndex: 4,
+            <Box
+                onTouchStart={handleTouchStart}
+                onTouchMove={handleTouchMove}
+                onTouchEnd={handleTouchEnd}
+            sx={{
+                width: '100%',
                 position: 'relative',
-                justifyContent: 'center',
                 alignItems: 'center',
                 display: 'flex',
-                'svg' : {
-                }
-            }
-            ,
-            '.road' : {
-                position: 'absolute',
-                minWidth: '768px',
-                zIndex: 0,
-                maxWidth: '2000px'
-            },
-            '.circle' : {
-                width: '100px',
-                height: '100px',
-                borderRadius: '50%',
-                zIndex: 3,
-                position: 'absolute',
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
-            },
-            '.circleBig' : {
-                width: '150px',
-                height: '150px',
-                borderRadius: '50%',
-                backgroundColor: '#FBBC04',
-                zIndex: 3,
-                position: 'absolute',
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
-            },
-            '.line' : {
-                width: '2px',
-                border: '2px solid #C2C2C2',
-                zIndex: 5,
-                position: 'absolute',
+                justifyContent: 'space-evenly',
+                overflow:'hidden',
 
-            },
-            '.upper' : {
-                'svg' : {
-                    transform: 'translateY(calc(-50px - 10%)) rotate(180deg)'                    
-                }
-            },
-            '.lower' : {
-                'svg' : {
-                    transform: 'translateY(calc(50px + 5%))'                    
-                }
-            },
-            '.lowerMiddle' : {
-                'svg' : {
-                    transform: 'translateY(calc(60px + 5%))'                    
+                'ul' : {
+                    xs: {
+                    },
+            
                 },
-                'img' : {
-                    maxWidth: '200px',
-                    top: {md: 0, lg: '5%'}
-                }
-            },
-            '.detail' : {
-                fontFamily: 'Montserrat',
-                fontSize: {xs: '14px',md: '13px' ,lg: '16px' ,xl: '20px'},
-                fontWeight: '500',
-                lineHeight: {xs: '30px', md: '22px', lg: '26px' ,xl: '40px'},
-                letterSpacing: '0em',
-                position: 'absolute',
-                color: 'black',
-                textAlign: {
-                    xs: 'center',
-                    md: 'left'
+
+                '.masterContainer' : {
+                    width: '80%', 
+                    height: '90vh',
+                    display: {xs: 'none', md: 'flex'},
+                    justifyContent: 'space-evenly',
+                    alignItems: 'center',
+                    maxWidth: '1920px',
+                    maxHeight: '660px',
+                    minWidth: '1000px'
                 },
-            },
-            '.year' : {
-                width: '100%',
-                fontFamily: 'Montserrat',
-                fontSize: '24px',
-                fontWeight: 800,
-                lineHeight: '29px',
-                letterSpacing: '0em',
-                textAlign: 'center',
-                'span:last-child' : {
-                    fontSize: 16,
-                    fontWeight: 500
+
+                '.smallContainer' : {
+                    height: '100%',
+                    zIndex: 4,
+                    position: 'relative',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    display: 'flex',
+                    'svg' : {
+                    }
                 }
+                ,
+                '.road' : {
+                    position: 'absolute',
+                    minWidth: '768px',
+                    zIndex: 0,
+                    maxWidth: '2000px'
+                },
+                '.circle' : {
+                    width: '100px',
+                    height: '100px',
+                    borderRadius: '50%',
+                    zIndex: 3,
+                    position: 'absolute',
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                },
+                '.circleBig' : {
+                    width: '150px',
+                    height: '150px',
+                    borderRadius: '50%',
+                    backgroundColor: '#FBBC04',
+                    zIndex: 3,
+                    position: 'absolute',
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                },
+                '.line' : {
+                    width: '2px',
+                    border: '2px solid #C2C2C2',
+                    zIndex: 5,
+                    position: 'absolute',
+
+                },
+                '.upper' : {
+                    'svg' : {
+                        transform: 'translateY(calc(-50px - 10%)) rotate(180deg)'                    
+                    }
+                },
+                '.lower' : {
+                    'svg' : {
+                        transform: 'translateY(calc(50px + 5%))'                    
+                    }
+                },
+                '.lowerMiddle' : {
+                    'svg' : {
+                        transform: 'translateY(calc(60px + 5%))'                    
+                    },
+                    'img' : {
+                        maxWidth: '200px',
+                        top: {md: 0, lg: '5%'}
+                    }
+                },
+                '.detail' : {
+                    fontFamily: 'Montserrat',
+                    fontSize: {xs: '14px',md: '13px' ,lg: '16px' ,xl: '20px'},
+                    fontWeight: '500',
+                    lineHeight: {xs: '30px', md: '22px', lg: '26px' ,xl: '40px'},
+                    letterSpacing: '0em',
+                    position: 'absolute',
+                    color: 'black',
+                    textAlign: {
+                        xs: 'center',
+                        md: 'left'
+                    },
+                },
+                '.year' : {
+                    width: '100%',
+                    fontFamily: 'Montserrat',
+                    fontSize: '24px',
+                    fontWeight: 800,
+                    lineHeight: '29px',
+                    letterSpacing: '0em',
+                    textAlign: 'center',
+                    'span:last-child' : {
+                        fontSize: 16,
+                        fontWeight: 500
+                    }
+                    
+                },
+                '.yearm' : {
+                    width: '100%',
+                    fontFamily: 'Montserrat',
+                    fontSize: '48px',
+                    fontWeight: 800,
+                    lineHeight: '50px ',
+                    letterSpacing: '0em',
+                    textAlign: 'center',
+                    'span:last-child' : {
+                        fontSize: 16,
+                        fontWeight: 'normal'
+                    },
+                    mt: 5
+                    
+                },
+                '.bigscr' : {
+                    display: {
+                        xs: 'none',
+                        md: 'flex'
+                    },
                 
-            },
-            '.yearm' : {
-                width: '100%',
-                fontFamily: 'Montserrat',
-                fontSize: '48px',
-                fontWeight: 800,
-                lineHeight: '50px ',
-                letterSpacing: '0em',
-                textAlign: 'center',
-                'span:last-child' : {
-                    fontSize: 16,
-                    fontWeight: 'normal'
                 },
-                mt: 5
+                '.smallscr' : {
+                    display: {
+                        xs: 'flex',
+                        md: 'none'
+                    },
                 
-            },
-            '.bigscr' : {
-                display: {
-                    xs: 'none',
-                    md: 'flex'
                 },
-            
-            },
-            '.smallscr' : {
-                display: {
-                    xs: 'flex',
-                    md: 'none'
-                },
-            
-            },
-            
-        }}  
-            
-        >  
+                
+            }}  
+                
+            >  
             
             <svg className="road bigscr" width="2490" height="20" viewBox="0 0 2490 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="2490" height="20" fill="#564D4D"/>
             <line x1="-1" y1="9" x2="2490" y2="9.00022" stroke="#898989" stroke-width="2" stroke-dasharray="13 34"/>
             </svg>
 
-        
-            
-        
-            <Box className='smallscr' sx={{width: '100%', display: 'flex', justifyContent: 'center', height: '80vh'}}>
-            <svg className="road" width="2490" height="20" viewBox="0 0 2490 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="2490" height="20" fill="#564D4D"/>
-            <line x1="-1" y1="9" x2="2490" y2="9.00022" stroke="#898989" stroke-width="2" stroke-dasharray="13 34"/>
-            </svg>
-
-            <Box sx={{width: '100%', zIndex: 10, justifyContent: 'center', alignItems: 'center', display: {xs: 'flex', md: 'none'}}}>
-                
-                <Box sx={{width: '100%', display: 'flex', justifyContent: 'center', top: 0, position: 'absolute'}}>
-                <Box className='yearm'> 
-                        <span>
-
-                        {ms[picIndex].year}
-
-                        </span>    
-                        <br/>
-                        <span>
-                        {ms[picIndex].place}
-                        </span>
-                        <span>
-                        {ms[picIndex].detail}
-                        </span>
-                        
-                        
-
-                    </Box>
-                
-                    
-                </Box>
-            </Box>
-            </Box>
-
-            <Stack 
-            className="smallscr" 
-            direction={'row'} 
-            gap={2}
-            sx={{
-                width: '100%', 
-                display: 'flex', 
-                justifyContent: 'center', 
-                alignItems: 'center', 
-                position: 'absolute', 
-                top: 4
-                }}>
-
-                    <Box style={{width: '10px', height: '10px', backgroundColor: picIndex == 0? '#FBBC04' : '#93E2A8', display: 'flex', borderRadius: '50%', justifyContent: 'center', alignItems: 'center', transform: picIndex == 0 ? 'scale(1.5)' : 'unset',}}  >
-                        
-
-                        
-                    </Box>
-                    <Box style={{width: '10px', height: '10px', backgroundColor: picIndex == 1? '#FBBC04' : '#93E2A8', display: 'flex', borderRadius: '50%', justifyContent: 'center', alignItems: 'center', transform: picIndex == 1 ? 'scale(1.5)' : 'unset',}}  >
-                        
-
-                        
-                    </Box>
-                    <Box style={{width: '10px', height: '10px', backgroundColor: picIndex == 2? '#FBBC04' : '#93E2A8', display: 'flex', borderRadius: '50%', justifyContent: 'center', alignItems: 'center', transform: picIndex == 2 ? 'scale(1.5)' : 'unset',}}  >
-                        
-
-                        
-                    </Box>
-                    <Box style={{width: '10px', height: '10px', backgroundColor: picIndex == 3? '#FBBC04' : '#93E2A8', display: 'flex', borderRadius: '50%', justifyContent: 'center', alignItems: 'center', transform: picIndex == 3 ? 'scale(1.5)' : 'unset',}}  >
-                        
-
-                        
-                    </Box>
-                    <Box style={{width: '10px', height: '10px', backgroundColor: picIndex == 4? '#FBBC04' : '#93E2A8', display: 'flex', borderRadius: '50%', justifyContent: 'center', alignItems: 'center', transform: picIndex == 4 ? 'scale(1.5)' : 'unset',}}  >
-                        
-
-                        
-                    </Box>
-                    <Box style={{width: '10px', height: '10px', backgroundColor: picIndex == 5? '#FBBC04' : '#93E2A8', display: 'flex', borderRadius: '50%', justifyContent: 'center', alignItems: 'center', transform: picIndex == 5  ? 'scale(1.5)' : 'unset',}}  >
-                        
-
-                        
-                    </Box>
-                
-            </Stack>
-
-            <Box sx={{display: {xs: 'flex', md: 'none'}, width: '100%', position: 'absolute', bottom: '40vh'}}>
-            
-            </Box>
-            
-        
             <Grid container className="masterContainer" sx={{
 
             }}>
@@ -606,7 +519,55 @@ export default function RoadMap () {
                 
             </Grid>
         </Box>
-            
+            <Box sx={{
+                width: '90%',
+                minHeight: '100vh',
+                backgroundColor: 'blue',
+                mx: 'auto',
+                display: 'none',
+                flexDirection: 'row',
+                
+                
+            }}>
+                <Box sx={{
+                    width: '40%',
+                    minHeight: '100vh',
+                    
+
+
+                    // 'svg' : {
+                    //     transformOrigin: 'left',
+                    //     transform: 'rotate(90deg) scale(3) translateY(-50%)',
+                        
+
+
+                    // }
+                    
+                      
+                }}>
+                    {/* <svg style={{position: 'absolute'}} width="2490" height="20" viewBox="0 0 2490 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="2490" height="20" fill="#564D4D"/>
+                        <line x1="-1" y1="9" x2="2490" y2="9.00022" stroke="#898989" stroke-width="2" stroke-dasharray="13 34"/>
+                    </svg> */}
+                    <Box sx={{
+                        width: '40px',
+                        height: '40px'
+                    }}>
+
+                    </Box>
+                </Box>
+                <Box sx={{
+                    width: '60%',
+                    minHeight: '100vh',
+                    backgroundColor: 'yellow'
+                }}>
+                    
+                </Box>
+                
+
+            </Box>
+
+
             </Stack>
             
         </Box>
