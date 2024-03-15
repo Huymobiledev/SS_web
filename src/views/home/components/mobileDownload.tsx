@@ -10,8 +10,6 @@ export function MobileDownload() {
                 xs: 'flex',
                 sm: 'none',
                 justifyContent: 'center',
-
-                
             }
         }}>
             <Stack direction={'column'} sx={{
@@ -19,14 +17,15 @@ export function MobileDownload() {
                 display: 'flex',
                 justifyContent: 'center',
                 alignItems: 'center',
-                maxWidth: '400px'                
+                maxWidth: '400px' 
+                               
             }}>
-                <Link href='https://apps.apple.com/app/singsing-network/id1611106632' target='_blank'>
-                    <img src='/assets/images/welcome/appstore.png' style={{width: '100%'}}/>
-                </Link>
-
                 <Link href='https://app.singsing.net/vi' target='_blank'>
                     <img src='/assets/images/welcome/dapp.png' style={{width: '100%'}}/>
+                </Link>
+                
+                <Link href='https://apps.apple.com/app/singsing-network/id1611106632' target='_blank'>
+                    <img src='/assets/images/welcome/appstore.png' style={{width: '100%'}}/>
                 </Link>
                 
                 <Link href='https://play.google.com/store/apps/details?id=net.singsing.app&pli=1' target='_blank'>

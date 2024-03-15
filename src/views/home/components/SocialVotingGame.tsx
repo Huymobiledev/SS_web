@@ -179,23 +179,7 @@ export default function SocialVotingGame(props: any) {
                                 alignItems: 'center',
                                 position: 'relative',
                                 display: 'flex',
-                                '.prev' : {
-                                    position: 'absolute',
-                                    right: '25%',
-                                    zIndex: -1,
-                                    transform: 'scale(0.85)',
-                                    opacity: 0.5,
-                                    transition: 'transform 0.3s, opacity 0.3s',
-                                    width: '100%'
-                                },
-                                '.next' : {
-                                    position: 'absolute',
-                                    left: '25%',
-                                    zIndex: -1,
-                                    transform: 'scale(0.85)',
-                                    opacity: 0.5,
-                                    transition: 'transform 0.3s, opacity 0.3s',
-                                },
+                                
                                 'img' : {
                                     width: '100%',
                                     maxWidth: {sm: '280px', md: '0'}

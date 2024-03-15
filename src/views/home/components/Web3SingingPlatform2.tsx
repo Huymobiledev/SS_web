@@ -204,40 +204,12 @@ export default function Web3SingingPlatform2(props: any) {
                                 }
                             }}>
                                 <TransitionGroup>
-                                    {picIndex !== 0 && (
-                                    <CSSTransition
-                                        key={picIndex - 1}
-                                        in={picIndex!=0} // You can use picIndex !== 0 as well
-                                        timeout={100}
-                                        classNames="prev"
-                                    >
-                                    <img
-                                        src={steps[picIndex - 1].pic}
-                                        className="prev"
-                                        alt="Previous"
-                                    />
-                                    </CSSTransition>
-                                    )}
+                                    
 
-                                    <CSSTransition
-                                        key={picIndex}
-                                        in={true}
-                                        timeout={100}
-                                        classNames="current"
-                                    >
+                                    
                                         <img src={steps[picIndex].pic} className="current" alt="Current" />
-                                    </CSSTransition>
 
-                                    {picIndex !== 3 && (
-                                    <CSSTransition
-                                    key={picIndex + 1}
-                                    in={picIndex != 3} // You can use picIndex !== 3 as well
-                                    timeout={100}
-                                    classNames="next"
-                                    >
-                                    <img src={steps[picIndex + 1].pic} className="next" alt="Next" />
-                                    </CSSTransition>
-                                    )}
+                                    
                                 </TransitionGroup>
                             
                             </Box>
