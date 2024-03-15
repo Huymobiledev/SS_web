@@ -149,7 +149,7 @@ export default function RoadMap () {
             }}>
                 <ul>
                     <li>
-                        Vietnam market push with Okara
+                        Vietnam market pushed with Okara
                     </li>
                     <li>
                         Platform expand to other chains
@@ -178,7 +178,7 @@ export default function RoadMap () {
                         Platform expand to other chains
                     </li>
                     <li>
-                        Expand Market to Taiwan, Hongkhong
+                        Expand Market to Taiwan, Hong Kong
                     </li>
                 </ul>
             </Typography>
@@ -189,7 +189,7 @@ export default function RoadMap () {
         <Box sx={{
             width: '100%',
             overflow: 'hidden',
-            display: {xs: 'none', md: 'flex'},
+            display: 'flex',
             alignItems: {xs: 'unset', md: 'center'},
             position: 'relative',
             '.road' : {
@@ -197,7 +197,6 @@ export default function RoadMap () {
                 
             },
             justifyContent: 'center',
-        
         }}>
             <Stack direction={'column'} gap={5} sx={{width: '100%', mt: 5}}>
             <Typography variant="h1" sx={{
@@ -217,14 +216,12 @@ export default function RoadMap () {
                     ROADMAP
                 </Typography>
             <Box
-                onTouchStart={handleTouchStart}
-                onTouchMove={handleTouchMove}
-                onTouchEnd={handleTouchEnd}
+                
             sx={{
                 width: '100%',
                 position: 'relative',
                 alignItems: 'center',
-                display: 'flex',
+                display: {xs: 'none', md: 'flex'},
                 justifyContent: 'space-evenly',
                 overflow:'hidden',
 
@@ -502,9 +499,6 @@ export default function RoadMap () {
                         <span>
                             {ms[5].year}
                             </span>
-                            
-                        
-                            
                             <br/>
                             <span>
                             {ms[5].place}
@@ -519,53 +513,264 @@ export default function RoadMap () {
                 
             </Grid>
         </Box>
-            <Box sx={{
+            <Stack direction={"column"} gap={10} sx={{
                 width: '90%',
-                minHeight: '100vh',
-                backgroundColor: 'blue',
+                minHeight: '1200px',
                 mx: 'auto',
-                display: 'none',
-                flexDirection: 'row',
-                
-                
-            }}>
-                <Box sx={{
-                    width: '40%',
-                    minHeight: '100vh',
-                    
+                display: {xs: 'flex', md: 'none'},
+                flexDirection: 'column',
+                maxWidth: '420px',
+                background: 'url(assets/images/road.png) no-repeat',
+                backgroundSize: '16px',
+                backgroundPositionX: '31.5px',
+                alignItems: 'center',
+                justifyContent: 'center',
 
-
-                    // 'svg' : {
-                    //     transformOrigin: 'left',
-                    //     transform: 'rotate(90deg) scale(3) translateY(-50%)',
+                '.content' : {
+                    fontFamily: 'Montserrat',
+                    fontSize: '14px',
+                    fontWeight: 500,
+                    lineHeight: '17px',
+                    letterSpacing: '0em',
+                    textAlign: 'left',
+                    maxWidth: '70%'
+                },
+                '.time' : {
+                    fontFamily: 'Montserrat',
+                    'span:first-child' : {
+                        fontSize: '16px',
+                        fontWeight: 800,
+                        lineHeight: '17px',
+                        letterSpacing: '0em',
                         
-
-
-                    // }
-                    
-                      
+                    },
+                    'span:last-child' : {
+                        fontSize: '12px',
+                        fontWeight: 500,
+                        lineHeight: '17px',
+                        letterSpacing: '0em', 
+                    }
+                }
+            }}>
+                <Stack direction={'row'} sx={{
+                    display: 'flex',
+                    width: '100%',
+                    justifyContent: 'left'
                 }}>
-                    {/* <svg style={{position: 'absolute'}} width="2490" height="20" viewBox="0 0 2490 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="2490" height="20" fill="#564D4D"/>
-                        <line x1="-1" y1="9" x2="2490" y2="9.00022" stroke="#898989" stroke-width="2" stroke-dasharray="13 34"/>
-                    </svg> */}
-                    <Box sx={{
-                        width: '40px',
-                        height: '40px'
+                    <Box className='time' sx={{
+                        width: '80px',
+                        height: '80px',
+                        borderRadius: '50%',
+                        backgroundColor: '#DDDDDD',
+                        display: 'flex',
+                        justifyContent: 'center',
+                        alignItems: 'center',
+                        color: '#8B8B8B',
+                        flexDirection: 'column'
                     }}>
-
+                        <span>
+                            2023
+                        </span>
+                        <span>
+                            Q3
+                        </span>
                     </Box>
-                </Box>
-                <Box sx={{
-                    width: '60%',
-                    minHeight: '100vh',
-                    backgroundColor: 'yellow'
+                    <Typography className="content">
+                        <ul>
+                            <li>
+                            Real world voucher launch
+                            </li>
+                            <li>
+                            Real world Sing to Earn
+                            </li>
+                        </ul>
+                    </Typography>
+                </Stack>
+                <Stack direction={'row'} sx={{
+                    display: 'flex',
+                    width: '100%',
+                    justifyContent: 'left'
                 }}>
-                    
-                </Box>
+                    <Box className='time' sx={{
+                        width: '80px',
+                        height: '80px',
+                        borderRadius: '50%',
+                        backgroundColor: '#DDDDDD',
+                        display: 'flex',
+                        justifyContent: 'center',
+                        alignItems: 'center',
+                        color: '#8B8B8B',
+                        flexDirection: 'column'
+                    }}>
+                        <span>
+                            2023
+                        </span>
+                        <span>
+                            Q4
+                        </span>
+                    </Box>
+                    <Typography className="content">
+                        <ul>
+                            <li>
+                            Expand to Oasys and Polygon
+                            </li>
+                        </ul>
+                    </Typography>
+                </Stack>
+                <Stack direction={'row'} sx={{
+                    display: 'flex',
+                    width: '100%',
+                    justifyContent: 'left'
+                }}>
+                    <Box className='time' sx={{
+                        width: '80px',
+                        height: '80px',
+                        borderRadius: '50%',
+                        backgroundColor: '#FBBC04',
+                        display: 'flex',
+                        justifyContent: 'center',
+                        alignItems: 'center',
+                        color: 'black',
+                        flexDirection: 'column'
+                    }}>
+                        <span>
+                            2024
+                        </span>
+                        <span>
+                            Q1
+                        </span>
+                    </Box>
+                    <Typography className="content" position={'relative'}>
+                        <img style={{position: 'absolute', width: '61px', top: '-60px', left: '20px'}} src='assets/images/roadmap/singer.png'>
+                        </img>
+                        <ul>
+                            <li>
+                            Sing to win launch
+                            </li>
+                            <li>
+                            Indonesia big event with AAG
+                            </li>
+                        </ul>
+                    </Typography>
+                </Stack>
                 
+                <Stack direction={'row'} sx={{
+                    display: 'flex',
+                    width: '100%',
+                    justifyContent: 'left'
+                }}>
+                    <Box className='time' sx={{
+                        width: '80px',
+                        height: '80px',
+                        borderRadius: '50%',
+                        backgroundColor: '#93E2A8',
+                        display: 'flex',
+                        justifyContent: 'center',
+                        alignItems: 'center',
+                        color: 'black',
+                        flexDirection: 'column'
+                    }}>
+                        <span>
+                            2024
+                        </span>
+                        <span>
+                            Q2
+                        </span>
+                    </Box>
+                    <Typography className="content">
+                        <ul>
+                            <b>
+                            <li>
+                            Fansipan subnet launch
+                            </li>
+                            <li>
+                            Philippines market big contest with YGG
+                            </li>
+                            <li>
+                            B2B platform dev
+                            </li>
+                            <li>
+                            IDO
+                            </li>
+                            </b>
+                        </ul>
+                    </Typography>
+                </Stack>
+                <Stack direction={'row'} sx={{
+                    display: 'flex',
+                    width: '100%',
+                    justifyContent: 'left'
+                }}>
+                    <Box className='time' sx={{
+                        width: '80px',
+                        height: '80px',
+                        borderRadius: '50%',
+                        backgroundColor: '#93E2A8',
+                        display: 'flex',
+                        justifyContent: 'center',
+                        alignItems: 'center',
+                        color: 'black',
+                        flexDirection: 'column'
+                    }}>
+                        <span>
+                            2024
+                        </span>
+                        <span>
+                            Q3
+                        </span>
+                    </Box>
+                    <Typography className="content">
+                        <ul>
+                            <li>
+                            Vietnam market pushed with Okara
+                            </li>
+                            <li>
+                            Platform expand to other chains
+                            </li>
+                        </ul>
+                    </Typography>
+                </Stack>
+                <Stack direction={'row'} sx={{
+                    display: 'flex',
+                    width: '100%',
+                    justifyContent: 'left'
+                }}>
+                    <Box className='time' sx={{
+                        width: '80px',
+                        height: '80px',
+                        borderRadius: '50%',
+                        backgroundColor: '#93E2A8',
+                        display: 'flex',
+                        justifyContent: 'center',
+                        alignItems: 'center',
+                        color: 'black',
+                        flexDirection: 'column'
+                    }}>
+                        <span>
+                            2024
+                        </span>
+                        <span>
+                            Q4
+                        </span>
+                    </Box>
+                    <Typography className="content">
+                        <ul>
+                            <li>
+                            South-East-Asia big contest with 1 big Foundation
+                            </li>
+                            <li>
+                            Platform expand to other chains
+                            </li>
+                            <li>
+                            Expand Market to Taiwan, Hong Kong
+                            </li>
+                        </ul>
+                    </Typography>
+                </Stack>
+                    
+                    
 
-            </Box>
+            </Stack>
 
 
             </Stack>
