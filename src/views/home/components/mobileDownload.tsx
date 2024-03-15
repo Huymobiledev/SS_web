@@ -14,7 +14,7 @@ export function MobileDownload() {
                 
             }
         }}>
-            <Stack direction={'column'} gap={2} sx={{
+            <Stack direction={'column'} sx={{
                 width: '80%',
                 display: 'flex',
                 justifyContent: 'center',
