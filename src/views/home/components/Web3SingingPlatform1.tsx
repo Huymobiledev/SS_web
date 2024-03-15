@@ -89,9 +89,9 @@ export default function Web3SingingPlatform1(props: any) {
                         
                     }
                 }}>
-                    {images.map((num) => {
+                    {images.map((num, index) => {
                         return (
-                            <img src={`assets/images/web3singingplatform1/20220816-SingSing-AppMockupMobile-SelectSong ${num}.png` } style={{
+                            <img key={index} src={`assets/images/web3singingplatform1/20220816-SingSing-AppMockupMobile-SelectSong ${num}.png` } style={{
                                 width: num%2 == 1 ? '100%' : '20%'
                             }}/>
                         )
