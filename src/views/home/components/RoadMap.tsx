@@ -158,7 +158,7 @@ export default function RoadMap () {
             </Typography>
         },
         {
-            year: '2023',
+            year: '2024',
             place: 'Q4',
             detail: 
             <Typography className="detail" sx={{
