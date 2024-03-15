@@ -66,6 +66,7 @@ export default function Web3SingingPlatform1(props: any) {
                 <Box ref={boxRef} sx={{
                     width: '100%',
                     display: {xs: 'none', md: 'flex'},
+                    maxWidth: 'xl',
                     'img': {
                         width: '100%',
                         maxWidth: '1600px'
@@ -77,7 +78,8 @@ export default function Web3SingingPlatform1(props: any) {
                     <img src='assets/images/web3singingplatform.png' alt='Web3 Singing Platform' />
                 </Box>
                 <Stack direction={'column'} gap={2} sx={{
-                    width: '90%',
+                    width: '40%',
+                    minWidth: '300px',
                     minHeight: '100vh',
                     display: {
                         xs: 'flex',

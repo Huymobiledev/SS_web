@@ -19,7 +19,7 @@ export default function ViewHomePage(props: any) {
     const [data, setData] = useState<any>(null);
     return (
         <Fragment>
-            <Stack direction={'column'} width={'100%'} gap={10} alignItems={'center'} sx={{backgroundColor: '#white', overflowX: 'hidden'}}>
+            <Stack direction={'column'} width={'100%'} gap={10} alignItems={'center'} sx={{backgroundColor: '#white', overflow: 'hidden'}}>
                 <Welcome/>
                 <MobileDownload/>
                 <Web3SingingPlatform1/>

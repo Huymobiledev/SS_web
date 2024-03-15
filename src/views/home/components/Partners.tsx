@@ -72,10 +72,10 @@ export default function Partners(props: any) {
             textAlign: 'center',
             flexDirection: 'column',
             alignItems: 'center',
-            mb: '20px',
             justifyContent:'center',
             backgroundSize: '100% 100%',
             width: '100%',
+            mb: {xs: '500px', md: '-30'}
         }}>
             <ScrollAnimation animateIn='fadeIn'
                 animateOnce={true}>

@@ -50,7 +50,7 @@ export default function Tokenomic(props: any) {
                         <Grid item xs={12} sm={4} sx={{
                             'img' : {
                                 width: '95%',
-                                
+                                height: 'auto'
                             }
                         }}>
                             <img src='assets/images/legends.png'/>
