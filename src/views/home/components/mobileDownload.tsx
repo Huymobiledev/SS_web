@@ -15,12 +15,11 @@ export function MobileDownload() {
             }
         }}>
             <Stack direction={'column'} gap={2} sx={{
-                width: '100%',
+                width: '80%',
                 display: 'flex',
                 justifyContent: 'center',
                 alignItems: 'center',
-                maxWidth: '320px'
-                
+                maxWidth: '400px'                
             }}>
                 <Link href='https://apps.apple.com/app/singsing-network/id1611106632' target='_blank'>
                     <img src='/assets/images/welcome/appstore.png' style={{width: '100%'}}/>
