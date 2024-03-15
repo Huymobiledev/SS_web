@@ -10,9 +10,6 @@ const handleClick = (event: any) => {
         let target = dataMenu[index]
 
         let targettedElement = document.getElementById(`${target.lable.toLowerCase().replaceAll(' ','')}`)
-
-        console.log(target.lable.toLowerCase().replaceAll(' ',''))
-
         switch (target.lable) {
             case 'WHITE PAPER':
                 window.open('https://singsing.gitbook.io/singsing/welcome/singsing-summary', '_blank')
