@@ -36,10 +36,6 @@ export const dataMenu = [
         lable: 'WHITE PAPER',
         link: handleClick
     },
-    // {
-    //     lable: 'MARKET PLACE',
-    //     link: () => {}
-    // },
     {
         lable: 'LINK TREE',
         link: handleClick
