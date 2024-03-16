@@ -20,7 +20,7 @@ export function MobileDownload() {
                 maxWidth: '400px' 
                                
             }}>
-                <Link href='https://app.singsing.net/vi' target='_blank'>
+                <Link href='https://app.singsing.net/' target='_blank'>
                     <img src='/assets/images/welcome/dapp.png' style={{width: '100%'}}/>
                 </Link>
                 

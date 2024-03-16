@@ -145,7 +145,7 @@ export default function Welcome(props: any) {
                             
                         </Grid>
                         <Grid item sm={3} className="btn">
-                            <Link href='https://app.singsing.net/vi' target='_blank'>
+                            <Link href='https://app.singsing.net/' target='_blank'>
                                 <img src='/assets/images/welcome/dapp.png' style={{width: '100%'}}/>
                             </Link>
                             
