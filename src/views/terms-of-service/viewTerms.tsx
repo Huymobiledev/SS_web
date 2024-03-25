@@ -22,6 +22,7 @@ export default function ViewTerms(props: any) {
             const data = await response.json();
             if (data != undefined) {
               setArticleData(data)
+              document.getElementById('termContent')!.innerHTML = data.content
             }
 
           } catch (error) {
@@ -31,23 +32,16 @@ export default function ViewTerms(props: any) {
     
         fetchData();
       }, []);
+
     
-
-      useEffect(() => {
-        if (articleData){
-          document.getElementById('termContent')!.innerHTML = articleData!.content
-        } 
-      }, [articleData])
-
     return (
         <Fragment>
             <Stack direction={"column"} sx={{mt: '100px', width: '80vw', minWidth: 'sm', maxWidth: 'xl'}}>
-                {loaded &&
                 <Typography variant="h1" sx={{textAlign: 'center', fontSize: '46px', fontWeight: 700}}>
-                {articleData!.title}
+                  TERM
                 </Typography>
-               }
                 <Typography id='termContent' sx={{textAlign: 'justify'}}>
+
                 </Typography>
             </Stack>
         </Fragment>
