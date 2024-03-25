@@ -20,9 +20,9 @@ export default function ViewTerms(props: any) {
               throw new Error('Network response was not ok');
             }
             const data = await response.json();
-            setArticleData(data);
-            setLoaded(true),
-            document.getElementById('termContent')!.innerHTML = articleData!.content
+            if (data != undefined) {
+              setArticleData(data)
+            }
 
           } catch (error) {
             console.error('Error fetching data:', error);
@@ -32,14 +32,12 @@ export default function ViewTerms(props: any) {
         fetchData();
       }, []);
     
-    useEffect(()=>{
-        console.log(articleData)
 
-        document.getElementById('termContent')!.innerHTML = articleData!.content
-    }, [articleData])
-    
-    
-
+      useEffect(() => {
+        if (articleData){
+          document.getElementById('termContent')!.innerHTML = articleData!.content
+        } 
+      }, [articleData])
 
     return (
         <Fragment>
