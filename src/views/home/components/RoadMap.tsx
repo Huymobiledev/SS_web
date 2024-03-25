@@ -168,7 +168,7 @@ export default function RoadMap () {
                         }
                     }}>
                         <span>
-                            2024
+                            2023
                         </span>
                         <span>
                             Q4
@@ -722,9 +722,6 @@ export default function RoadMap () {
                         </ul>
                     </Typography>
                 </Stack>
-                    
-                    
-
             </Stack>
 
 
