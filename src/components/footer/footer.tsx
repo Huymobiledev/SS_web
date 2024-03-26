@@ -153,7 +153,10 @@ export default function Footer() {
                                     <span onClick={() => {document.getElementById('howtoplay')?.scrollIntoView({ behavior: 'smooth',})}}>How To Play</span>
                                     <br/>
                                     <span onClick={() => {document.getElementById('ourteam')?.scrollIntoView({ behavior: 'smooth',})}}>Our Team</span>
-                                    
+                                    <br></br>
+                                    <Link href='/terms-of-service'><span>Terms of use</span></Link>
+                                    <br></br>
+                                    <Link href='/policy'><span>Privacy Policy</span></Link>
                                     {/* <br/>
                                     Terms
                                     <br/>
