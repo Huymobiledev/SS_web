@@ -319,7 +319,7 @@ export default function RoadMap () {
                                 Fansipan subnet launch
                                 </li>
                                 <li>
-                                Philippines market big contest with YGG
+                                Philippines market big contest
                                 </li>
                                 <li>
                                 B2B platform dev
@@ -639,7 +639,7 @@ export default function RoadMap () {
                             Fansipan subnet launch
                             </li>
                             <li>
-                            Philippines market big contest with YGG
+                            Philippines market big contest
                             </li>
                             <li>
                             B2B platform dev
