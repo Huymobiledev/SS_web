@@ -26,10 +26,12 @@ import Header from '@/components/header/header';
 
 import lightTheme from '@/styles/theme/lightThemeOptions';
 import Footer from '@/components/footer/footer';
+
 // import { AppConfigGuard } from '@/components/appGuard/appConfigGuard';
 //import i18n from '../../i18n';
 
 require('dotenv').config();
+
 
 NProgress.configure({ showSpinner: false })
 
