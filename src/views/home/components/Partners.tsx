@@ -64,6 +64,9 @@ export default function Partners(props: any) {
         {
             url: 'https://app.saakuru.com/'
         },
+        {
+            url: 'https://www.web3port.us/'
+        }
     ]
 
     return (
