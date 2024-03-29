@@ -30,21 +30,6 @@ export default function SocialVotingGame(props: any) {
         }
     ]
 
-    const handleTouchStart = (event: any) => {
-        setStartX(event.touches[0].clientX);
-      };
-    
-      const handleTouchEnd = (event: any) => {
-        const deltaX = event.changedTouches[0].clientX - startX;
-    
-        if (deltaX > 0) {
-          // Swipe right
-        
-        } else if (deltaX < 0) {
-          // Swipe left
-          
-        }
-      };
 
     return (
         <Box
@@ -54,11 +39,11 @@ export default function SocialVotingGame(props: any) {
                 justifyContent: 'center',
                 alignItems: 'center',
                 backgroundColor: 'white',
-                maxHeight: '100vh'
+                overflow: "hidden"
         }}>
-            <ScrollAnimation animateIn='slideInRight' duration={.5} animateOnce={true}>
+            <ScrollAnimation animateIn="slideInLeft" duration={.5} animateOnce={true}>
 
-            <Stack direction={'column'} sx={{
+            <Stack direction={'column'} gap={5} sx={{
                 width: '100%', 
                 maxWidth: '99vw',
                 display: 'flex', 
@@ -70,8 +55,8 @@ export default function SocialVotingGame(props: any) {
                     display: 'flex',
                     alignItems: 'center',
                     p: 0,
-
                 },
+                overflow: 'hidden'
             }}>
                 <Typography sx={{
                     fontFamily: 'Montserrat',
@@ -80,7 +65,7 @@ export default function SocialVotingGame(props: any) {
                         sm: '64px', 
                     },
                     fontWeight: 800,
-                    lineHeight: {xs: '40px', md: '108px'},
+                    lineHeight: {xs: '54px', md: '108px'},
                     textAlign: 'center',
                     color: 'black',
                     alignItems: 'center',
@@ -100,26 +85,28 @@ export default function SocialVotingGame(props: any) {
                             objectFit: 'contain',
                             MaxWidth: '228px',
                             height: '462px',
-                            width: '80%'
+                            width: '99%',
+                            maxWidth: '161px'
                         }, 
-                        height: '550px',
                         '.bigscreenDetail' : {
                             fontFamily: 'Montserrat',
                             fontSize: {md: '12px', lg: '14px', xl: '20'},
                             fontWeight: 600,
-                            lineHeight: {md: '24px', lg: '32px' ,xl: '41px'},
+                            lineHeight: {md: '21px', lg: '32px' ,xl: '41px'},
                             textAlign: 'center',
                             color: 'black',
+                            width: '100%',
+                            textTransform: 'uppercase'
                         },
                         '.detail' : {
-                            //styleName: Title;
                             fontFamily: 'Montserrat',
-                            fontSize: '14px',
+                            fontSize: '16px',
                             fontWeight: 600,
                             lineHeight: '20px',
                             letterSpacing: '0em',
                             textAlign: 'center',
-                            color: 'black'
+                            color: 'black',
+                            textTransform: 'uppercase'
                         },
                         '.num' : {
                             fontFamily: 'Montserrat',
@@ -136,95 +123,58 @@ export default function SocialVotingGame(props: any) {
                         display: 'flex',
                         '.bigscreenArrow' : {
                             width: '100%',
-
+                        
+                            
                         },
                         '.arrow' : {
                             'img' : {
                                 width: '50%'
                             },
                             height: '100%'
-                        }
-                        
-
+                        },
+                        overflow: 'hidden',
                     }}>
-                        <Grid item xs={2}  sx={{
-                            my: 'auto',
+                        
+                        <Grid item xs={10} sx={{
                             display: {
                                 xs: 'flex',
                                 md: 'none'
                             },
-                            height: '100%',
-                            justifyContent: 'center',
-                            alignItems: 'center',
-                            visibility: picIndex == 0 ? 'hidden' : 'unset',
-                            
-                        }}>
-                            <Button className="arrow" sx={{width: '100%'}} onClick={()=>{setPicIndex(picIndex -1)}}>
-                                <img alt='' src='assets/icons/Polygon_2.svg' style={{transform: 'rotate(180deg)'}}/>
-                            </Button>
-                        </Grid>
-                        <Grid item xs={6} sx={{
-                            display: {
-                                md: 'none'
-                            },
-                            height: '100%',
                             'img': {
                                 width: '100%',
                                 my: 'auto'
                             },
+                            mx: 'auto',
+                            overflow: 'hidden'
                         }}>
-                            <Box sx={{
+                            <Stack direction={"column"} gap={10} sx={{
                                 width: '100%',
-                                height: '462px',
-                                alignItems: 'center',
-                                position: 'relative',
+                                maxWidth: '310px',
                                 display: 'flex',
-                                
+                                alignItems: 'center',
                                 'img' : {
-                                    width: '100%',
-                                    maxWidth: {sm: '280px', md: '0'}
-                                }
+                                    width: '90%',
+                                    maxWidth: '280px'
+                                },
+                                overflow: 'hidden'
                             }}>
-                                <TransitionGroup>
-
-
-                                        <img alt='' src={steps[picIndex].pic} className="current"/>
-
-                                
-                                </TransitionGroup>
-                            
-                            </Box>
-                            <Box sx={{
-                                width: '100%',
-                                background: 'radial-gradient(50% 50% at 50% 50%, #00000070 0%, rgba(0, 0, 0, 0) 100%)',
-                                height: '17px',
-                                mt: -5,
-                                mb: 2
-                                
-                            }}>
-
-                            </Box>
-                            <Typography variant="body1" className="detail">
-                                {steps[picIndex].detail}
-                            </Typography>
-                        </Grid>
-
-                        <Grid item xs={2} sx={{
-                            display: {
-                                xs: 'flex',
-                                md: 'none'
-                            },
-                            my: 'auto',
-                            visibility: picIndex == 3 ? 'hidden' : 'unset',
-                            
-                            justifyContent: 'center',
-                            alignItems: 'center',
-                            height: '100%'
-                        }}>
-                            <Button className="arrow" sx={{width: '100%'}} onClick={()=>{setPicIndex(picIndex + 1)}}>
-                                <img alt='' src='assets/icons/Polygon_2.svg' style={{}}/>
-                            </Button>
-                                                      
+                                {steps.map((value, index) => {
+                                    return (
+                                        <Stack key={index} direction={'column'} gap={3} sx={{
+                                            width: '100%',
+                                            alignItems: 'center',
+                                            position: 'relative',
+                                            display: 'flex',
+                                            overflow: 'hidden'
+                                        }}>
+                                            <img src={value.pic} className="current"/>
+                                            <Typography variant="body1" className="detail">
+                                                {value.detail}
+                                            </Typography>
+                                        </Stack>
+                                    )
+                                })}
+                            </Stack>        
                         </Grid>
 
                         <Grid item md={2.5} sx={{
@@ -238,21 +188,20 @@ export default function SocialVotingGame(props: any) {
                             }}>
                                 1
                             </Box>
-                            <img alt='' className="bigscreen" src='assets/images/socialvotinggame/step1.png'/>
+                            <img className="bigscreen" src='assets/images/socialvotinggame/step1.png'/>
                             <Box sx={{
                                 width: '100%',
                                 background: 'radial-gradient(50% 50% at 50% 50%, #00000070 0%, rgba(0, 0, 0, 0) 100%)',
                                 height: '17px',
-                                mt: -7,
+                                mt: -15,
                                 mb: 2
-                            }}>
-
-                            </Box>
+                                
+                            }}></Box>
                             <Typography className='bigscreenDetail' sx={{
                                 
                             }}>
-                            VOTING USING SING TOKEN
-                            </Typography>
+                                VOTING USING SING TOKEN
+                            </Typography>   
                         </Grid>
                         <Grid item md={0.5} sx={{
                             display: {
@@ -262,7 +211,7 @@ export default function SocialVotingGame(props: any) {
                             my: 'auto'
                         }}>
                             
-                            <img alt='' className='bigscreenArrow' src='assets/icons/Polygon_2.svg'/>
+                            <img className='bigscreenArrow' src='assets/icons/Polygon_2.svg'/>
                         </Grid>
                         <Grid item md={2.5} sx={{
                             display: {
@@ -275,7 +224,7 @@ export default function SocialVotingGame(props: any) {
                             }}>
                                 2
                             </Box>
-                            <img alt='' className="bigscreen" src='assets/images/socialvotinggame/step2.png'/>
+                            <img className="bigscreen" src='assets/images/socialvotinggame/step2.png'/>
                             <Box sx={{
                                 width: '100%',
                                 background: 'radial-gradient(50% 50% at 50% 50%, #00000070 0%, rgba(0, 0, 0, 0) 100%)',
@@ -283,9 +232,7 @@ export default function SocialVotingGame(props: any) {
                                 mt: -7,
                                 mb: 2
                                 
-                            }}>
-
-                            </Box>
+                            }}></Box>
                             <Typography className='bigscreenDetail' sx={{
                                 
                             }}>
@@ -299,7 +246,7 @@ export default function SocialVotingGame(props: any) {
                             },
                             my: 'auto'
                         }}>
-                            <img alt='' className='bigscreenArrow' src='assets/icons/Polygon_2.svg'/>
+                            <img className='bigscreenArrow' src='assets/icons/Polygon_2.svg'/>
                         </Grid>
                         <Grid item md={2.5} sx={{
                             display: {
@@ -312,22 +259,19 @@ export default function SocialVotingGame(props: any) {
                             }}>
                                 3
                             </Box>
-                            <img alt='' className="bigscreen" src='assets/images/socialvotinggame/step3.png'/>
+                            <img className="bigscreen" src='assets/images/socialvotinggame/step3.png'/>
                             <Box sx={{
                                 width: '100%',
                                 background: 'radial-gradient(50% 50% at 50% 50%, #00000070 0%, rgba(0, 0, 0, 0) 100%)',
                                 height: '17px',
-                                mt: -7,
+                                mt: -15,
                                 mb: 2
                                 
-                            }}>
-
-                            </Box>
+                            }}></Box>
                             <Typography className='bigscreenDetail' sx={{
-                         
                                 
                             }}>
-                            SHARE THE SINGER&apos;S VOTING LINK TO X TO ENCOURAGE VOTING
+                                SHARE THE SINGER'S VOTING LINK TO X TO ENCOURAGE VOTING
                             </Typography>
                         </Grid>
                         <Grid item md={0.5} sx={{
@@ -337,7 +281,7 @@ export default function SocialVotingGame(props: any) {
                             },
                             my: 'auto'
                         }}>
-                            <img alt='' className='bigscreenArrow' src='assets/icons/Polygon_2.svg'/>
+                            <img className='bigscreenArrow' src='assets/icons/Polygon_2.svg'/>
                         </Grid>
                         <Grid item md={2.5} sx={{
                             display: {
@@ -352,7 +296,7 @@ export default function SocialVotingGame(props: any) {
                             }}>
                                 4
                             </Box>
-                            <img alt='' className="bigscreen" src='assets/images/socialvotinggame/step4.png'/>
+                            <img className="bigscreen" src='assets/images/socialvotinggame/step4.png'/>
                             <Box sx={{
                                 width: '100%',
                                 background: 'radial-gradient(50% 50% at 50% 50%, #00000070 0%, rgba(0, 0, 0, 0) 100%)',
@@ -360,19 +304,16 @@ export default function SocialVotingGame(props: any) {
                                 mt: -7,
                                 mb: 2
                                 
-                            }}>
-
-                            </Box>
+                            }}></Box>
                             <Typography className='bigscreenDetail' sx={{
                                 
                             }}>
-                            CLAIM REWARDS IF YOUR CHOSEN SINGER WINS
+                                CLAIM REWARDS IF YOUR CHOSEN SINGERS WIN
                             </Typography>
                         </Grid>
                     </Grid>
             </Stack>
             </ScrollAnimation>
-
        </Box>
 
     );
