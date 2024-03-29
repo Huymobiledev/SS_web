@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 import {CSSTransition, TransitionGroup} from 'react-transition-group';
 import Image from 'next/image'
+import { width } from "@mui/system";
 
 export default function SocialVotingGame(props: any) {
     const [picIndex, setPicIndex] = useState(0)
@@ -165,12 +166,18 @@ export default function SocialVotingGame(props: any) {
                                             alignItems: 'center',
                                             position: 'relative',
                                             display: 'flex',
-                                            overflow: 'hidden'
+                                            overflow: 'hidden',
+                                            justifyContent: 'center'
                                         }}>
                                             <img src={value.pic} className="current"/>
                                             <Typography variant="body1" className="detail">
                                                 {value.detail}
                                             </Typography>
+                                            
+                                            {index < 3 && <img style={{
+                                                transform: 'rotate(90deg)',
+                                                height: '100px'
+                                            }} src='assets/icons/Polygon_2.svg'/>}
                                         </Stack>
                                     )
                                 })}

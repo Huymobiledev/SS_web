@@ -169,6 +169,10 @@ export default function Web3SingingPlatform2(props: any) {
                                             <Typography variant="body1" className="detail">
                                                 {value.detail}
                                             </Typography>
+                                            {index < 3 && <img style={{
+                                                transform: 'rotate(90deg)',
+                                                height: '100px'
+                                            }} src='assets/icons/Polygon_2.svg'/>}
                                         </Stack>
                                     )
                                 })}
