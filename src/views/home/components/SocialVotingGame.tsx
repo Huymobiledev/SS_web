@@ -271,7 +271,7 @@ export default function SocialVotingGame(props: any) {
                             <Typography className='bigscreenDetail' sx={{
                                 
                             }}>
-                                SHARE THE SINGER'S VOTING LINK TO X TO ENCOURAGE VOTING
+                                SHARE THE SINGER&apos;S VOTING LINK TO X TO ENCOURAGE VOTING
                             </Typography>
                         </Grid>
                         <Grid item md={0.5} sx={{
