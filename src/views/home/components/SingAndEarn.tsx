@@ -137,8 +137,8 @@ export default function SingAndEarn(props: any) {
                         display: 'flex',
                         '.bigscreenArrow' : {
                             width: '100%',
-                        
-                            
+                            minWidth: '20px',
+                            maxWidth: '40px'
                         },
                         '.arrow' : {
                             'img' : {
@@ -161,7 +161,7 @@ export default function SingAndEarn(props: any) {
                             mx: 'auto',
                             overflow: 'hidden'
                         }}>
-                            <Stack direction={"column"} gap={10} sx={{
+                            <Stack direction={"column"} gap={5} sx={{
                                 width: '100%',
                                 maxWidth: '310px',
                                 display: 'flex',
@@ -174,20 +174,24 @@ export default function SingAndEarn(props: any) {
                             }}>
                                 {steps.map((value, index) => {
                                     return (
-                                        <Stack key={index} direction={'column'} gap={3} sx={{
+                                        <Stack key={index} direction={'column'} gap={2} sx={{
                                             width: '100%',
                                             alignItems: 'center',
                                             position: 'relative',
                                             display: 'flex',
-                                            overflow: 'hidden'
+                                            overflow: 'hidden',
+                                            'img' : {
+                                                my: 'auto'
+                                            }
                                         }}>
                                             <img src={value.pic} className="current"/>
-                                            <Typography variant="body1" className="detail">
+                                            {value.detail != '' && <Typography variant="body1" className="detail">
                                                 {value.detail}
-                                            </Typography>
+                                            </Typography>}
                                             {index < 3 && <img style={{
                                                 transform: 'rotate(90deg)',
-                                                height: '100px'
+                                                height: '100px',
+                                                
                                             }} src='assets/icons/Polygon_2.svg'/>}
                                         </Stack>
                                     )
