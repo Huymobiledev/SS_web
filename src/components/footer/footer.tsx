@@ -114,8 +114,6 @@ export default function Footer() {
                                 sm: 'left'
                             },
                             mb: 3,
-                            
-
                         }}>
                                 <Typography variant="h1" sx={{
                                     //styleName: Mont T18;
@@ -146,7 +144,6 @@ export default function Footer() {
                                         ':hover' : {
                                             color: '#B226C5',
                                             filter: 'brightness(2)',
-                                            
                                         }
                                     }
                                 }}>
@@ -157,60 +154,10 @@ export default function Footer() {
                                     <Link href='/terms-of-service'><span>Terms of use</span></Link>
                                     <br></br>
                                     <Link href='/policy'><span>Privacy Policy</span></Link>
-                                    
                                 </Typography>
                         </Box>
                     </Grid>
-                    {/* <Grid item xs={12} sm={5.5} md={2.5}>
-                    <Box sx={{
-                            width: '100%',
-                            display: 'grid',
-                            gridTemplateRows: '60px 100px',
-                            'img': {
-                                width: '174px',
-                                m: {
-                                    xs: 'auto',
-                                    sm: 0
-                                }
-                            },
-                            height: '160px',
-                            justifyContent: {
-                                xs: 'center',
-                                sm: 'left'
-                            },
-                            mb: 2
-
-                        }}>
-                                <Typography variant="h1" sx={{
-                                    //styleName: Mont T18;
-                                    fontFamily: 'Montserrat',
-                                    fontSize: '18px',
-                                    fontWeight: 700,
-                                    lineHeight: '22px',
-                                    letterSpacing: '0px',
-                                    textAlign: {xs: 'center', sm: 'left'},
-                                }}>
-                                    Support Center
-                                </Typography>
-                                <Typography variant="body1" sx={{
-                                    //styleName: Mont L14;
-                                    fontFamily: 'Montserrat',
-                                    fontSize: '14px',
-                                    fontWeight: 400,
-                                    lineHeight: '22px',
-                                    letterSpacing: '0px',
-                                    textAlign: {xs: 'center', sm: 'left'},
-                                }}>
-                                    How to register
-                                    <br/>
-                                    How to buy and sell
-                                    <br/>
-                                    How to transfer NFT
-                                </Typography> 
-                        </Box>
-                    </Grid> */}
                     <Grid item xs={12} sm={5.5} md={2.5} sx={{
-                        
                     }}>
                         <Grid container sx={{
                             width: '100%',
@@ -225,9 +172,7 @@ export default function Footer() {
                                 transition: 'transform .4s, filter .5s',
                                 ':hover' : {
                                     transform: 'scale(1.2)',
-                                    filter: 'brightness(0.7)',
-                                    
-                                   
+                                    filter: 'brightness(0.7)',  
                                 },
                             }
                         }}>
@@ -255,6 +200,5 @@ export default function Footer() {
                     </Grid>
                 </Grid>
            </Box>
-
     )
 }
