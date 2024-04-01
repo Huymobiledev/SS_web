@@ -157,10 +157,7 @@ export default function Footer() {
                                     <Link href='/terms-of-service'><span>Terms of use</span></Link>
                                     <br></br>
                                     <Link href='/policy'><span>Privacy Policy</span></Link>
-                                    {/* <br/>
-                                    Terms
-                                    <br/>
-                                    Privacy Policy */}
+                                    
                                 </Typography>
                         </Box>
                     </Grid>

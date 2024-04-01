@@ -18,7 +18,7 @@ export default function ViewPolicy(props: any) {
                 </Typography>
                 <Typography id='policy' sx={{textAlign: 'justify'}}>
                     <span>
-                        <p>Sing Sing Pte. Ltd. (“SingSing,” “we” or “us”) provides you with a platform (&quot;Platform&quot;) that allows you to buy, sell, or display NFTs or create a collection of NFTs, in addition to other features and services (collectively, the “Services”).</p>
+                        <p>SingSing Pte. Ltd. (“SingSing,” “we” or “us”) provides you with a platform (&quot;Platform&quot;) that allows you to buy, sell, or display NFTs or create a collection of NFTs, in addition to other features and services (collectively, the “Services”).</p>
                         <p>We are committed to protecting your privacy. We have prepared this Privacy Policy to describe to you our practices regarding the Personal Data (as defined below) we collect, why we collect it, and how we use and disclose it.</p>
                         <p>We care about your privacy, so please take the time to learn about and understand our policies and practices. Please be aware that we reserve the right to amend any of our policies and practices at any time, but the most recent version of this Privacy Policy may always be found on this page. We recommend that you review the Privacy Policy on a regular basis to ensure that you are familiar with the most updated version.</p>
                         <p><b>1. Personal Data We Collect</b></p>

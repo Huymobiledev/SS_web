@@ -50,12 +50,12 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
 
 	const seoData: { [lang: string]: SeoInterface } = {
 		'en': {
-			title: 'Sing Sing',
+			title: 'SingSing',
 			description: 'We pioneer carbon reduction in asean with our internationally accredited web 3.0 carbon trading platform while offering comprehensive technology and equipment solutions to help businesses and their supply chains reduce carbon emissions and trade in the international carbon credit markets. Our streamlined platform simplifies project registration and carbon credit issuance, combined with expert consultation to maximize carbon credit potential and ensure transparent tracking of the buy/sell process, contributing to verifiable sustainability projects and supply chains.',
 			image: 'https://web-dev.carbonasean.net/assets/images/cctpa.png'
 		},
 		'vi': {
-			title: 'Sing Sing',
+			title: 'SingSing',
 			description: 'We pioneer carbon reduction in asean with our internationally accredited web 3.0 carbon trading platform while offering comprehensive technology and equipment solutions to help businesses and their supply chains reduce carbon emissions and trade in the international carbon credit markets. Our streamlined platform simplifies project registration and carbon credit issuance, combined with expert consultation to maximize carbon credit potential and ensure transparent tracking of the buy/sell process, contributing to verifiable sustainability projects and supply chains.',
 			image: 'https://web-dev.carbonasean.net/assets/images/cctpa.png'
 		}
@@ -73,8 +73,8 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
 	return (
 		<Suspense fallback={''}>
 			<Head>
-				<title>Sing Sing</title>
-				<link rel="icon" type="image/png" href="path/to/favicon.png"></link>
+				<title>SingSing</title>
+				<link rel="icon" href="/favicon.ico" sizes="any" />
 				{/* <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,shrink-to-fit=no,user-scalable=no" />
 				
 				<meta name="description" content={pageProps?.description || seoData[`${router.locale}` || 'en']?.description} />
