@@ -11,7 +11,7 @@ export default function Document() {
         
         <link href="assets/js/font.css" rel="stylesheet" />
 
-        {/* <script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GTAG || `G-3DPEDGM2E2`}`}></script>
+        <script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GTAG || `G-H23Z2RWE41`}`}></script>
         <script
           data-partytown-config
           dangerouslySetInnerHTML={{
@@ -20,11 +20,11 @@ export default function Document() {
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
             
-              gtag('config', '${process.env.NEXT_PUBLIC_GTAG || `G-3DPEDGM2E2`}');
+              gtag('config', '${process.env.NEXT_PUBLIC_GTAG || `G-H23Z2RWE41`}');
             
             `,
           }}
-        /> */}
+        />
         <link rel="stylesheet" href="assets/js/animate.min.css"/>
       </Head>
       <body>
