@@ -24,7 +24,7 @@ export default function ViewHomePage(props: any) {
       <Stack
         direction={"column"}
         width={"100%"}
-        gap={10}
+        gap={2}
         alignItems={"center"}
         sx={{ backgroundColor: "#white", overflow: "hidden" }}
       >

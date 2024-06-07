@@ -261,7 +261,7 @@ export default function Welcome(props: any) {
         ".img_banner": {
           width: "100%",
           height: "100vh",
-          objectFit: "cover",
+          objectFit: "fill",
           display: {
             lg: "flex",
             md: "flex",
