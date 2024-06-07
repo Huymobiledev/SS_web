@@ -101,11 +101,6 @@ export default function OurGame(props: any) {
         alignItems: "center",
         backgroundColor: "white",
         display: "flex",
-        paddingY: {
-          md: "100px",
-          sm: "50px",
-          xs: "50px",
-        },
       }}
     >
       <ScrollAnimation animateIn="fadeIn" duration={0.5} animateOnce={true}>

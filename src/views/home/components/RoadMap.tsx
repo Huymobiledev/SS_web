@@ -702,10 +702,9 @@ export default function RoadMap() {
         gap={{ xs: 5, md: 40 }}
         sx={{
           width: "100%",
-          mt: 5,
           display: "flex",
           justifyContent: "center",
-          mb: 40,
+          mb: 10,
         }}
       >
         <Typography
