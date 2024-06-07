@@ -13,25 +13,38 @@ import Web3SingingPlatform1 from "./components/Web3SingingPlatform1";
 import Web3SingingPlatform2 from "./components/Web3SingingPlatform2";
 import RoadMap from "./components/RoadMap";
 import { MobileDownload } from "./components/mobileDownload";
+import OurGame from "./components/OurGame";
+import OurMetric from "./components/OurMetric";
 
 export default function ViewHomePage(props: any) {
-    const { t } = useTranslation()
-    const [data, setData] = useState<any>(null);
-    return (
-        <Fragment>
-            <Stack direction={'column'} width={'100%'} gap={10} alignItems={'center'} sx={{backgroundColor: '#white', overflow: 'hidden'}}>
-                <Welcome/>
-                <MobileDownload/>
+  const { t } = useTranslation();
+  const [data, setData] = useState<any>(null);
+  return (
+    <Fragment>
+      <Stack
+        direction={"column"}
+        width={"100%"}
+        gap={10}
+        alignItems={"center"}
+        sx={{ backgroundColor: "#white", overflow: "hidden" }}
+      >
+        <Welcome />
+        <OurGame />
+        <OurMetric />
+        <TheTeam/>
+        <Partners/>
+        <RoadMap/>
+        {/* <MobileDownload/>
                 <Web3SingingPlatform1/>
                 <Web3SingingPlatform2/>
                 <SocialVotingGame/>
                 <SingAndEarn data={data}/>
                 <Tokenomic data={data} />
-                <TheTeam/>
-                <Partners/>
-                <RoadMap/>
-                {/* <BlogAndNews/> */}
-            </Stack>
-        </Fragment>
-    )
+              
+              
+                <RoadMap/> */}
+        {/* <BlogAndNews/> */}
+      </Stack>
+    </Fragment>
+  );
 }
