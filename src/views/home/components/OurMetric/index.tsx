@@ -85,7 +85,7 @@ export default function OurMetric(props: any) {
                 flexDirection: "column",
               }}
             >
-              <Box />
+              <Box sx={{height:"20px"}} />
               <Box
                 sx={{
                   width: {
@@ -102,12 +102,12 @@ export default function OurMetric(props: any) {
                   backgroundColor: "#FFC00080",
                   border: "2px dashed #FFC000",
                   display: "flex",
-                  justifyContent: "space-evenly",
+                  justifyContent: "space-around",
                   flexDirection: "column",
                   alignItems: "center",
                 }}
               >
-                <Box />
+                <Box sx={{height:"20px"}} />
                 <Box
                   sx={{
                     width: {
@@ -132,8 +132,8 @@ export default function OurMetric(props: any) {
                     sx={{
                       fontFamily: "Montserrat",
                       fontSize: {
-                        xs: "14px",
-                        md: "24px",
+                        xs: "13px",
+                        md: "22px",
                       },
                       fontWeight: 700,
                       lineHeight: {
@@ -152,13 +152,13 @@ export default function OurMetric(props: any) {
                   sx={{
                     fontFamily: "Montserrat",
                     fontSize: {
-                      xs: "14px",
-                      md: "24px",
+                      xs: "13px",
+                      md: "22px",
                     },
                     fontWeight: 700,
                     lineHeight: {
                       xs: "14px",
-                      md: "24px",
+                      md: "20px",
                     },
                     textAlign: "center",
                     color: "black",
@@ -172,13 +172,13 @@ export default function OurMetric(props: any) {
                 sx={{
                   fontFamily: "Montserrat",
                   fontSize: {
-                    xs: "14px",
-                    md: "24px",
+                    xs: "13px",
+                    md: "22px",
                   },
                   fontWeight: 700,
                   lineHeight: {
                     xs: "14px",
-                    md: "24px",
+                    md: "20px",
                   },
                   textAlign: "center",
                   color: "black",
