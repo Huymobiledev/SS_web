@@ -712,7 +712,10 @@ export default function RoadMap() {
             letterSpacing: "0em",
             textAlign: "center",
             color: "black",
-            mb: "100px",
+            mb: {
+              md:"100px",
+              xs:"50px"
+            },
           }}
         >
           ROADMAP

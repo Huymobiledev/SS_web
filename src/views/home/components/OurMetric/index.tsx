@@ -81,11 +81,11 @@ export default function OurMetric(props: any) {
                 border: "2px dashed #FFC000",
                 display: "flex",
                 alignItems: "center",
-                justifyContent: "space-evenly",
+                justifyContent: "space-around",
                 flexDirection: "column",
               }}
             >
-              <Box sx={{height:"20px"}} />
+              <Box flex={1} />
               <Box
                 sx={{
                   width: {
@@ -102,12 +102,12 @@ export default function OurMetric(props: any) {
                   backgroundColor: "#FFC00080",
                   border: "2px dashed #FFC000",
                   display: "flex",
-                  justifyContent: "space-around",
+                  justifyContent: "center",
                   flexDirection: "column",
                   alignItems: "center",
                 }}
               >
-                <Box sx={{height:"20px"}} />
+                <Box flex={1} />
                 <Box
                   sx={{
                     width: {
@@ -128,14 +128,80 @@ export default function OurMetric(props: any) {
                     alignItems: "center",
                   }}
                 >
+                  <Box flexDirection={"column"} display={"flex"}>
+                    <Typography
+                      sx={{
+                        fontFamily: "Montserrat",
+                        fontSize: {
+                          xs: "10px",
+                          md: "20px",
+                        },
+                        fontWeight: 700,
+                        lineHeight: {
+                          xs: "14px",
+                          md: "22px",
+                        },
+                        textAlign: "center",
+                        color: "black",
+                        whiteSpace: "pre-line", // This will respect \n characters
+                      }}
+                    >
+                      {"Ruby &\nNFT Holders"}
+                    </Typography>
+                    <Typography
+                      sx={{
+                        fontFamily: "Montserrat",
+                        fontSize: {
+                          xs: "13px",
+                          md: "24px",
+                        },
+                        fontWeight: 800,
+                        lineHeight: {
+                          xs: "14px",
+                          md: "20px",
+                        },
+                        textAlign: "center",
+                        color: "black",
+                        whiteSpace: "pre-line", // This will respect \n characters
+                      }}
+                    >
+                      {"50,000"}
+                    </Typography>
+                  </Box>
+                </Box>
+                <Box
+                  flexDirection={"column"}
+                  display={"flex"}
+                  flex={1}
+                  justifyContent={"center"}
+                >
+                  <Typography
+                    sx={{
+                      fontFamily: "Montserrat",
+                      fontSize: {
+                        xs: "10px",
+                        md: "20px",
+                      },
+                      fontWeight: 700,
+                      lineHeight: {
+                        xs: "14px",
+                        md: "20px",
+                      },
+                      textAlign: "center",
+                      color: "black",
+                      whiteSpace: "pre-line", // This will respect \n characters
+                    }}
+                  >
+                    {"Web3 User"}
+                  </Typography>
                   <Typography
                     sx={{
                       fontFamily: "Montserrat",
                       fontSize: {
                         xs: "13px",
-                        md: "22px",
+                        md: "24px",
                       },
-                      fontWeight: 700,
+                      fontWeight: 800,
                       lineHeight: {
                         xs: "14px",
                         md: "24px",
@@ -145,15 +211,22 @@ export default function OurMetric(props: any) {
                       whiteSpace: "pre-line", // This will respect \n characters
                     }}
                   >
-                    {"Ruby &\nNFT Holders\n50,000"}
+                    {"250,000"}
                   </Typography>
                 </Box>
+              </Box>
+              <Box
+                flexDirection={"column"}
+                display={"flex"}
+                flex={1}
+                justifyContent={"center"}
+              >
                 <Typography
                   sx={{
                     fontFamily: "Montserrat",
                     fontSize: {
-                      xs: "13px",
-                      md: "22px",
+                      xs: "10px",
+                      md: "20px",
                     },
                     fontWeight: 700,
                     lineHeight: {
@@ -165,28 +238,28 @@ export default function OurMetric(props: any) {
                     whiteSpace: "pre-line", // This will respect \n characters
                   }}
                 >
-                  {"Web3 User\n250,000"}
+                  {"Web2 User"}
+                </Typography>
+                <Typography
+                  sx={{
+                    fontFamily: "Montserrat",
+                    fontSize: {
+                      xs: "13px",
+                      md: "24px",
+                    },
+                    fontWeight: 800,
+                    lineHeight: {
+                      xs: "14px",
+                      md: "24px",
+                    },
+                    textAlign: "center",
+                    color: "black",
+                    whiteSpace: "pre-line", // This will respect \n characters
+                  }}
+                >
+                  {"2,000,000"}
                 </Typography>
               </Box>
-              <Typography
-                sx={{
-                  fontFamily: "Montserrat",
-                  fontSize: {
-                    xs: "13px",
-                    md: "22px",
-                  },
-                  fontWeight: 700,
-                  lineHeight: {
-                    xs: "14px",
-                    md: "20px",
-                  },
-                  textAlign: "center",
-                  color: "black",
-                  whiteSpace: "pre-line", // This will respect \n characters
-                }}
-              >
-                {"Web2 User\n2,000,000"}
-              </Typography>
             </Box>
           </Box>
         </Stack>

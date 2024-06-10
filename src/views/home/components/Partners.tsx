@@ -11,7 +11,7 @@ export default function Partners(props: any) {
   const strongBackers = [
     {
       pic: "/assets/images/strongbackers/Frame55.png",
-      url: "https://kyber.network/",
+      url: "https://www.cls.global/",
     },
     {
       pic: "/assets/images/strongbackers/Frame54.png",

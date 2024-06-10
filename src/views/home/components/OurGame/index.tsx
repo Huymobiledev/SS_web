@@ -11,18 +11,48 @@ import { CSSTransition, TransitionGroup } from "react-transition-group";
 
 export default function OurGame(props: any) {
   const listImager = [
-    "/assets/images/our_game/bg_mine_ruby.png",
-    "/assets/images/our_game/bg_quest.png",
-    "/assets/images/our_game/bg_mine_point.png",
-    "/assets/images/our_game/bg_sing_to_win.png",
-    "/assets/images/our_game/bg_sing_to_earn.png",
+    {
+      img: "/assets/images/our_game/bg_mine_ruby.png",
+      link: "https://t.me/SingSing_TG_bot/app",
+    },
+    {
+      img: "/assets/images/our_game/bg_quest.png",
+      link: "https://app.singsing.net/vi/rewards?_action=quest",
+    },
+    {
+      img: "/assets/images/our_game/bg_mine_point.png",
+      link: "https://chromewebstore.google.com/detail/singsing-experiencing-soc/hfogkcjhmnpnfoeagmjjmbdaobdobegh",
+    },
+    {
+      img: "/assets/images/our_game/bg_sing_to_win.png",
+      link: "https://app.singsing.net/vi/s2w",
+    },
+    {
+      img: "/assets/images/our_game/bg_sing_to_earn.png",
+      link: "https://app.singsing.net/vi/song",
+    },
   ];
   const listImagerMB = [
-    "/assets/images/our_game/bg_mine_ruby_mb.png",
-    "/assets/images/our_game/bg_quest_mb.png",
-    "/assets/images/our_game/bg_mine_point_mb.png",
-    "/assets/images/our_game/bg_sing_to_win_mb.png",
-    "/assets/images/our_game/bg_sing_to_earn_mb.png",
+    {
+      img: "/assets/images/our_game/bg_mine_ruby_mb.png",
+      link: "https://t.me/SingSing_TG_bot/app",
+    },
+    {
+      img: "/assets/images/our_game/bg_quest_mb.png",
+      link: "https://app.singsing.net/vi/rewards?_action=quest",
+    },
+    {
+      img: "/assets/images/our_game/bg_mine_point_mb.png",
+      link: "https://chromewebstore.google.com/detail/singsing-experiencing-soc/hfogkcjhmnpnfoeagmjjmbdaobdobegh",
+    },
+    {
+      img: "/assets/images/our_game/bg_sing_to_win_mb.png",
+      link: "https://app.singsing.net/vi/s2w",
+    },
+    {
+      img: "/assets/images/our_game/bg_sing_to_earn_mb.png",
+      link: "https://app.singsing.net/vi/song",
+    },
   ];
   const ViewImage = () => {
     return (
@@ -52,8 +82,8 @@ export default function OurGame(props: any) {
         }}
       >
         {listImager.map((item, index) => (
-          <Link className="link" key={index} href="/">
-            <img className="img" src={item} alt={`image-${index}`} />
+          <Link className="link" key={index} href={item.link} target="_blank">
+            <img className="img" src={item.img} alt={`image-${index}`} />
           </Link>
         ))}
       </Stack>
@@ -84,9 +114,9 @@ export default function OurGame(props: any) {
           },
         }}
       >
-        {listImagerMB.map((item, index) => (
-          <Link className="link" key={index} href="/">
-            <img className="img" src={item} alt={`image-${index}`} />
+         {listImagerMB.map((item, index) => (
+          <Link className="link" key={index} href={item.link} target="_blank">
+            <img className="img" src={item.img} alt={`image-${index}`} />
           </Link>
         ))}
       </Stack>
