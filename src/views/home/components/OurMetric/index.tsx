@@ -145,7 +145,7 @@ export default function OurMetric(props: any) {
                       whiteSpace: "pre-line", // This will respect \n characters
                     }}
                   >
-                    {"Ruby &\nNFT Holders\n50,000".toUpperCase()}
+                    {"Ruby &\nNFT Holders\n50,000"}
                   </Typography>
                 </Box>
                 <Typography
@@ -165,7 +165,7 @@ export default function OurMetric(props: any) {
                     whiteSpace: "pre-line", // This will respect \n characters
                   }}
                 >
-                  {"Web3 User\n250,000".toUpperCase()}
+                  {"Web3 User\n250,000"}
                 </Typography>
               </Box>
               <Typography
@@ -185,7 +185,7 @@ export default function OurMetric(props: any) {
                   whiteSpace: "pre-line", // This will respect \n characters
                 }}
               >
-                {"Web2 User\n2,000,000".toUpperCase()}
+                {"Web2 User\n2,000,000"}
               </Typography>
             </Box>
           </Box>
