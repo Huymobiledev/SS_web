@@ -59,18 +59,24 @@ export default function OurGame(props: any) {
       <Stack
         width="100%"
         flexDirection="column"
-        gap="100px"
         sx={{
           ".link": {
             width: "100%",
-            height: "500px",
+            // height: "500px",
             paddingX: "4%",
           },
           ".img": {
             width: "100%",
-            height: "500px",
+            // height: "500px",
             borderRadius: "21px",
-            objectFit: "cover",
+            objectFit: "contain",
+          },
+          gap: {
+            xs: "60px",
+            sm: "60px",
+            md: "80px",
+            lg: "100px",
+            xl: "100px",
           },
           display: {
             sm: "none",
@@ -103,7 +109,7 @@ export default function OurGame(props: any) {
           ".img": {
             width: "95%",
             borderRadius: "21px",
-            objectFit: "contain",
+            objectFit: "cover",
           },
           display: {
             sm: "flex",
@@ -114,7 +120,7 @@ export default function OurGame(props: any) {
           },
         }}
       >
-         {listImagerMB.map((item, index) => (
+        {listImagerMB.map((item, index) => (
           <Link className="link" key={index} href={item.link} target="_blank">
             <img className="img" src={item.img} alt={`image-${index}`} />
           </Link>
