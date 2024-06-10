@@ -140,8 +140,8 @@ export default function RoadMap() {
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
-              color: "black",
               flexDirection: "column",
+              color: "#8B8B8B",
             }}
           >
             <span>2024</span>
@@ -192,7 +192,6 @@ export default function RoadMap() {
                 <li>{"Sing to Win - Big Event\nwith Avalanche"}</li>
                 <li>{"Launching Subnet(Haku Chain)\non Avalanche"}</li>
                 <li>{"Launching SingSing\nMini App"}</li>
-                <li>{""}</li>
               </b>
             </ul>
           </Typography>
@@ -684,6 +683,11 @@ export default function RoadMap() {
         display: "flex",
         alignItems: { xs: "unset", md: "center" },
         position: "relative",
+        paddingY: {
+          md: "80px",
+          sm: "50px",
+          xs: "50px",
+        },
       }}
     >
       <Stack
@@ -714,7 +718,7 @@ export default function RoadMap() {
             color: "black",
             mb: {
               md:"100px",
-              xs:"50px"
+              xs:"30px"
             },
           }}
         >

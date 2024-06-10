@@ -61,7 +61,7 @@ export default function OurMetric(props: any) {
             alignItems="center"
             width="100%"
             sx={{
-              marginTop: { md: "50px", sm: "50px", xs: "50px" },
+              marginTop: { md: "50px", sm: "50px", xs: "20px" },
             }}
           >
             <Box

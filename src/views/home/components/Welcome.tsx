@@ -168,14 +168,40 @@ export default function Welcome(props: any) {
       <Box
         width="100%"
         height="100%"
+        bottom={0}
         position="absolute"
-        bottom={30}
         // left={50}
-        alignItems="flex-end"
+        alignItems="center"
+        flexDirection={"column"}
+        justifyContent={"space-between"}
         sx={{
           display: { lg: "none", md: "none", sm: "flex", xs: "flex" },
+          paddingY: {
+            sm: "30px",
+            xs: "30px",
+          },
         }}
       >
+        <Typography
+          sx={{
+            fontFamily: "Montserrat",
+            fontSize: {
+              xs: "40px",
+              sm: "60px",
+            },
+            lineHeight: {
+              xs: "40px",
+              sm: "60px",
+            },
+            fontWeight: 900,
+            textAlign: "center",
+            color: "white",
+            textShadow: "2px 2px 4px #000000C4",
+            whiteSpace: "pre-line", // This will respect \n characters
+          }}
+        >
+          {"singing\nSOCIALFI\nplatform".toUpperCase()}
+        </Typography>
         <Grid
           container
           display={"flex"}
@@ -257,11 +283,12 @@ export default function Welcome(props: any) {
       width="100%"
       minHeight="100vh"
       position="relative"
+      marginTop={"60px"}
       sx={{
         ".img_banner": {
           width: "100%",
           height: "100vh",
-          objectFit: "fill",
+          objectFit: "cover",
           display: {
             lg: "flex",
             md: "flex",

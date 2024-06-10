@@ -1,81 +1,78 @@
-import * as React from 'react';
-import type { AppProps } from 'next/app';
-import { Box, CssBaseline} from '@mui/material';
-import { ThemeProvider, createTheme } from '@mui/system'
+import * as React from "react";
+import type { AppProps } from "next/app";
+import { Box, CssBaseline } from "@mui/material";
+import { ThemeProvider, createTheme } from "@mui/system";
 
-import '@/styles/globals.css';
+import "@/styles/globals.css";
 import "@/styles/nprogress.css";
 
-import { Provider } from 'react-redux';
-import { SnackbarProvider } from 'notistack';
+import { Provider } from "react-redux";
+import { SnackbarProvider } from "notistack";
 
 // ** Loader Import
-import { useRouter } from 'next/router';
+import { useRouter } from "next/router";
 
-import { PersistGate } from 'redux-persist/integration/react'
+import { PersistGate } from "redux-persist/integration/react";
 
-// import i18n (needs to be bundled ;)) 
+// import i18n (needs to be bundled ;))
 // import '../../i18n';
 
-import { Suspense, useEffect } from 'react';
-import NProgress from 'nprogress';
-import Head from 'next/head';
-import { CookiesProvider } from 'react-cookie';
-import configureStore, { persistor } from '@/hooks/store';
-import Header from '@/components/header/header';
+import { Suspense, useEffect } from "react";
+import NProgress from "nprogress";
+import Head from "next/head";
+import { CookiesProvider } from "react-cookie";
+import configureStore, { persistor } from "@/hooks/store";
+import Header from "@/components/header/header";
 
-import lightTheme from '@/styles/theme/lightThemeOptions';
-import Footer from '@/components/footer/footer';
+import lightTheme from "@/styles/theme/lightThemeOptions";
+import Footer from "@/components/footer/footer";
 
 // import { AppConfigGuard } from '@/components/appGuard/appConfigGuard';
 //import i18n from '../../i18n';
 
-require('dotenv').config();
+require("dotenv").config();
 
-
-NProgress.configure({ showSpinner: false })
+NProgress.configure({ showSpinner: false });
 
 interface SeoInterface {
-	title: string,
-	description: string,
-	image: string
+  title: string;
+  description: string;
+  image: string;
 }
 
-
 const MyApp = ({ Component, pageProps }: AppProps) => {
+  const router = useRouter();
+  //console.log('pageProps', process.env?.NEXT_PUBLIC_DOMAIN)
 
+  const seoData: { [lang: string]: SeoInterface } = {
+    en: {
+      title: "SingSing",
+      description:
+        "We pioneer carbon reduction in asean with our internationally accredited web 3.0 carbon trading platform while offering comprehensive technology and equipment solutions to help businesses and their supply chains reduce carbon emissions and trade in the international carbon credit markets. Our streamlined platform simplifies project registration and carbon credit issuance, combined with expert consultation to maximize carbon credit potential and ensure transparent tracking of the buy/sell process, contributing to verifiable sustainability projects and supply chains.",
+      image: "https://web-dev.carbonasean.net/assets/images/cctpa.png",
+    },
+    vi: {
+      title: "SingSing",
+      description:
+        "We pioneer carbon reduction in asean with our internationally accredited web 3.0 carbon trading platform while offering comprehensive technology and equipment solutions to help businesses and their supply chains reduce carbon emissions and trade in the international carbon credit markets. Our streamlined platform simplifies project registration and carbon credit issuance, combined with expert consultation to maximize carbon credit potential and ensure transparent tracking of the buy/sell process, contributing to verifiable sustainability projects and supply chains.",
+      image: "https://web-dev.carbonasean.net/assets/images/cctpa.png",
+    },
+  };
 
-	const router = useRouter()
-	//console.log('pageProps', process.env?.NEXT_PUBLIC_DOMAIN)
+  // useEffect(() => {
 
-	const seoData: { [lang: string]: SeoInterface } = {
-		'en': {
-			title: 'SingSing',
-			description: 'We pioneer carbon reduction in asean with our internationally accredited web 3.0 carbon trading platform while offering comprehensive technology and equipment solutions to help businesses and their supply chains reduce carbon emissions and trade in the international carbon credit markets. Our streamlined platform simplifies project registration and carbon credit issuance, combined with expert consultation to maximize carbon credit potential and ensure transparent tracking of the buy/sell process, contributing to verifiable sustainability projects and supply chains.',
-			image: 'https://web-dev.carbonasean.net/assets/images/cctpa.png'
-		},
-		'vi': {
-			title: 'SingSing',
-			description: 'We pioneer carbon reduction in asean with our internationally accredited web 3.0 carbon trading platform while offering comprehensive technology and equipment solutions to help businesses and their supply chains reduce carbon emissions and trade in the international carbon credit markets. Our streamlined platform simplifies project registration and carbon credit issuance, combined with expert consultation to maximize carbon credit potential and ensure transparent tracking of the buy/sell process, contributing to verifiable sustainability projects and supply chains.',
-			image: 'https://web-dev.carbonasean.net/assets/images/cctpa.png'
-		}
+  // 	router.events.on('routeChangeStart', () => NProgress.start());
+  // 	router.events.on('routeChangeComplete', () => NProgress.done());
+  // 	router.events.on('routeChangeError', () => NProgress.done());
 
-	}
+  // }, []);
 
-	// useEffect(() => {
-
-	// 	router.events.on('routeChangeStart', () => NProgress.start());
-	// 	router.events.on('routeChangeComplete', () => NProgress.done());
-	// 	router.events.on('routeChangeError', () => NProgress.done());
-
-	// }, []); 
-
-	return (
-		<Suspense fallback={''}>
-			<Head>
-				<title>SingSing</title>
-				<link rel="icon" href="/favicon.ico" sizes="any" />
-				{/* <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,shrink-to-fit=no,user-scalable=no" />
+  return (
+    <Suspense fallback={""}>
+      <Head>
+        <title>SingSing</title>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        {/* <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,shrink-to-fit=no,user-scalable=no" />
 				
 				<meta name="description" content={pageProps?.description || seoData[`${router.locale}` || 'en']?.description} />
 				<meta property="og:title" content={pageProps?.title || seoData[`${router.locale}` || 'en']?.title} />
@@ -91,45 +88,39 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
 				<meta name="twitter:description" content={pageProps?.description || seoData[`${router.locale}` || 'en']?.description} />
 				<meta name="twitter:image" content={pageProps?.image || seoData[`${router.locale}` || 'en']?.image} />
 				<meta name="twitter:card" content="summary_large_image" /> */}
-			</Head>
+      </Head>
 
-			<CookiesProvider>
-				<Provider store={configureStore}>
-					<PersistGate loading={null} persistor={persistor}>
-						<SnackbarProvider
-							maxSnack={3}
-							autoHideDuration={2000}
-						>
-							<ThemeProvider theme={lightTheme}>
-
-								<CssBaseline/>
-								{/* <AppConfigGuard> */}
-									{/* Header */}
-									<Header />
-									<Box
-										sx={{
-											position: 'relative',
-											width: '100%',
-											minHeight: '100vh',
-											display: 'flex',
-											flexDirection: 'column',
-											justifyContent: 'flex-start',
-											alignItems: 'center',
-											backgroundColor:'white'
-											
-										}}
-									>
-										<Component {...pageProps} />
-									</Box>
-									<Footer/>
-								
-							</ThemeProvider>
-						</SnackbarProvider>
-					</PersistGate>
-				</Provider>
-			</CookiesProvider>
-		</Suspense>
-	);
+      <CookiesProvider>
+        <Provider store={configureStore}>
+          <PersistGate loading={null} persistor={persistor}>
+            <SnackbarProvider maxSnack={3} autoHideDuration={2000}>
+              <ThemeProvider theme={lightTheme}>
+                <CssBaseline />
+                {/* <AppConfigGuard> */}
+                {/* Header */}
+                <Header />
+                <Box
+                  sx={{
+                    position: "relative",
+                    width: "100%",
+                    minHeight: "100vh",
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "flex-start",
+                    alignItems: "center",
+                    backgroundColor: "white",
+                  }}
+                >
+                  <Component {...pageProps} />
+                </Box>
+                <Footer />
+              </ThemeProvider>
+            </SnackbarProvider>
+          </PersistGate>
+        </Provider>
+      </CookiesProvider>
+    </Suspense>
+  );
 };
 
-export default MyApp
+export default MyApp;
