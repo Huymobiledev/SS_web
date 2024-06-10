@@ -300,7 +300,7 @@ export default function RoadMap() {
 
               "span:first-child": {
                 fontFamily: "Montserrat",
-                fontSize: "24px",
+                fontSize: "20px",
                 fontWeight: 800,
                 lineHeight: "29px",
                 letterSpacing: "0em",
@@ -310,7 +310,7 @@ export default function RoadMap() {
 
               "span:last-child": {
                 fontFamily: "Montserrat",
-                fontSize: "16px",
+                fontSize: "14px",
                 fontWeight: 500,
                 lineHeight: "19.5px",
                 letterSpacing: "0em",
@@ -328,7 +328,7 @@ export default function RoadMap() {
             <Typography
               sx={{
                 fontFamily: "Montserrat",
-                fontSize: { md: "14px", lg: "20px" },
+                fontSize: { md: "12px", lg: "15px" },
                 fontWeight: 500,
                 lineHeight: { md: "30px", lg: "55px" },
                 letterSpacing: "0em",
@@ -363,7 +363,7 @@ export default function RoadMap() {
 
               "span:first-child": {
                 fontFamily: "Montserrat",
-                fontSize: "24px",
+                fontSize: "20px",
                 fontWeight: 800,
                 lineHeight: "29px",
                 letterSpacing: "0em",
@@ -372,7 +372,7 @@ export default function RoadMap() {
 
               "span:last-child": {
                 fontFamily: "Montserrat",
-                fontSize: "16px",
+                fontSize: "14px",
                 fontWeight: 500,
                 lineHeight: "19.5px",
                 letterSpacing: "0em",
@@ -393,7 +393,7 @@ export default function RoadMap() {
             <Typography
               sx={{
                 fontFamily: "Montserrat",
-                fontSize: { md: "14px", lg: "20px" },
+                fontSize: { md: "12px", lg: "15px" },
                 fontWeight: 500,
                 lineHeight: { md: "30px", lg: "55px" },
                 letterSpacing: "0em",
@@ -429,7 +429,7 @@ export default function RoadMap() {
               position: "relative",
               "span:first-child": {
                 fontFamily: "Montserrat",
-                fontSize: "24px",
+                fontSize: "20px",
                 fontWeight: 800,
                 lineHeight: "29px",
                 letterSpacing: "0em",
@@ -440,7 +440,7 @@ export default function RoadMap() {
               },
               "span:last-child": {
                 fontFamily: "Montserrat",
-                fontSize: "16px",
+                fontSize: "14px",
                 fontWeight: 500,
                 lineHeight: "19.5px",
                 letterSpacing: "0em",
@@ -458,7 +458,7 @@ export default function RoadMap() {
             <Typography
               sx={{
                 fontFamily: "Montserrat",
-                fontSize: { md: "14px", lg: "20px" },
+                fontSize: { md: "12px", lg: "15px" },
                 fontWeight: 500,
                 lineHeight: { md: "30px", lg: "55px" },
                 letterSpacing: "0em",
@@ -493,7 +493,7 @@ export default function RoadMap() {
               position: "relative",
               "span:first-child": {
                 fontFamily: "Montserrat",
-                fontSize: "24px",
+                fontSize: "20px",
                 fontWeight: 800,
                 lineHeight: "29px",
                 letterSpacing: "0em",
@@ -502,7 +502,7 @@ export default function RoadMap() {
 
               "span:last-child": {
                 fontFamily: "Montserrat",
-                fontSize: "16px",
+                fontSize: "14px",
                 fontWeight: 500,
                 lineHeight: "19.5px",
                 letterSpacing: "0em",
@@ -531,7 +531,7 @@ export default function RoadMap() {
             <Typography
               sx={{
                 fontFamily: "Montserrat",
-                fontSize: { md: "14px", lg: "20px" },
+                fontSize: { md: "12px", lg: "15px" },
                 fontWeight: 500,
                 lineHeight: { md: "30px", lg: "55px" },
                 letterSpacing: "0em",
@@ -566,7 +566,7 @@ export default function RoadMap() {
 
               "span:first-child": {
                 fontFamily: "Montserrat",
-                fontSize: "24px",
+                fontSize: "20px",
                 fontWeight: 800,
                 lineHeight: "29px",
                 letterSpacing: "0em",
@@ -575,7 +575,7 @@ export default function RoadMap() {
 
               "span:last-child": {
                 fontFamily: "Montserrat",
-                fontSize: "16px",
+                fontSize: "14px",
                 fontWeight: 500,
                 lineHeight: "19.5px",
                 letterSpacing: "0em",
@@ -592,7 +592,7 @@ export default function RoadMap() {
             <Typography
               sx={{
                 fontFamily: "Montserrat",
-                fontSize: { md: "14px", lg: "20px" },
+                fontSize: { md: "12px", lg: "15px" },
                 fontWeight: 500,
                 lineHeight: { md: "30px", lg: "55px" },
                 letterSpacing: "0em",
@@ -623,7 +623,7 @@ export default function RoadMap() {
 
               "span:first-child": {
                 fontFamily: "Montserrat",
-                fontSize: "24px",
+                fontSize: "20px",
                 fontWeight: 800,
                 lineHeight: "29px",
                 letterSpacing: "0em",
@@ -632,7 +632,7 @@ export default function RoadMap() {
 
               "span:last-child": {
                 fontFamily: "Montserrat",
-                fontSize: "16px",
+                fontSize: "14px",
                 fontWeight: 500,
                 lineHeight: "19.5px",
                 letterSpacing: "0em",
@@ -653,7 +653,7 @@ export default function RoadMap() {
             <Typography
               sx={{
                 fontFamily: "Montserrat",
-                fontSize: { md: "14px", lg: "20px" },
+                fontSize: { md: "12px", lg: "15px" },
                 fontWeight: 500,
                 lineHeight: { md: "30px", lg: "55px" },
                 letterSpacing: "0em",
