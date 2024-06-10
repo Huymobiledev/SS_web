@@ -50,7 +50,6 @@ export default function Welcome(props: any) {
         <Grid
           container
           display={"flex"}
-          width="100%"
           gap={"10px"}
           sx={{
             justifyContent: {
@@ -58,7 +57,7 @@ export default function Welcome(props: any) {
               sm: "center",
               xs: "center",
             },
-            marginTop: {},
+            marginRight: "35px",
             ".btn": {
               transition: "filter .5s, transform 0.3s",
               ":hover": {
