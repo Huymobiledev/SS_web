@@ -22,7 +22,7 @@ export default function RoadMap() {
         transition={{ duration: 0.5, delay: 2 }}
         sx={{
           width: "90%",
-          height: "1100px",
+          // height: "1050px",
           mx: "auto",
           display: { xs: "flex", md: "none" },
           flexDirection: "column",
@@ -33,8 +33,6 @@ export default function RoadMap() {
           alignItems: "center",
           justifyContent: "center",
           overflow: "hidden",
-          mb: -20,
-
           ".content": {
             fontFamily: "Montserrat",
             fontSize: "14px",
@@ -341,10 +339,8 @@ export default function RoadMap() {
                 top: "200px",
               }}
             >
-              <ul>
-                <li>Real world voucher launch</li>
-                <li>Real world Sing to Earn</li>
-              </ul>
+              <li>Real world voucher launch</li>
+              <li>Real world Sing to Earn</li>
             </Typography>
           </Box>
         </Stack>
@@ -432,7 +428,6 @@ export default function RoadMap() {
               alignItems: "center",
               flexDirection: "column",
               position: "relative",
-
               "span:first-child": {
                 fontFamily: "Montserrat",
                 fontSize: "24px",
@@ -441,7 +436,9 @@ export default function RoadMap() {
                 letterSpacing: "0em",
                 textAlign: "center",
               },
-
+              span: {
+                color: "#8B8B8B",
+              },
               "span:last-child": {
                 fontFamily: "Montserrat",
                 fontSize: "16px",
@@ -457,7 +454,7 @@ export default function RoadMap() {
 
             <img
               src="assets/images/roadmap/Line2.svg"
-              style={{ position: "absolute", top: "150px" }}
+              style={{ position: "absolute", top: "100px" }}
             />
             <Typography
               sx={{
@@ -472,10 +469,8 @@ export default function RoadMap() {
                 top: "270px",
               }}
             >
-              <ul>
-                <li>Sing to win launch</li>
-                <li>Indonesia big event with AAG</li>
-              </ul>
+              <li>Sing to win launch</li>
+              <li>Indonesia big event with AAG</li>
             </Typography>
           </Box>
         </Stack>
@@ -547,14 +542,12 @@ export default function RoadMap() {
                 bottom: "200px",
               }}
             >
-              <ul>
-                <b>
-                  <li>Sing to Win - Big Event with Avalanche</li>
-                  <li>Launching Subnet (Haku Chain) on Avalanche</li>
-                  <li>Launching SingSing Mini App</li>
-                  <li>IDO</li>
-                </b>
-              </ul>
+              <b>
+                <li>Sing to Win - Big Event with Avalanche</li>
+                <li>Launching Subnet (Haku Chain) on Avalanche</li>
+                <li>Launching SingSing Mini App</li>
+                <li>IDO</li>
+              </b>
             </Typography>
           </Box>
         </Stack>
@@ -610,10 +603,8 @@ export default function RoadMap() {
                 top: "200px",
               }}
             >
-              <ul>
-                <li>Vietnam market pushed with Okara</li>
-                <li>Platform expand to other chains</li>
-              </ul>
+              <li>Vietnam market pushed with Okara</li>
+              <li>Platform expand to other chains</li>
             </Typography>
           </Box>
         </Stack>
@@ -677,11 +668,9 @@ export default function RoadMap() {
                 },
               }}
             >
-              <ul>
-                <li>South-East-Asia big contest with 1 big Foundation</li>
-                <li>Platform expand to other chains</li>
-                <li>Expand Market to Taiwan, Hong Kong</li>
-              </ul>
+              <li>South-East-Asia big contest with 1 big Foundation</li>
+              <li>Platform expand to other chains</li>
+              <li>Expand Market to Taiwan, Hong Kong</li>
             </Typography>
           </Box>
         </Stack>
@@ -704,7 +693,10 @@ export default function RoadMap() {
           width: "100%",
           display: "flex",
           justifyContent: "center",
-          mb: 10,
+          marginBottom: {
+            md: "100px",
+            xs: "50px",
+          },
         }}
       >
         <Typography

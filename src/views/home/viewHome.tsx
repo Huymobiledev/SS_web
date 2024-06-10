@@ -31,9 +31,9 @@ export default function ViewHomePage(props: any) {
         <Welcome />
         <OurGame />
         <OurMetric />
-        <TheTeam/>
-        <Partners/>
-        <RoadMap/>
+        <TheTeam />
+        <Partners />
+        <RoadMap />
         {/* <MobileDownload/>
                 <Web3SingingPlatform1/>
                 <Web3SingingPlatform2/>
