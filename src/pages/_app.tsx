@@ -70,10 +70,12 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
     <Suspense fallback={""}>
       <Head>
-        <title>SingSing - Singing Socialfi Plarform</title>
+        <title>SingSing - Singing Socialfi Platform</title>
         <link rel="icon" href="/assets/icons/favicon.jpg" sizes="any" />
-        <meta name="viewport" content="viewport-fit=cover" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+          name="viewport"
+          content="viewport-fit=cover, width=device-width, initial-scale=1"
+        />
         <meta charSet="utf-8" />
         <meta
           name="apple-mobile-web-app-status-bar-style"
@@ -81,61 +83,63 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
         />
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta content="width=device-width, initial-scale=1" name="viewport" />
         <meta
           property="og:title"
-          content={
+          content={`${
             pageProps?.title || router.locale == "vi"
               ? seoData.vi?.title
               : seoData.en.title
-          }
+          }`}
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://singsing.net" />
+        <meta property="og:url" content="https://singsing.net/" />
         <meta
           property="og:image"
-          content={
+          content={`${
             pageProps?.image || router.locale == "vi"
               ? seoData.vi?.image
               : seoData.en.image
-          }
+          }`}
         />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta
           property="og:description"
-          content={
+          content={`${
             pageProps?.description || router.locale == "vi"
               ? seoData.vi?.description
               : seoData.en.description
-          }
+          }`}
         />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="SingSing - Singing Socialfi Plarform" />
-        <meta name="twitter:creator" content="@Singing Socialfi Plarform, Inc" />
+        <meta
+          name="twitter:site"
+          content="SingSing - Singing Socialfi Platform"
+        />
+        <meta name="twitter:creator" content="@SingingSocialfiPlatform" />
         <meta
           name="twitter:title"
-          content={
+          content={`${
             pageProps?.title || router.locale == "vi"
               ? seoData.vi?.title
               : seoData.en.title
-          }
+          }`}
         />
         <meta
           name="twitter:description"
-          content={
+          content={`${
             pageProps?.description || router.locale == "vi"
               ? seoData.vi?.description
               : seoData.en.description
-          }
+          }`}
         />
         <meta
           name="twitter:image"
-          content={
+          content={`${
             pageProps?.image || router.locale == "vi"
               ? seoData.vi?.image
               : seoData.en.image
-          }
+          }`}
         />
       </Head>
 
