@@ -13,7 +13,27 @@ import { appConfigSelector } from "@/slices/appConfigSlice";
 import router from "next/router";
 import Link from "next/link";
 import Image from "next/image";
-
+const StyledButton = styled(Button)(({ theme }) => ({
+  backgroundColor: "#FFC000",
+  color: "#000000",
+  width: "240px",
+  padding: "7px 0px",
+  borderRadius: "40px",
+  textTransform: "none",
+  fontWeight: "bold",
+  display: "flex",
+  flexDirection: "column",
+  boxShadow: `
+    0px -3px 13px 0px #7C1E0057 inset,
+    0px -5px 13px 0px #7C1E0036 inset,
+    0px 8px 21px 0px #FFDF8E57 inset,
+    0px 5px 8px 0px #FFFFFFE3 inset,
+    0px 1px 1px 0px #FFFFFF inset
+  `,
+  "&:hover": {
+    backgroundColor: "#FFA500",
+  },
+}));
 export default function Welcome(props: any) {
   const ViewButtonLaucher = () => {
     return (
@@ -85,7 +105,7 @@ export default function Welcome(props: any) {
             </Link>
           </Grid>
           <Grid item className="btn" xs={12} sm={6} md={4}>
-          <Link href="https://app.singsing.net/" target="_blank">
+            <Link href="https://app.singsing.net/" target="_blank">
               <img
                 src="/assets/images/welcome/btn_lauch_dApp.png"
                 style={{ width: "240px", height: "60px" }}
@@ -93,7 +113,7 @@ export default function Welcome(props: any) {
             </Link>
           </Grid>
           <Grid item className="btn" xs={12} sm={6} md={4}>
-          <Link
+            <Link
               href="https://play.google.com/store/apps/details?id=net.singsing.app&hl=vi/"
               target="_blank"
             >
@@ -104,7 +124,7 @@ export default function Welcome(props: any) {
             </Link>
           </Grid>
           <Grid item className="btn" xs={12} sm={6} md={4}>
-          <Link
+            <Link
               href="https://apps.apple.com/vn/app/singsing-network/id1611106632?l=vi"
               target="_blank"
             >
@@ -237,18 +257,69 @@ export default function Welcome(props: any) {
               href="https://t.me/SingSing_TG_bot/app"
               target="_blank"
             >
-              <img
-                src="/assets/images/welcome/btn_lauch_mini_app_mb.png"
-                style={{ width: "100%", height: "40px" }}
-              />
+              <StyledButton variant="contained">
+                <Typography
+                  sx={{
+                    fontFamily: "Montserrat",
+                    fontSize: "10px",
+                    lineHeight: "12px",
+                    fontWeight: 500,
+                    textAlign: "center",
+                    color: "black",
+                    whiteSpace: "pre-line", // This will respect \n characters
+                  }}
+                >
+                  {"Launch the".toUpperCase()}
+                </Typography>
+                <Typography
+                  sx={{
+                    fontFamily: "Montserrat",
+                    fontSize: "14px",
+                    lineHeight: "17px",
+                    fontWeight: 700,
+                    textAlign: "center",
+                    color: "black",
+                    whiteSpace: "pre-line", // This will respect \n characters
+                  }}
+                >
+                  {"Mini APP".toUpperCase()}
+                </Typography>
+              </StyledButton>
             </Link>
           </Grid>
           <Grid item className="btn">
-            <Link href="https://app.singsing.net/" target="_blank">
-              <img
-                src="/assets/images/welcome/btn_lauch_dApp_mb.png"
-                style={{ width: "100%", height: "40px" }}
-              />
+            <Link
+              href="https://app.singsing.net/"
+              target="_blank"
+            >
+              <StyledButton variant="contained">
+                <Typography
+                  sx={{
+                    fontFamily: "Montserrat",
+                    fontSize: "10px",
+                    lineHeight: "12px",
+                    fontWeight: 500,
+                    textAlign: "center",
+                    color: "black",
+                    whiteSpace: "pre-line", // This will respect \n characters
+                  }}
+                >
+                  {"Launch the".toUpperCase()}
+                </Typography>
+                <Typography
+                  sx={{
+                    fontFamily: "Montserrat",
+                    fontSize: "14px",
+                    lineHeight: "17px",
+                    fontWeight: 700,
+                    textAlign: "center",
+                    color: "black",
+                    whiteSpace: "pre-line", // This will respect \n characters
+                  }}
+                >
+                  {"Dapp".toUpperCase()}
+                </Typography>
+              </StyledButton>
             </Link>
           </Grid>
           <Grid item className="btn">
