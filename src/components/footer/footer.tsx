@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/alt-text */
+/* eslint-disable @next/next/no-img-element */
 import { COLOR } from "@/constant/common";
 import {
   Box,
@@ -113,7 +115,7 @@ export default function Footer() {
                   ?.scrollIntoView({ behavior: "smooth" });
               }}
             >
-              How To Play
+              Whitepaper
             </span>
             <br />
             <span
@@ -242,56 +244,16 @@ export default function Footer() {
         sx={{
           width: "90%",
           maxWidth: "1270px",
-          justifyContent: "space-evenly",
+          justifyContent: "space-around",
           alignItems: "flex-start",
           m: "auto",
           maxHeight: "90vh",
           display: "flex",
         }}
       >
-        <Grid item xs={12} sm={5.5} md={2.5}>
-          <Box
-            sx={{
-              width: "100%",
-              display: "flex",
-              // display: 'grid',
-              // gridTemplateRows: '60px 100px',
-              img: {
-                width: "174px",
-                m: {
-                  xs: "auto",
-                  sm: 0,
-                },
-              },
-              justifyContent: {
-                xs: "center",
-                sm: "left",
-              },
-              my: 3,
-            }}
-          >
-            <img src="assets/icons/logo_singsing.svg" />
-            {/* <Typography variant="body1" sx={{
-                                    //styleName: Mont L14;
-                                    fontFamily: 'Montserrat',
-                                    fontSize: '14px',
-                                    fontWeight: 400,
-                                    lineHeight: '22px',
-                                    letterSpacing: '0px',
-                                    textAlign: {xs: 'center', sm: 'left'},
-                                }}>
-                                    SING SING PTE. LTD
-                                    <br/>
-                                    Address: 114 Lavender street # 11-83
-                                    <br/>
-                                    CT Hub 2 Singapore (338729)
-                                    <br/>
-                                    © SingSing 2021
-                                </Typography> */}
-          </Box>
-        </Grid>
+        <img src="assets/icons/logo_singsing.svg" />
         {viewAboutUs()}
-        {viewSupportCenter()}
+        {/* {viewSupportCenter()} */}
         <Grid item xs={12} sm={5.5} md={2.5} sx={{}}>
           <Grid
             container

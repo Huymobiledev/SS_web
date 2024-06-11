@@ -47,15 +47,13 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
   const seoData: { [lang: string]: SeoInterface } = {
     en: {
       title: "SingSing",
-      description:
-        "We pioneer carbon reduction in asean with our internationally accredited web 3.0 carbon trading platform while offering comprehensive technology and equipment solutions to help businesses and their supply chains reduce carbon emissions and trade in the international carbon credit markets. Our streamlined platform simplifies project registration and carbon credit issuance, combined with expert consultation to maximize carbon credit potential and ensure transparent tracking of the buy/sell process, contributing to verifiable sustainability projects and supply chains.",
-      image: "https://web-dev.carbonasean.net/assets/images/cctpa.png",
+      description: "SINGING SOCIALFI PLATFORM",
+      image: "https://ss-web-six.vercel.app/assets/icons/favicon.jpg",
     },
     vi: {
       title: "SingSing",
-      description:
-        "We pioneer carbon reduction in asean with our internationally accredited web 3.0 carbon trading platform while offering comprehensive technology and equipment solutions to help businesses and their supply chains reduce carbon emissions and trade in the international carbon credit markets. Our streamlined platform simplifies project registration and carbon credit issuance, combined with expert consultation to maximize carbon credit potential and ensure transparent tracking of the buy/sell process, contributing to verifiable sustainability projects and supply chains.",
-      image: "https://web-dev.carbonasean.net/assets/images/cctpa.png",
+      description: "SINGING SOCIALFI PLATFORM",
+      image: "https://ss-web-six.vercel.app/assets/icons/favicon.jpg",
     },
   };
 
@@ -71,23 +69,64 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
     <Suspense fallback={""}>
       <Head>
         <title>SingSing</title>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-        {/* <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,shrink-to-fit=no,user-scalable=no" />
-				
-				<meta name="description" content={pageProps?.description || seoData[`${router.locale}` || 'en']?.description} />
-				<meta property="og:title" content={pageProps?.title || seoData[`${router.locale}` || 'en']?.title} />
-				<meta property="og:type" content="website" />
-				<meta property="og:image" content={pageProps?.image || seoData[`${router.locale}` || 'en']?.image} />
-				<meta property="og:description" content={pageProps?.description || seoData[`${router.locale}` || 'en']?.description} />
-				<meta property="og:image:width" content="1200" />
-				<meta property="og:image:height" content="630" />
-				<meta property="og:image:type" content="image/png" />
-				<meta name="twitter:card" content="FANSIPAN LAB" />
-				<meta name="twitter:site" content="FANSIPAN LAB" />
-				<meta name="twitter:title" content={pageProps?.title || seoData[`${router.locale}` || 'en']?.title} />
-				<meta name="twitter:description" content={pageProps?.description || seoData[`${router.locale}` || 'en']?.description} />
-				<meta name="twitter:image" content={pageProps?.image || seoData[`${router.locale}` || 'en']?.image} />
-				<meta name="twitter:card" content="summary_large_image" /> */}
+        <link rel="icon" href="/assets/icons/favicon.jpg" sizes="any" />
+        <meta
+          name="viewport"
+          content="width=device-width,initial-scale=1,maximum-scale=1,shrink-to-fit=no,user-scalable=no"
+        />
+
+        <meta
+          name="description"
+          content={
+            pageProps?.description ||
+            seoData[`${router.locale}` || "en"]?.description
+          }
+        />
+        <meta
+          property="og:title"
+          content={
+            pageProps?.title || seoData[`${router.locale}` || "en"]?.title
+          }
+        />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:image"
+          content={
+            pageProps?.image || seoData[`${router.locale}` || "en"]?.image
+          }
+        />
+        <meta
+          property="og:description"
+          content={
+            pageProps?.description ||
+            seoData[`${router.locale}` || "en"]?.description
+          }
+        />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:type" content="image/png" />
+        <meta name="twitter:card" content="SingSing" />
+        <meta name="twitter:site" content="SingSing" />
+        <meta
+          name="twitter:title"
+          content={
+            pageProps?.title || seoData[`${router.locale}` || "en"]?.title
+          }
+        />
+        <meta
+          name="twitter:description"
+          content={
+            pageProps?.description ||
+            seoData[`${router.locale}` || "en"]?.description
+          }
+        />
+        <meta
+          name="twitter:image"
+          content={
+            pageProps?.image || seoData[`${router.locale}` || "en"]?.image
+          }
+        />
+        <meta name="twitter:card" content="summary_large_image" />
       </Head>
 
       <CookiesProvider>

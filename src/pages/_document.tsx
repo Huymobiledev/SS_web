@@ -1,5 +1,5 @@
-import * as React from 'react';
-import { Html, Head, Main, NextScript } from 'next/document';
+import * as React from "react";
+import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {
   return (
@@ -7,11 +7,16 @@ export default function Document() {
       <Head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-        
+        <link rel="icon" href="/assets/icons/favicon.jpg" sizes="any" />
+
         <link href="assets/js/font.css" rel="stylesheet" />
 
-        <script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GTAG || `G-DFZPQTX28M`}`}></script>
+        <script
+          async
+          src={`https://www.googletagmanager.com/gtag/js?id=${
+            process.env.NEXT_PUBLIC_GTAG || `G-DFZPQTX28M`
+          }`}
+        ></script>
         <script
           data-partytown-config
           dangerouslySetInnerHTML={{
@@ -20,12 +25,14 @@ export default function Document() {
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
             
-              gtag('config', '${process.env.NEXT_PUBLIC_GTAG || `G-DFZPQTX28M`}');
+              gtag('config', '${
+                process.env.NEXT_PUBLIC_GTAG || `G-DFZPQTX28M`
+              }');
             
             `,
           }}
         />
-        <link rel="stylesheet" href="assets/js/animate.min.css"/>
+        <link rel="stylesheet" href="assets/js/animate.min.css" />
       </Head>
       <body>
         <Main />

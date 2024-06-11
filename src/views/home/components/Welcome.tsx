@@ -67,12 +67,12 @@ export default function Welcome(props: any) {
               height: "60px",
               width: "240px",
               display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
+              justifyContent: "flex-start",
+              alignItems: "flex-start",
             },
           }}
         >
-          <Grid item className="btn">
+          <Grid item className="btn" xs={12} sm={6} md={4}>
             <Link
               className="btn"
               href="https://t.me/SingSing_TG_bot/app"
@@ -84,16 +84,16 @@ export default function Welcome(props: any) {
               />
             </Link>
           </Grid>
-          <Grid item className="btn">
-            <Link href="https://app.singsing.net/" target="_blank">
+          <Grid item className="btn" xs={12} sm={6} md={4}>
+          <Link href="https://app.singsing.net/" target="_blank">
               <img
                 src="/assets/images/welcome/btn_lauch_dApp.png"
                 style={{ width: "240px", height: "60px" }}
               />
             </Link>
           </Grid>
-          <Grid item className="btn">
-            <Link
+          <Grid item className="btn" xs={12} sm={6} md={4}>
+          <Link
               href="https://play.google.com/store/apps/details?id=net.singsing.app&hl=vi/"
               target="_blank"
             >
@@ -103,8 +103,8 @@ export default function Welcome(props: any) {
               />
             </Link>
           </Grid>
-          <Grid item className="btn">
-            <Link
+          <Grid item className="btn" xs={12} sm={6} md={4}>
+          <Link
               href="https://apps.apple.com/vn/app/singsing-network/id1611106632?l=vi"
               target="_blank"
             >

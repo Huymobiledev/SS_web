@@ -33,36 +33,44 @@ export default function Partners(props: any) {
       pic: "/assets/images/strongbackers/Frame52.png",
       url: "https://funverse.capital/",
     },
-   
   ];
 
   const partners = [
     {
       url: "https://okara.vn/",
+      pic: "/assets/images/partners/okara.png",
     },
     {
       url: "https://www.oav.edu.in/",
+      pic: "/assets/images/partners/academy.png",
     },
     {
       url: "https://www.aag.org/",
+      pic: "/assets/images/partners/aag.png",
     },
     {
       url: "https://www.avax.network/",
+      pic: "/assets/images/partners/avalanche.png",
     },
     {
       url: "https://aws.amazon.com/",
+      pic: "/assets/images/partners/amazon.png",
     },
     {
       url: "https://www.yieldguild.io/",
+      pic: "/assets/images/partners/guild.png",
     },
     {
       url: "http://www.coins.ph/",
+      pic: "/assets/images/partners/coins.png",
     },
     {
       url: "https://metaone.gg/",
+      pic: "/assets/images/partners/metaone.png",
     },
     {
       url: "https://app.saakuru.com/",
+      pic: "/assets/images/partners/saakuru.png",
     },
   ];
 
@@ -231,7 +239,7 @@ export default function Partners(props: any) {
               >
                 <Link href={partner.url} target="_blank">
                   <img
-                    src={`assets/images/partners/Funverse_Captial_1-${index}.png`}
+                    src={partner.pic}
                     alt={`Partner ${index}`}
                     style={{
                       maxWidth: "100%",
