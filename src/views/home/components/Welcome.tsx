@@ -17,7 +17,7 @@ const StyledButton = styled(Button)(({ theme }) => ({
   backgroundColor: "#FFC000",
   color: "#000000",
   width: "240px",
-  padding: "7px 0px",
+  padding: "5.5px 0px",
   borderRadius: "40px",
   textTransform: "none",
   fontWeight: "bold",
@@ -37,7 +37,7 @@ const StyledButton = styled(Button)(({ theme }) => ({
 export default function Welcome(props: any) {
   const ViewButtonLaucher = () => {
     return (
-      <Grid container width="100%" gap={3}>
+      <Box flex={1}>
         <Typography
           sx={{
             fontFamily: "Montserrat",
@@ -48,7 +48,9 @@ export default function Welcome(props: any) {
             fontWeight: 900,
             lineHeight: {
               xs: "40px",
-              md: "60px",
+              md: "50px",
+              xl: "55px",
+              lg: "60px",
             },
             textAlign: {
               md: "left",
@@ -67,17 +69,26 @@ export default function Welcome(props: any) {
         >
           {"singing\nSOCIALFI platform".toUpperCase()}
         </Typography>
-        <Grid
-          container
+        <Box
           display={"flex"}
-          gap={"10px"}
+          gap={{
+            xs: "10px",
+            md: "13px", // Decrease the gap for md screens
+          }}
+          marginTop={{
+            xs: "10px",
+            md: "31px", // Decrease the gap for md screens
+          }}
           sx={{
             justifyContent: {
               md: "flex-start",
               sm: "center",
               xs: "center",
             },
-            marginRight: "35px",
+            marginRight: {
+              md: "0px", // Remove or reduce the margin-right for md screens
+              xs: "35px",
+            },
             ".btn": {
               transition: "filter .5s, transform 0.3s",
               ":hover": {
@@ -92,50 +103,82 @@ export default function Welcome(props: any) {
             },
           }}
         >
-          <Grid item className="btn" xs={12} sm={6} md={4}>
-            <Link
-              className="btn"
-              href="https://t.me/SingSing_TG_bot/app"
-              target="_blank"
-            >
-              <img
-                src="/assets/images/welcome/btn_lauch_mini_app.png"
-                style={{ width: "240px", height: "60px" }} // Ensure the image itself has the required dimensions
-              />
-            </Link>
-          </Grid>
-          <Grid item className="btn" xs={12} sm={6} md={4}>
-            <Link href="https://app.singsing.net/" target="_blank">
-              <img
-                src="/assets/images/welcome/btn_lauch_dApp.png"
-                style={{ width: "240px", height: "60px" }}
-              />
-            </Link>
-          </Grid>
-          <Grid item className="btn" xs={12} sm={6} md={4}>
-            <Link
-              href="https://play.google.com/store/apps/details?id=net.singsing.app&hl=vi/"
-              target="_blank"
-            >
-              <img
-                src="/assets/images/welcome/ggplay.png"
-                style={{ width: "240px", height: "60px" }}
-              />
-            </Link>
-          </Grid>
-          <Grid item className="btn" xs={12} sm={6} md={4}>
-            <Link
-              href="https://apps.apple.com/vn/app/singsing-network/id1611106632?l=vi"
-              target="_blank"
-            >
-              <img
-                src="/assets/images/welcome/appstore.png"
-                style={{ width: "240px", height: "60px" }}
-              />
-            </Link>
-          </Grid>
-        </Grid>
-      </Grid>
+          <Link
+            className="btn"
+            href="https://t.me/SingSing_TG_bot/app"
+            target="_blank"
+          >
+            <img
+              src="/assets/images/welcome/btn_lauch_mini_app.png"
+              style={{ width: "240px", height: "60px" }}
+            />
+          </Link>
+          <Link
+            className="btn"
+            href="https://app.singsing.net/"
+            target="_blank"
+          >
+            <img
+              src="/assets/images/welcome/btn_lauch_dApp.png"
+              style={{ width: "240px", height: "60px" }}
+            />
+          </Link>
+        </Box>
+        <Box
+          display={"flex"}
+          width={"auto"}
+          gap={{
+            xs: "10px",
+            md: "13px", // Decrease the gap for md screens
+          }}
+          marginTop={{
+            xs: "10px",
+            md: "21px", // Decrease the gap for md screens
+          }}
+          sx={{
+            justifyContent: {
+              md: "flex-start",
+              sm: "center",
+              xs: "center",
+            },
+            marginRight: {
+              md: "0px", // Remove or reduce the margin-right for md screens
+              xs: "35px",
+            },
+            ".btn": {
+              transition: "filter .5s, transform 0.3s",
+              ":hover": {
+                filter: "brightness(1.3)",
+                transform: "scale(1.01)",
+              },
+              height: "60px",
+              width: "240px",
+              display: "flex",
+              justifyContent: "flex-start",
+              alignItems: "flex-start",
+            },
+          }}
+        >
+          <Link
+            href="https://play.google.com/store/apps/details?id=net.singsing.app&hl=vi/"
+            target="_blank"
+          >
+            <img
+              src="/assets/images/welcome/ggplay.png"
+              style={{ width: "240px", height: "60px" }}
+            />
+          </Link>
+          <Link
+            href="https://apps.apple.com/vn/app/singsing-network/id1611106632?l=vi"
+            target="_blank"
+          >
+            <img
+              src="/assets/images/welcome/appstore.png"
+              style={{ width: "240px", height: "60px" }}
+            />
+          </Link>
+        </Box>
+      </Box>
     );
   };
   const viewAbsolute = () => {
@@ -156,7 +199,9 @@ export default function Welcome(props: any) {
             xs: "none",
           },
           left: {
-            md: 50,
+            lg: "12%",
+            xl: "10%",
+            md: "5%",
             sm: 0,
             xs: 0,
           },
@@ -240,11 +285,11 @@ export default function Welcome(props: any) {
                 transform: "scale(1.01)",
               },
               img: {
-                objectFit: "contain",
+                objectFit: "cover",
                 width: "100%",
               },
               height: "40px",
-              width: "80%",
+              width: "240px",
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
@@ -288,10 +333,7 @@ export default function Welcome(props: any) {
             </Link>
           </Grid>
           <Grid item className="btn">
-            <Link
-              href="https://app.singsing.net/"
-              target="_blank"
-            >
+            <Link href="https://app.singsing.net/" target="_blank">
               <StyledButton variant="contained">
                 <Typography
                   sx={{
@@ -326,15 +368,17 @@ export default function Welcome(props: any) {
             <Link
               href="https://play.google.com/store/apps/details?id=net.singsing.app&hl=vi/"
               target="_blank"
+              className="btn"
             >
               <img
                 src="/assets/images/welcome/ggplay_mb.png"
-                style={{ width: "100%", height: "40px" }}
+                style={{ width: "100%", height: "40px",objectFit:"cover" }}
               />
             </Link>
           </Grid>
           <Grid item className="btn">
             <Link
+            className="btn"
               href="https://apps.apple.com/vn/app/singsing-network/id1611106632?l=vi"
               target="_blank"
             >
