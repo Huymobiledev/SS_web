@@ -46,14 +46,16 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
 
   const seoData: { [lang: string]: SeoInterface } = {
     en: {
-      title: "SingSing",
-      description: "SINGING SOCIALFI PLATFORM",
-      image: "https://ss-web-six.vercel.app/assets/icons/favicon.jpg",
+      title: "SingSing - Singing Socialfi Plarform",
+      description:
+        "SingSing (SING) is an innovative socialFi platform that combines singing, contest, virtual idol management, and blockchain technology. Users can earn rewards and compete directly on social media.",
+      image: "https://singsing.net/assets/icons/favicon.jpg",
     },
     vi: {
-      title: "SingSing",
-      description: "SINGING SOCIALFI PLATFORM",
-      image: "https://ss-web-six.vercel.app/assets/icons/favicon.jpg",
+      title: "SingSing - Singing Socialfi Plarform",
+      description:
+        "SingSing (SING) is an innovative socialFi platform that combines singing, contest, virtual idol management, and blockchain technology. Users can earn rewards and compete directly on social media.",
+      image: "https://singsing.net/assets/icons/favicon.jpg",
     },
   };
 
@@ -68,65 +70,73 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
     <Suspense fallback={""}>
       <Head>
-        <title>SingSing</title>
+        <title>SingSing - Singing Socialfi Plarform</title>
         <link rel="icon" href="/assets/icons/favicon.jpg" sizes="any" />
+        <meta name="viewport" content="viewport-fit=cover" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charSet="utf-8" />
         <meta
-          name="viewport"
-          content="width=device-width,initial-scale=1,maximum-scale=1,shrink-to-fit=no,user-scalable=no"
+          name="apple-mobile-web-app-status-bar-style"
+          content="black-translucent"
         />
-
-        <meta
-          name="description"
-          content={
-            pageProps?.description ||
-            seoData[`${router.locale}` || "en"]?.description
-          }
-        />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
         <meta
           property="og:title"
           content={
-            pageProps?.title || seoData[`${router.locale}` || "en"]?.title
+            pageProps?.title || router.locale == "vi"
+              ? seoData.vi?.title
+              : seoData.en.title
           }
         />
         <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://singsing.net" />
         <meta
           property="og:image"
           content={
-            pageProps?.image || seoData[`${router.locale}` || "en"]?.image
-          }
-        />
-        <meta
-          property="og:description"
-          content={
-            pageProps?.description ||
-            seoData[`${router.locale}` || "en"]?.description
+            pageProps?.image || router.locale == "vi"
+              ? seoData.vi?.image
+              : seoData.en.image
           }
         />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-        <meta property="og:image:type" content="image/png" />
-        <meta name="twitter:card" content="SingSing" />
-        <meta name="twitter:site" content="SingSing" />
+        <meta
+          property="og:description"
+          content={
+            pageProps?.description || router.locale == "vi"
+              ? seoData.vi?.description
+              : seoData.en.description
+          }
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="SingSing - Singing Socialfi Plarform" />
+        <meta name="twitter:creator" content="@Singing Socialfi Plarform, Inc" />
         <meta
           name="twitter:title"
           content={
-            pageProps?.title || seoData[`${router.locale}` || "en"]?.title
+            pageProps?.title || router.locale == "vi"
+              ? seoData.vi?.title
+              : seoData.en.title
           }
         />
         <meta
           name="twitter:description"
           content={
-            pageProps?.description ||
-            seoData[`${router.locale}` || "en"]?.description
+            pageProps?.description || router.locale == "vi"
+              ? seoData.vi?.description
+              : seoData.en.description
           }
         />
         <meta
           name="twitter:image"
           content={
-            pageProps?.image || seoData[`${router.locale}` || "en"]?.image
+            pageProps?.image || router.locale == "vi"
+              ? seoData.vi?.image
+              : seoData.en.image
           }
         />
-        <meta name="twitter:card" content="summary_large_image" />
       </Head>
 
       <CookiesProvider>
