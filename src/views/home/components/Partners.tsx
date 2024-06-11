@@ -148,7 +148,7 @@ export default function Partners(props: any) {
                     display: "flex",
                     justifyContent: "center",
                     alignItems: "center",
-                    boxShadow: "5px 5px 10px 0px rgba(0,0,0,0.48)",
+                    boxShadow: "2px 2px 5px 0px #DDDDDD",
                     transition: "filter 0.3s",
                     ":hover": {
                       filter: "brightness(0.9)",
@@ -218,7 +218,7 @@ export default function Partners(props: any) {
                   display: "flex",
                   justifyContent: "center",
                   alignItems: "center",
-                  boxShadow: "5px 5px 10px 0px rgba(0,0,0,0.48)",
+                  boxShadow: "2px 2px 5px 0px #DDDDDD",
                   transition: "filter 0.3s",
                   ":hover": {
                     filter: "brightness(0.9)",

@@ -32,10 +32,10 @@ const handleClick = (event: any) => {
 };
 
 export const dataMenu = [
-  {
-    lable: "HOW TO PLAY",
-    link: handleClick,
-  },
+  // {
+  //   lable: "HOW TO PLAY",
+  //   link: handleClick,
+  // },
   {
     lable: "WHITE PAPER",
     link: handleClick,
