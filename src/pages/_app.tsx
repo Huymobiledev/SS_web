@@ -50,13 +50,13 @@ const WebApp = (props: AppProps) => {
       title: "SingSing - Singing Socialfi Plarform",
       description:
         "SingSing (SING) is an innovative socialFi platform that combines singing, contest, virtual idol management, and blockchain technology. Users can earn rewards and compete directly on social media.",
-      image: "https://ss-web-six.vercel.app/assets/images/bg_social_seo.png",
+      image: "https://singsing.net/assets/images/bg_social_seo.png",
     },
     vi: {
       title: "SingSing - Singing Socialfi Plarform",
       description:
         "SingSing (SING) is an innovative socialFi platform that combines singing, contest, virtual idol management, and blockchain technology. Users can earn rewards and compete directly on social media.",
-      image: "https://ss-web-six.vercel.app/assets/images/bg_social_seo.png",
+      image: "https://singsing.net/assets/images/bg_social_seo.png",
     },
   };
 
