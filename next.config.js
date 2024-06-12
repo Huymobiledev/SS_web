@@ -39,10 +39,10 @@ const nextConfig = {
         return config;
     },
     transpilePackages: ['@mui/x-charts'],
-    i18n: {
-        locales: ['en', 'vi'],
-        defaultLocale: 'en',
-    }
+    // i18n: {
+    //     locales: ['en', 'vi'],
+    //     defaultLocale: 'en',
+    // }
 }
 
 module.exports = withBundleAnalyzer(nextConfig);

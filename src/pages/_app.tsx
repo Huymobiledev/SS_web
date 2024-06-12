@@ -40,7 +40,8 @@ interface SeoInterface {
   image: string;
 }
 
-const MyApp = ({ Component, pageProps }: AppProps) => {
+const WebApp = (props: AppProps) => {
+  const { Component, pageProps } = props;
   const router = useRouter();
   //console.log('pageProps', process.env?.NEXT_PUBLIC_DOMAIN)
 
@@ -176,4 +177,4 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
   );
 };
 
-export default MyApp;
+export default WebApp;

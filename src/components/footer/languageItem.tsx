@@ -22,9 +22,9 @@ useEffect(() => {
     setIsOnMobile(window.innerWidth > 770 ? false : true)
 })
 
-    useEffect(() => {
-        setLang(localStorage.getItem('i18nextLng') || router.locale || 'en')
-    }, [router.locale])
+    // useEffect(() => {
+    //     setLang(localStorage.getItem('i18nextLng') || router.locale || 'en')
+    // }, [router.locale])
 
     const changeLanguageHandler = (lang: any) => {
         handleClose()
