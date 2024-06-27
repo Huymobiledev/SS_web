@@ -165,7 +165,7 @@ export default function OurMetric(props: any) {
                         whiteSpace: "pre-line", // This will respect \n characters
                       }}
                     >
-                      {"50,000"}
+                      {"100,000"}
                     </Typography>
                   </Box>
                 </Box>
@@ -211,7 +211,7 @@ export default function OurMetric(props: any) {
                       whiteSpace: "pre-line", // This will respect \n characters
                     }}
                   >
-                    {"250,000"}
+                    {"300,000"}
                   </Typography>
                 </Box>
               </Box>
