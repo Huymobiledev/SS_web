@@ -21,7 +21,7 @@ export default function RoadMap() {
         variants={itemVariants}
         transition={{ duration: 0.5, delay: 2 }}
         sx={{
-          width: "90%",
+          width: "95%",
           // height: "1050px",
           mx: "auto",
           display: { xs: "flex", md: "none" },
@@ -169,12 +169,13 @@ export default function RoadMap() {
               width: "80px",
               height: "80px",
               borderRadius: "50%",
-              backgroundColor: "#FBBC04",
+              backgroundColor: "#DDDDDD",
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
-              color: "black",
+
               flexDirection: "column",
+              color: "#8B8B8B",
             }}
           >
             <span>2024</span>
@@ -182,17 +183,10 @@ export default function RoadMap() {
           </Box>
           <Typography className="content">
             <ul>
-              <img
-                style={{
-                  width: "61px",
-                }}
-                src="assets/images/roadmap/singer.png"
-              ></img>
-              <b>
-                <li>{"Sing to Win - Big Event\nwith Avalanche"}</li>
-                <li>{"Launching Subnet(Haku Chain)\non Avalanche"}</li>
-                <li>{"Launching SingSing\nMini App"}</li>
-              </b>
+              <li>Sing to Win - Big Event with Avalanche</li>
+              <li>Launching Subnet (Haku Chain) on Avalanche</li>
+              <li>Launching SingSing Mini App</li>
+              <li>IDO</li>
             </ul>
           </Typography>
         </Stack>
@@ -210,7 +204,7 @@ export default function RoadMap() {
               width: "80px",
               height: "80px",
               borderRadius: "50%",
-              backgroundColor: "#93E2A8",
+              backgroundColor: "#FBBC04",
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
@@ -223,8 +217,16 @@ export default function RoadMap() {
           </Box>
           <Typography className="content">
             <ul>
-              <li>Vietnam market pushed with Okara</li>
-              <li>Platform expand to other chains</li>
+              <img
+                style={{
+                  width: "61px",
+                }}
+                src="assets/images/roadmap/singer.png"
+              ></img>
+              <b>
+                <li>Vietnam market pushed with Okara</li>
+                <li>Platform expand to other chains</li>
+              </b>
             </ul>
           </Typography>
         </Stack>
@@ -328,7 +330,7 @@ export default function RoadMap() {
             <Typography
               sx={{
                 fontFamily: "Montserrat",
-                fontSize: { md: "12px", lg: "15px" },
+                fontSize: { md: "12px", lg: "13px" },
                 fontWeight: 500,
                 lineHeight: { md: "30px", lg: "55px" },
                 letterSpacing: "0em",
@@ -393,7 +395,7 @@ export default function RoadMap() {
             <Typography
               sx={{
                 fontFamily: "Montserrat",
-                fontSize: { md: "12px", lg: "15px" },
+                fontSize: { md: "12px", lg: "13px" },
                 fontWeight: 500,
                 lineHeight: { md: "30px", lg: "55px" },
                 letterSpacing: "0em",
@@ -458,7 +460,7 @@ export default function RoadMap() {
             <Typography
               sx={{
                 fontFamily: "Montserrat",
-                fontSize: { md: "12px", lg: "15px" },
+                fontSize: { md: "12px", lg: "13px" },
                 fontWeight: 500,
                 lineHeight: { md: "30px", lg: "55px" },
                 letterSpacing: "0em",
@@ -476,15 +478,15 @@ export default function RoadMap() {
 
         <Stack
           direction={"column"}
-          sx={{
-            transform: "translateY(-30px)",
-          }}
+          // sx={{
+          //   transform: "translateY(-30px)",
+          // }}
         >
           <Box
             sx={{
-              width: "120px",
-              height: "120px",
-              backgroundColor: "#FBBC04",
+              width: "100px",
+              height: "100px",
+              backgroundColor: "#DDDDDD",
               borderRadius: "50%",
               display: "flex",
               justifyContent: "center",
@@ -499,7 +501,9 @@ export default function RoadMap() {
                 letterSpacing: "0em",
                 textAlign: "center",
               },
-
+              span: {
+                color: "#8B8B8B",
+              },
               "span:last-child": {
                 fontFamily: "Montserrat",
                 fontSize: "14px",
@@ -513,14 +517,6 @@ export default function RoadMap() {
             <span>2024</span>
             <span>Q2</span>
             <img
-              src="assets/images/roadmap/singer.png"
-              style={{
-                position: "absolute",
-                bottom: "-200px",
-                width: "130px",
-              }}
-            />
-            <img
               src="assets/images/roadmap/Line2.svg"
               style={{
                 position: "absolute",
@@ -531,7 +527,7 @@ export default function RoadMap() {
             <Typography
               sx={{
                 fontFamily: "Montserrat",
-                fontSize: { md: "12px", lg: "15px" },
+                fontSize: { md: "12px", lg: "13px" },
                 fontWeight: 500,
                 lineHeight: { md: "30px", lg: "55px" },
                 letterSpacing: "0em",
@@ -541,12 +537,10 @@ export default function RoadMap() {
                 bottom: "200px",
               }}
             >
-              <b>
-                <li>Sing to Win - Big Event with Avalanche</li>
-                <li>Launching Subnet (Haku Chain) on Avalanche</li>
-                <li>Launching SingSing Mini App</li>
-                <li>IDO</li>
-              </b>
+              <li>Sing to Win - Big Event with Avalanche</li>
+              <li>Launching Subnet (Haku Chain) on Avalanche</li>
+              <li>Launching SingSing Mini App</li>
+              <li>IDO</li>
             </Typography>
           </Box>
         </Stack>
@@ -554,9 +548,9 @@ export default function RoadMap() {
         <Stack direction={"column"} sx={{}}>
           <Box
             sx={{
-              width: "100px",
-              height: "100px",
-              backgroundColor: "#93E2A8",
+              width: "120px",
+              height: "120px",
+              backgroundColor: "#FBBC04",
               borderRadius: "50%",
               display: "flex",
               justifyContent: "center",
@@ -586,13 +580,21 @@ export default function RoadMap() {
             <span>2024</span>
             <span>Q3</span>
             <img
+              src="assets/images/roadmap/singer.png"
+              style={{
+                position: "absolute",
+                top: "-200px",
+                width: "130px",
+              }}
+            />
+            <img
               src="assets/images/roadmap/Line2.svg"
               style={{ position: "absolute", top: "100px" }}
             />
             <Typography
               sx={{
                 fontFamily: "Montserrat",
-                fontSize: { md: "12px", lg: "15px" },
+                fontSize: { md: "12px", lg: "16px" },
                 fontWeight: 500,
                 lineHeight: { md: "30px", lg: "55px" },
                 letterSpacing: "0em",
@@ -602,8 +604,10 @@ export default function RoadMap() {
                 top: "200px",
               }}
             >
-              <li>Vietnam market pushed with Okara</li>
-              <li>Platform expand to other chains</li>
+              <b>
+                <li>Vietnam market pushed with Okara</li>
+                <li>Platform expand to other chains</li>
+              </b>
             </Typography>
           </Box>
         </Stack>
@@ -653,7 +657,7 @@ export default function RoadMap() {
             <Typography
               sx={{
                 fontFamily: "Montserrat",
-                fontSize: { md: "12px", lg: "15px" },
+                fontSize: { md: "12px", lg: "13px" },
                 fontWeight: 500,
                 lineHeight: { md: "30px", lg: "55px" },
                 letterSpacing: "0em",
@@ -717,8 +721,8 @@ export default function RoadMap() {
             textAlign: "center",
             color: "black",
             mb: {
-              md:"100px",
-              xs:"30px"
+              md: "100px",
+              xs: "30px",
             },
           }}
         >
