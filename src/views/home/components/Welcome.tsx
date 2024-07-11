@@ -67,7 +67,7 @@ export default function Welcome(props: any) {
             whiteSpace: "pre-line", // This will respect \n characters
           }}
         >
-          {"singing\nSOCIALFI platform".toUpperCase()}
+          {"singsing\nSOCIALFI platform".toUpperCase()}
         </Typography>
         <Box
           display={"flex"}
@@ -264,7 +264,7 @@ export default function Welcome(props: any) {
             whiteSpace: "pre-line", // This will respect \n characters
           }}
         >
-          {"singing\nSOCIALFI\nplatform".toUpperCase()}
+          {"singsing\nSOCIALFI\nplatform".toUpperCase()}
         </Typography>
         <Grid
           container
