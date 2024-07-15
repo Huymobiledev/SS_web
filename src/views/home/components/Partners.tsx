@@ -44,10 +44,7 @@ export default function Partners(props: any) {
       url: "https://www.oav.edu.in/",
       pic: "/assets/images/partners/academy.png",
     },
-    {
-      url: "https://www.aag.org/",
-      pic: "/assets/images/partners/aag.png",
-    },
+
     {
       url: "https://www.avax.network/",
       pic: "/assets/images/partners/avalanche.png",
@@ -64,10 +61,7 @@ export default function Partners(props: any) {
       url: "http://www.coins.ph/",
       pic: "/assets/images/partners/coins.png",
     },
-    {
-      url: "https://metaone.gg/",
-      pic: "/assets/images/partners/metaone.png",
-    },
+
     {
       url: "https://app.saakuru.com/",
       pic: "/assets/images/partners/saakuru.png",
