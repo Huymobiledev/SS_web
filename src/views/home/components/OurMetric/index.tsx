@@ -165,7 +165,7 @@ export default function OurMetric(props: any) {
                         whiteSpace: "pre-line", // This will respect \n characters
                       }}
                     >
-                      {"100,000"}
+                      {"150,000+"}
                     </Typography>
                   </Box>
                 </Box>
@@ -192,7 +192,7 @@ export default function OurMetric(props: any) {
                       whiteSpace: "pre-line", // This will respect \n characters
                     }}
                   >
-                    {"Web3 User"}
+                    {"Web3 Users"}
                   </Typography>
                   <Typography
                     sx={{
@@ -211,7 +211,7 @@ export default function OurMetric(props: any) {
                       whiteSpace: "pre-line", // This will respect \n characters
                     }}
                   >
-                    {"300,000"}
+                    {"500,000+"}
                   </Typography>
                 </Box>
               </Box>
@@ -238,7 +238,7 @@ export default function OurMetric(props: any) {
                     whiteSpace: "pre-line", // This will respect \n characters
                   }}
                 >
-                  {"Web2 User"}
+                  {"Web2 Users"}
                 </Typography>
                 <Typography
                   sx={{
@@ -257,7 +257,7 @@ export default function OurMetric(props: any) {
                     whiteSpace: "pre-line", // This will respect \n characters
                   }}
                 >
-                  {"2,000,000"}
+                  {"2,000,000+"}
                 </Typography>
               </Box>
             </Box>

@@ -186,7 +186,6 @@ export default function RoadMap() {
               <li>Sing to Win - Big Event with Avalanche</li>
               <li>Launching Subnet (Haku Chain) on Avalanche</li>
               <li>Launching SingSing Mini App</li>
-              <li>IDO</li>
             </ul>
           </Typography>
         </Stack>
@@ -226,6 +225,7 @@ export default function RoadMap() {
               <b>
                 <li>Vietnam market pushed with Okara</li>
                 <li>Platform expand to other chains</li>
+                <li>IDO</li>
               </b>
             </ul>
           </Typography>
@@ -540,7 +540,6 @@ export default function RoadMap() {
               <li>Sing to Win - Big Event with Avalanche</li>
               <li>Launching Subnet (Haku Chain) on Avalanche</li>
               <li>Launching SingSing Mini App</li>
-              <li>IDO</li>
             </Typography>
           </Box>
         </Stack>
@@ -607,6 +606,7 @@ export default function RoadMap() {
               <b>
                 <li>Vietnam market pushed with Okara</li>
                 <li>Platform expand to other chains</li>
+                <li>IDO</li>
               </b>
             </Typography>
           </Box>
