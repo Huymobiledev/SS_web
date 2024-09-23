@@ -225,7 +225,7 @@ export default function RoadMap() {
               <b>
                 <li>Vietnam market pushed with Okara</li>
                 <li>Platform expand to other chains</li>
-                <li>IDO</li>
+               
               </b>
             </ul>
           </Typography>
@@ -260,6 +260,7 @@ export default function RoadMap() {
               <li>South-East-Asia big contest with 1 big Foundation</li>
               <li>Platform expand to other chains</li>
               <li>Expand Market to Taiwan, Hong Kong</li>
+              <li>IDO</li>
             </ul>
           </Typography>
         </Stack>
@@ -606,7 +607,7 @@ export default function RoadMap() {
               <b>
                 <li>Vietnam market pushed with Okara</li>
                 <li>Platform expand to other chains</li>
-                <li>IDO</li>
+                
               </b>
             </Typography>
           </Box>
@@ -674,6 +675,7 @@ export default function RoadMap() {
               <li>South-East-Asia big contest with 1 big Foundation</li>
               <li>Platform expand to other chains</li>
               <li>Expand Market to Taiwan, Hong Kong</li>
+              <li>IDO</li>
             </Typography>
           </Box>
         </Stack>
