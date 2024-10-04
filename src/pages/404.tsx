@@ -1,5 +1,6 @@
 import { COLOR } from "@/constant/common";
 import { Box } from "@mui/material";
+import { Stack } from "@mui/system";
 import Link from "next/link";
 import { Fragment } from "react";
 
@@ -18,7 +19,7 @@ export default function PageNotFound(props: any) {
                 }}
             >
                 <h1>404</h1>
-                <Box
+                <Stack
                     sx={{
                         color: COLOR.Yellow,
                         textDecoration: 'none',
@@ -34,7 +35,7 @@ export default function PageNotFound(props: any) {
                     <Link href="/">
                         Go To Home Page
                     </Link>
-                </Box>
+                </Stack>
                 <p>{props?.error || 'Sorry, the content you are looking for could not be found.'}</p>
             </div>
         </Fragment>
