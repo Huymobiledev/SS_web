@@ -162,7 +162,7 @@ const WebApp = (props: AppProps) => {
                   <Component {...pageProps} />
 
                 </Stack>
-                <Footer />
+                {/* <Footer /> */}
               </ThemeProvider>
             </SnackbarProvider>
           </PersistGate>
