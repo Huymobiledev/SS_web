@@ -51,7 +51,7 @@ export default function Footer() {
   const viewAboutUs = () => {
     return (
       <Grid item xs={12} sm={5.5} md={2.5}>
-        <Box
+        <Stack
           sx={{
             width: "100%",
             // display: 'grid',
@@ -75,7 +75,7 @@ export default function Footer() {
             sx={{
               //styleName: Mont T18;
               fontFamily: "Montserrat",
-              fontSize: "18px",
+              fontSize: "12px",
               fontWeight: 700,
               lineHeight: "22px",
               letterSpacing: "0px",
@@ -91,7 +91,7 @@ export default function Footer() {
             sx={{
               //styleName: Mont L14;
               fontFamily: "Montserrat",
-              fontSize: "14px",
+              fontSize: "12px",
               fontWeight: 400,
               lineHeight: "22px",
               letterSpacing: "0px",
@@ -100,6 +100,7 @@ export default function Footer() {
               span: {
                 userSelect: "none",
                 cursor: "pointer",
+                fontSize: "12px",
                 transition: "color 0.3s, filter 0.3s",
                 ":hover": {
                   color: "#B226C5",
@@ -136,14 +137,14 @@ export default function Footer() {
               <span>Privacy Policy</span>
             </Link>
           </Typography>
-        </Box>
+        </Stack>
       </Grid>
     );
   };
   const viewSupportCenter = () => {
     return (
       <Grid item xs={12} sm={5.5} md={2.5}>
-        <Box
+        <Stack
           sx={{
             width: "100%",
             // display: 'grid',
@@ -222,12 +223,12 @@ export default function Footer() {
             </Link>
             <br></br>
           </Typography>
-        </Box>
+        </Stack>
       </Grid>
     );
   };
   return (
-    <Box
+    <Stack
       sx={{
         width: "100%",
         color: "white",
@@ -236,22 +237,22 @@ export default function Footer() {
         overflowX: "hidden",
         display: "flex",
         alignItems: "center",
-        py: 8,
+        py: 3,
       }}
     >
       <Grid
         container
         sx={{
-          width: "90%",
-          maxWidth: "1270px",
+          width: "100%",
           justifyContent: "space-around",
           alignItems: "flex-start",
-          m: "auto",
-          maxHeight: "90vh",
           display: "flex",
+          "& #imgLogo": {
+            height: 125, width: 125
+          }
         }}
       >
-        <img src="assets/icons/logo_singsing.svg" />
+        <img id={'imgLogo'} src="assets/icons/logo_singsing.svg" />
         {viewAboutUs()}
         {/* {viewSupportCenter()} */}
         <Grid item xs={12} sm={5.5} md={2.5} sx={{}}>
@@ -285,15 +286,16 @@ export default function Footer() {
                     display: "flex",
                     justifyContent: "center",
                     alignItems: "center",
-                    height: "42px",
+                    height: "35px",
                     borderRadius: "50%",
-                    img: {
-                      width: "42px",
+                    '& #imgButton': {
+                      width: "35px",
+                      height: "35px",
                     },
                   }}
                 >
                   <Link href={button.link} target="_blank" key={index}>
-                    <img src={button.pic}></img>
+                    <img id={'imgButton'} src={button.pic}></img>
                   </Link>
                 </Grid>
               );
@@ -301,6 +303,6 @@ export default function Footer() {
           </Grid>
         </Grid>
       </Grid>
-    </Box>
+    </Stack>
   );
 }

@@ -1,6 +1,6 @@
 import * as React from "react";
 import type { AppProps } from "next/app";
-import { Box, CssBaseline } from "@mui/material";
+import { Box, CssBaseline, Stack } from "@mui/material";
 import { ThemeProvider, createTheme } from "@mui/system";
 
 import "@/styles/globals.css";
@@ -86,31 +86,28 @@ const WebApp = (props: AppProps) => {
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta
           property="og:title"
-          content={`${
-            pageProps?.title || router.locale == "vi"
+          content={`${pageProps?.title || router.locale == "vi"
               ? seoData.vi?.title
               : seoData.en.title
-          }`}
+            }`}
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://singsing.net/" />
         <meta
           property="og:image"
-          content={`${
-            pageProps?.image || router.locale == "vi"
+          content={`${pageProps?.image || router.locale == "vi"
               ? seoData.vi?.image
               : seoData.en.image
-          }`}
+            }`}
         />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta
           property="og:description"
-          content={`${
-            pageProps?.description || router.locale == "vi"
+          content={`${pageProps?.description || router.locale == "vi"
               ? seoData.vi?.description
               : seoData.en.description
-          }`}
+            }`}
         />
         <meta name="twitter:card" content="summary_large_image" />
         <meta
@@ -120,27 +117,24 @@ const WebApp = (props: AppProps) => {
         <meta name="twitter:creator" content="@SingingSocialfiPlatform" />
         <meta
           name="twitter:title"
-          content={`${
-            pageProps?.title || router.locale == "vi"
+          content={`${pageProps?.title || router.locale == "vi"
               ? seoData.vi?.title
               : seoData.en.title
-          }`}
+            }`}
         />
         <meta
           name="twitter:description"
-          content={`${
-            pageProps?.description || router.locale == "vi"
+          content={`${pageProps?.description || router.locale == "vi"
               ? seoData.vi?.description
               : seoData.en.description
-          }`}
+            }`}
         />
         <meta
           name="twitter:image"
-          content={`${
-            pageProps?.image || router.locale == "vi"
+          content={`${pageProps?.image || router.locale == "vi"
               ? seoData.vi?.image
               : seoData.en.image
-          }`}
+            }`}
         />
       </Head>
 
@@ -152,8 +146,8 @@ const WebApp = (props: AppProps) => {
                 <CssBaseline />
                 {/* <AppConfigGuard> */}
                 {/* Header */}
-                <Header />
-                <Box
+                {/* <Header /> */}
+                <Stack
                   sx={{
                     position: "relative",
                     width: "100%",
@@ -163,10 +157,12 @@ const WebApp = (props: AppProps) => {
                     justifyContent: "flex-start",
                     alignItems: "center",
                     backgroundColor: "white",
+                    overflowX:"hidden"
                   }}
                 >
                   <Component {...pageProps} />
-                </Box>
+
+                </Stack>
                 <Footer />
               </ThemeProvider>
             </SnackbarProvider>

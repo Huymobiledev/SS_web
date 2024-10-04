@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-sync-scripts */
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 import * as React from 'react';
 
@@ -29,9 +30,8 @@ class WebAppDocument extends Document {
 
           <script
             async
-            src={`https://www.googletagmanager.com/gtag/js?id=${
-              process.env.NEXT_PUBLIC_GTAG || `G-DFZPQTX28M`
-            }`}
+            src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GTAG || `G-DFZPQTX28M`
+              }`}
           ></script>
           <script
             data-partytown-config
@@ -41,9 +41,8 @@ class WebAppDocument extends Document {
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
             
-              gtag('config', '${
-                process.env.NEXT_PUBLIC_GTAG || `G-DFZPQTX28M`
-              }');
+              gtag('config', '${process.env.NEXT_PUBLIC_GTAG || `G-DFZPQTX28M`
+                }');
             
             `,
             }}

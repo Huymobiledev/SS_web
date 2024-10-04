@@ -73,7 +73,7 @@ export default function Header() {
 
   return (
     <Fragment>
-      <Box
+      <Stack
         sx={{
           background: "black",
           position: "fixed",
@@ -86,13 +86,13 @@ export default function Header() {
           pl: 0,
         }}
       >
-        <Box
+        <Stack
           sx={{
             "@media screen and (min-width: 800px)": {
               width: "10vw",
             },
           }}
-        ></Box>
+        ></Stack>
         <Stack
           direction="row"
           justifyContent="space-between"
@@ -112,7 +112,7 @@ export default function Header() {
             height="100%"
             sx={{ pl: 0 }}
           >
-            <Box
+            <Stack
               sx={{
                 height: [30],
                 minHeight: [30],
@@ -131,7 +131,7 @@ export default function Header() {
               <Link href="/">
                 <img src="assets/icons/logo-white.png" alt="logo" />
               </Link>
-            </Box>
+            </Stack>
           </Stack>
           <Stack
             direction="row"
@@ -143,7 +143,7 @@ export default function Header() {
             }}
           >
             <Nav isDark={isDark} />
-            <Box
+            <Stack
               sx={{
                 display: isBg ? "flex" : "none",
                 position: "fixed",
@@ -168,7 +168,7 @@ export default function Header() {
               onClick={scrollToTop}
             >
               <img src="/assets/icons/Polygon_1.svg"></img>
-            </Box>
+            </Stack>
             <IconButton
               sx={{
                 display: {
@@ -184,14 +184,14 @@ export default function Header() {
             {/* <LanguageItem isDark={isDark} /> */}
           </Stack>
         </Stack>
-        <Box
+        <Stack
           sx={{
             "@media screen and (min-width: 800px)": {
               width: "10vw",
             },
           }}
-        ></Box>
-      </Box>
+        ></Stack>
+      </Stack>
       <Drawer
         open={openMenu}
         onClose={() => setOpenMenu(false)}

@@ -1,49 +1,47 @@
-import { Stack } from "@mui/material";
-import { Fragment, useEffect, useState } from "react";
+import { Fragment, useState } from "react";
 import { useTranslation } from "react-i18next";
-import TheTeam from "./components/TheTeam";
-import Welcome from "./components/Welcome";
-import Partners from "./components/Partners";
-import Tokenomic from "./components/Tokenomic";
-import ScrollAnimation from "react-animate-on-scroll";
-// import { getHomeContentAPI } from "@/api/home";
-import SingAndEarn from "./components/SingAndEarn";
-import SocialVotingGame from "./components/SocialVotingGame";
-import Web3SingingPlatform1 from "./components/Web3SingingPlatform1";
-import Web3SingingPlatform2 from "./components/Web3SingingPlatform2";
-import RoadMap from "./components/RoadMap";
-import { MobileDownload } from "./components/mobileDownload";
-import OurGame from "./components/OurGame";
-import OurMetric from "./components/OurMetric";
+import AboutSS from "./view/AboutSS";
+import { Stack } from "@mui/material";
+import OurPartners from "./view/OurPartners";
+import StarsCanvas from "@/components/background";
+import Ecosystem from "./view/Ecosystem";
+import BannerSS from "./view/BannerSS";
 
 export default function ViewHomePage(props: any) {
   const { t } = useTranslation();
   const [data, setData] = useState<any>(null);
+
   return (
+
     <Fragment>
       <Stack
         direction={"column"}
-        width={"100%"}
-        gap={2}
+        width={"100vw"}
+        overflow={'hidden'}
         alignItems={"center"}
-        sx={{ backgroundColor: "#white", overflow: "hidden" }}
+        sx={{ backgroundColor: "black" }}
       >
-        <Welcome />
-        <OurGame />
-        <OurMetric />
-        <TheTeam />
-        <Partners />
-        <RoadMap />
-        {/* <MobileDownload/>
-                <Web3SingingPlatform1/>
-                <Web3SingingPlatform2/>
-                <SocialVotingGame/>
-                <SingAndEarn data={data}/>
-                <Tokenomic data={data} />
-              
-              
-                <RoadMap/> */}
-        {/* <BlogAndNews/> */}
+        <Stack sx={{
+          width: "100vw",
+          height: "100vh",
+          position: "relative",
+          alignItems: "center",
+          display: "flex",
+          '& #imgBanner': {
+            height: "100vh",
+            width: "100vw",
+            objectFit:'cover'
+          }
+        }}>
+          {/* <EarthCanvas /> */}
+          <img id={'imgBanner'} src={`/assets/background/bg_banner.webp`} />
+          <BannerSS />
+        </Stack>
+        <StarsCanvas >
+          <Ecosystem />
+          <OurPartners />
+          <AboutSS />
+        </StarsCanvas>
       </Stack>
     </Fragment>
   );
