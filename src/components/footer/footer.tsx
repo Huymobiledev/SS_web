@@ -21,7 +21,6 @@ import {
   YoutubeSvgIcon,
 } from "../icons/socials";
 import router from "next/router";
-import LanguageItem from "./languageItem";
 import Link from "next/link";
 
 export default function Footer() {
