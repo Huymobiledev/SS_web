@@ -22,7 +22,6 @@ import NProgress from "nprogress";
 import Head from "next/head";
 import { CookiesProvider } from "react-cookie";
 import configureStore, { persistor } from "@/hooks/store";
-import Header from "@/components/header/header";
 
 import lightTheme from "@/styles/theme/lightThemeOptions";
 import Footer from "@/components/footer/footer";
