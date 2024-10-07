@@ -4,7 +4,6 @@ import { makeStyles, Stack, Theme, Typography } from "@mui/material";
 import { fontSize } from "@mui/system";
 import { color } from "framer-motion";
 import Link from "next/link";
-import GameCanvas from "./components/gameAnimation";
 export default function BannerSS(props: any) {
     const Header = () => {
         return (
@@ -42,8 +41,8 @@ export default function BannerSS(props: any) {
                         py: 1,
                         textAlign: "center",
                         justifyItems: "left",
-                        mr: 2,
-                        fontSize: 12,
+                        mr: 1,
+                        fontSize: 20,
                         color: "white",
                         fontWeight: "600",
                         border: "1px solid transparent", // Use transparent border for layout
@@ -86,9 +85,9 @@ export default function BannerSS(props: any) {
                 <Typography
                     sx={{
                         fontSize: {
-                            xs: 24,
-                            md: 60,
-                            xl: 100
+                            xs: 65,
+                            md: 90,
+                            xl: 120
                         },
                         color: "white",
                         fontWeight: 800,
@@ -103,9 +102,9 @@ export default function BannerSS(props: any) {
                         ml: "5%",
                         span: {
                             fontSize: {
-                                xl: 24,
-                                md: 14,
-                                xs: 12
+                                xl: 32,
+                                md: 28,
+                                xs: 20
                             },
                             color: "white",
                             fontWeight: 500,
@@ -121,11 +120,10 @@ export default function BannerSS(props: any) {
                 <Stack
                     sx={{
                         height: {
-                            xl: "80vh",
-                            md: "60vh",
+                            xl: "40vh",
+                            md: "40vh",
                             xs: '30vh'
                         },
-                        width: "100%",
                     }}
                 >
                     {/* <GameCanvas /> */}
@@ -133,7 +131,7 @@ export default function BannerSS(props: any) {
                 <Typography
                     sx={{
                         fontSize: {
-                            xs: 45,
+                            xs: 65,
                             md: 60,
                             xl: 90
                         },
@@ -151,9 +149,9 @@ export default function BannerSS(props: any) {
                         alignItems: "center",
                         span: {
                             fontSize: {
-                                xl: 16,
-                                md: 16,
-                                xs: 16
+                                xl: 24,
+                                md: 24,
+                                xs: 24
                             },
                             color: "white",
                             fontWeight: 700,

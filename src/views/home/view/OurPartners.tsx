@@ -87,8 +87,8 @@ export default function OurPartners(props: any) {
                     //styleName: Header-AllCap;
                     fontFamily: "Montserrat",
                     fontSize: {
-                        xs: "16px",
-                        sm: "24px",
+                        xs: "18px",
+                        sm: "32px",
                     },
                     fontWeight: 900,
                     lineHeight: { xs: "40px", md: "108px" },
@@ -132,8 +132,8 @@ export default function OurPartners(props: any) {
                             lg={3}
                             xl={3}
                             sx={{
-                                width: "250px", // Set specific width
-                                height: "90px", // Set specific height
+                                width: "270px", // Set specific width
+                                height: "100px", // Set specific height
                                 objectFit: "cover",
                                 borderRadius: "15px",
                                 display: "flex",
@@ -145,7 +145,7 @@ export default function OurPartners(props: any) {
                                     boxShadow: '0 0 100px rgba(255, 255, 255, 1), 0 0 180px rgba(255, 255, 255, 0.2)' // Glowing effect
                                 },
                                 img: {
-                                    width: "80%",
+                                    width: "100%",
                                 },
                                 overflow: "hidden",
                                 backgroundColor: 'transparent'
@@ -166,8 +166,8 @@ export default function OurPartners(props: any) {
                     //styleName: Header-AllCap;
                     fontFamily: "Montserrat",
                     fontSize: {
-                        xs: "16px",
-                        sm: "24px",
+                        xs: "18px",
+                        sm: "32px",
                     },
                     fontWeight: 900,
                     lineHeight: { xs: "40px", md: "108px" },
@@ -210,8 +210,8 @@ export default function OurPartners(props: any) {
                         lg={3}
                         xl={3}
                         sx={{
-                            width: "250px",
-                            height: "90px",
+                            width: "270px",
+                            height: "100px",
                             backgroundColor: "transparent",
                             objectFit: "cover",
                             borderRadius: "15px",
@@ -224,7 +224,7 @@ export default function OurPartners(props: any) {
                                 boxShadow: '0 0 100px rgba(255, 255, 255, 1), 0 0 180px rgba(255, 255, 255, 0.2)' // Glowing effect
                             },
                             img: {
-                                width: "75%",
+                                width: "100%",
                             },
                             overflow: "hidden",
                         }}

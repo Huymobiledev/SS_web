@@ -2,7 +2,7 @@ import { Stack } from "@mui/system";
 import { Points, PointMaterial, Preload } from "@react-three/drei";
 import { Canvas, type PointsProps, useFrame } from "@react-three/fiber";
 import * as random from "maath/random";
-import { useRef, Suspense, useState } from "react";
+import { useRef, Suspense, useState, useEffect } from "react";
 import type { Points as PointsType } from "three";
 
 // Stars
@@ -10,7 +10,7 @@ const Stars = (props: PointsProps) => {
     const ref = useRef<PointsType | null>(null);
     // For each star
     const [sphere] = useState(() =>
-        random.inSphere(new Float32Array(10000), { radius: 1 }),
+        random.inSphere(new Float32Array(12000), { radius: 1.2 }),
     );
 
     // Rotate multiple stars
@@ -22,7 +22,7 @@ const Stars = (props: PointsProps) => {
     });
 
     return (
-        <group rotation={[0, 0, Math.PI / 4]}>
+        <group rotation={[0, 0, Math.PI / 2]}>
             {/* Points */}
             <Points
                 ref={ref}
@@ -35,7 +35,7 @@ const Stars = (props: PointsProps) => {
                 <PointMaterial
                     transparent
                     color="#5c5b5b"
-                    size={0.002}
+                    size={0.0015}
                     sizeAttentuation
                     depthWrite={false}
                 />
@@ -50,9 +50,9 @@ const StarsCanvas = ({ children }: { children?: any }) => {
         <Stack sx={{
             width: "100vw",
             height: {
-                xl: "290vh",
-                md: "350vh",
-                xs: "380vh"
+                xl: "250vh",
+                md: "300vh",
+                xs: "320vh"
             },
             alignItems: "center",
             position: "relative"
@@ -60,9 +60,9 @@ const StarsCanvas = ({ children }: { children?: any }) => {
             <Stack sx={{
                 width: "100vw",
                 height: {
-                    xl: "290vh",
-                    md: "350vh",
-                    xs: "380vh"
+                    xl: "250vh",
+                    md: "300vh",
+                    xs: "320vh"
                 },
             }}>
                 <Canvas camera={{ position: [0, 0, 1] }}>
@@ -75,9 +75,9 @@ const StarsCanvas = ({ children }: { children?: any }) => {
             <Stack sx={{
                 width: "100vw",
                 height: {
-                    xl: "290vh",
-                    md: "350vh",
-                    xs: "380vh"
+                    xl: "250vh",
+                    md: "300vh",
+                    xs: "320vh"
                 },
                 position: "absolute",
                 pt: 10

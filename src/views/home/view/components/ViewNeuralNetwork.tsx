@@ -1,8 +1,7 @@
-import React, { StrictMode, useRef, useMemo, useEffect } from 'react'
-import { createRoot } from 'react-dom/client'
+import React, { useRef, useMemo, useEffect } from 'react'
 import { Canvas, useFrame } from '@react-three/fiber'
 import { OrbitControls } from '@react-three/drei'
-import { AdditiveBlending, Vector3, BufferGeometry, Points, LineSegments } from 'three'
+import { AdditiveBlending, Vector3 } from 'three'
 import * as THREE from "three";
 interface ParticleData {
   velocity: Vector3
@@ -10,12 +9,12 @@ interface ParticleData {
 }
 
 export function NeuralNetwork() {
-  const groupRef = useRef<THREE.Group>(null!)
-  const particlesRef = useRef<THREE.BufferGeometry>(null!)
-  const linesGeometryRef = useRef<THREE.BufferGeometry>(null!)
+  const groupRef = useRef<THREE.Group>(null)
+  const particlesRef = useRef<THREE.ShapeGeometry>(null)
+  const linesGeometryRef = useRef<THREE.ShapeGeometry>(null)
 
-  const maxParticleCount = 1000
-  const particleCount = 500
+  const maxParticleCount = 1200
+  const particleCount = 600
   const r = 10
   const rHalf = r / 2
   const maxConnections = 20
@@ -49,7 +48,7 @@ export function NeuralNetwork() {
         -1 + Math.random() * 2,
         -1 + Math.random() * 2
       ).normalize().divideScalar(50)
-      
+
       particlesData.push({ velocity, numConnections: 0 })
     }
 
@@ -129,9 +128,9 @@ export function NeuralNetwork() {
     }
 
     if (linesGeometryRef.current) {
-      linesGeometryRef.current.setDrawRange(0, numConnected * 2)
-      linesGeometryRef.current.attributes.position.needsUpdate = true
-      linesGeometryRef.current.attributes.color.needsUpdate = true
+      linesGeometryRef.current.setDrawRange(0, numConnected * 2);
+      linesGeometryRef.current.attributes.position.needsUpdate = true; // This must be done after setting the positions
+      linesGeometryRef.current.attributes.color.needsUpdate = true; // Ensure the color attribute is marked for update
     }
 
     if (particlesRef.current) {
@@ -191,7 +190,7 @@ export function ViewNeuralNetwork() {
   return (
     <Canvas camera={{ position: [0, 0, 17.5] }} >
       <NeuralNetwork />
-      <OrbitControls  />
+      <OrbitControls />
     </Canvas>
   )
 }

@@ -60,6 +60,7 @@ export default function ViewHomePage(props: any) {
           <OurPartners />
           <AboutSS />
         </StarsCanvas>
+
       </Stack>
     </Fragment>
   );

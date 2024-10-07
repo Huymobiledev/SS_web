@@ -134,6 +134,7 @@ export default function Ecosystem(props: any) {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
+        mt:2,
     }}>
         <Typography
             sx={{
