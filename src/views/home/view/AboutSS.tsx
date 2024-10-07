@@ -17,7 +17,7 @@ export default function AboutSS(props: any) {
         alignItems: 'center',
         mt: 2,
     }}>
-        {(Number(safariVersion) > 15 || Number(safariVersion) == -1) && <Stack sx={{
+        {(Number(safariVersion) > 16.8 || Number(safariVersion) == -1) && <Stack sx={{
             height: "25vw",
             width: "25vw"
         }}>

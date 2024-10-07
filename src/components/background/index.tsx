@@ -55,17 +55,17 @@ const StarsCanvas = ({ children }: { children?: any }) => {
             height: {
                 xl: "260vh",
                 md: "300vh",
-                xs: "320vh"
+                xs: "380vh"
             },
             alignItems: "center",
             position: "relative"
         }}>
-            {(Number(safariVersion) > 15 || Number(safariVersion) == -1)  && <Stack sx={{
+            {(Number(safariVersion) > 16.8 || Number(safariVersion) == -1)  && <Stack sx={{
                 width: "100vw",
                 height: {
                     xl: "260vh",
                     md: "300vh",
-                    xs: "320vh"
+                    xs: "380vh"
                 },
             }}>
                 <Canvas camera={{ position: [0, 0, 1] }}>
@@ -80,7 +80,7 @@ const StarsCanvas = ({ children }: { children?: any }) => {
                 height: {
                     xl: "260vh",
                     md: "300vh",
-                    xs: "320vh"
+                    xs: "380vh"
                 },
                 position: "absolute",
                 pt: 10
