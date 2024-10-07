@@ -64,23 +64,23 @@ export default function Ecosystem(props: any) {
                         alignItems: "center",
                         flexDirection: "column",
                         width: index == 1 ? {
-                            xs: "80vw",
+                            xs: "75vw",
                             md: "250px",
                             lg: "350px",
                             xl: "350px"
                         } : {
-                            xs: '80vw',
+                            xs: "75vw",
                             md: "200px",
                             lg: "300px",
                             xl: "300px"
                         },
                         height: index == 1 ? {
-                            xs: '100%',
+                            xs: 'auto',
                             md: "550px",
                             lg: "650px",
                             xl: "650px"
                         } : {
-                            xs: '100%',
+                            xs: 'auto',
                             md: "450px",
                             lg: "550px",
                             xl: "550px"
@@ -109,14 +109,20 @@ export default function Ecosystem(props: any) {
 
                     </Stack>
                     <Typography sx={{
-                        fontSize: 13,
+                        fontSize: {
+                            xl: 18,
+                            xs: 18
+                        },
                         color: 'white',
-                        fontWeight: 600,
+                        fontWeight: 700,
                         display: "flex",
                         flexDirection: "column",
                         alignItems: "center",
                         span: {
-                            fontSize: 16,
+                            fontSize: {
+                                xl: 16,
+                                xs: 18
+                            },
                             color: '#E13737',
                             fontWeight: 800,
                         }
@@ -134,24 +140,14 @@ export default function Ecosystem(props: any) {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        mt:2,
+        mt: 2,
+        '& #txthearder': {
+            fontSize: 24,
+            fontWeight: 700,
+            color: 'white'
+        }
     }}>
-        <Typography
-            sx={{
-                fontFamily: "Montserrat",
-                fontSize: {
-                    xs: "16px",
-                    sm: "24px",
-                },
-                fontWeight: 700,
-                lineHeight: { xs: "16px", md: "24px" },
-                letterSpacing: "0em",
-                textAlign: "center",
-                color: "white",
-            }}
-        >
-            1M users ecosystem
-        </Typography>
+        <span id={'txthearder'}>1M users ecosystem</span>
         <Grid
             container
             sx={{

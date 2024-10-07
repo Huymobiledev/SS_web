@@ -13,6 +13,7 @@ export default function BannerSS(props: any) {
                     flexDirection: "row",
                     width: "100vw",
                     justifyContent: "space-between",
+                    alignItems:"center",
                     p: 1,
                 }}
             >
@@ -38,10 +39,7 @@ export default function BannerSS(props: any) {
                 </Stack>
                 <Stack
                     sx={{
-                        px: 2,
-                        py: 1,
                         textAlign: "center",
-                        justifyItems: "left",
                         mr: 1,
                         fontSize: {
                             xl:20,
