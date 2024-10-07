@@ -36,7 +36,7 @@ const Game = ({ scale }: { scale: number }) => {
 
 const GameCanvas = () => {
     const { width } = useWindowSize();
-    const scale = width <= 768 ? 14 : 18; 
+    const scale = width <= 768 ? 12 : 15; 
 
     return (
         <Canvas

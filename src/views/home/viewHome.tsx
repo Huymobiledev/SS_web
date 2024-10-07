@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
 import { Fragment, useState } from "react";
 import { useTranslation } from "react-i18next";
@@ -28,14 +29,30 @@ export default function ViewHomePage(props: any) {
           position: "relative",
           alignItems: "center",
           display: "flex",
+          backgroundColor: "#E13737",
           '& #imgBanner': {
             height: "100vh",
             width: "100vw",
-            objectFit:'cover'
+            objectFit: 'cover',
+            display: {
+              xl: 'flex',
+              md: 'flex',
+              xs: 'none'
+            },
+          },
+          '& #imgBannerMb': {
+            height: "100vh",
+            width: "100vw",
+            objectFit: '100% 100%',
+            display: {
+              xl: 'none',
+              md: 'none',
+              xs: 'flex'
+            },
           }
         }}>
-          {/* <EarthCanvas /> */}
-          <img id={'imgBanner'} src={`/assets/background/bg_banner.webp`} />
+          <img id={`imgBanner`} src={'/assets/background/bg_banner.png'} />
+          <img id={`imgBannerMb`} src={'/assets/background/bg_banner_mb.png'} />
           <BannerSS />
         </Stack>
         <StarsCanvas >

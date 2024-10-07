@@ -1,11 +1,11 @@
 Model Information:
-* title:	Gamepad Sony DualShock 3
-* source:	https://sketchfab.com/3d-models/gamepad-sony-dualshock-3-a7c82b41d2524ffeba28798b357daebd
-* author:	NPC (https://sketchfab.com/NPCxBot)
+* title:	Playstation 5 controler
+* source:	https://sketchfab.com/3d-models/playstation-5-controler-6b7d44f26f11402f9d424ed0b114daf5
+* author:	Pokkenjake2021 (https://sketchfab.com/Pokkenjake_2021)
 
 Model License:
 * license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
 * requirements:	Author must be credited. Commercial use is allowed.
 
 If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
-This work is based on "Gamepad Sony DualShock 3" (https://sketchfab.com/3d-models/gamepad-sony-dualshock-3-a7c82b41d2524ffeba28798b357daebd) by NPC (https://sketchfab.com/NPCxBot) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+This work is based on "Playstation 5 controler" (https://sketchfab.com/3d-models/playstation-5-controler-6b7d44f26f11402f9d424ed0b114daf5) by Pokkenjake2021 (https://sketchfab.com/Pokkenjake_2021) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

@@ -34,7 +34,7 @@ const Stars = (props: PointsProps) => {
                 {/* Each point material */}
                 <PointMaterial
                     transparent
-                    color="white"
+                    color="#5c5b5b"
                     size={0.002}
                     sizeAttentuation
                     depthWrite={false}
@@ -51,8 +51,8 @@ const StarsCanvas = ({ children }: { children?: any }) => {
             width: "100vw",
             height: {
                 xl: "290vh",
-                md: "380vh",
-                xs: "350vh"
+                md: "350vh",
+                xs: "380vh"
             },
             alignItems: "center",
             position: "relative"
@@ -61,7 +61,7 @@ const StarsCanvas = ({ children }: { children?: any }) => {
                 width: "100vw",
                 height: {
                     xl: "290vh",
-                    md: "380vh",
+                    md: "350vh",
                     xs: "380vh"
                 },
             }}>
@@ -76,7 +76,7 @@ const StarsCanvas = ({ children }: { children?: any }) => {
                 width: "100vw",
                 height: {
                     xl: "290vh",
-                    md: "380vh",
+                    md: "350vh",
                     xs: "380vh"
                 },
                 position: "absolute",

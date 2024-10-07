@@ -45,10 +45,9 @@ export default function BannerSS(props: any) {
                         mr: 2,
                         fontSize: 12,
                         color: "white",
-                        fontWeight: "800",
+                        fontWeight: "600",
                         border: "1px solid transparent", // Use transparent border for layout
                         borderRadius: "23px",
-                        background: "linear-gradient(to left, #350af5, #2f024d)", // Set the gradient as background
                         backgroundClip: "padding-box", // Make sure the gradient doesn't overlap the border
                     }}
                 >
@@ -89,7 +88,7 @@ export default function BannerSS(props: any) {
                         fontSize: {
                             xs: 24,
                             md: 60,
-                            xl: 90
+                            xl: 100
                         },
                         color: "white",
                         fontWeight: 800,
@@ -104,7 +103,7 @@ export default function BannerSS(props: any) {
                         ml: "5%",
                         span: {
                             fontSize: {
-                                xl: 20,
+                                xl: 24,
                                 md: 14,
                                 xs: 12
                             },
@@ -124,22 +123,22 @@ export default function BannerSS(props: any) {
                         height: {
                             xl: "80vh",
                             md: "60vh",
-                            xs: '50vh'
+                            xs: '30vh'
                         },
                         width: "100%",
                     }}
                 >
-                    <GameCanvas />
+                    {/* <GameCanvas /> */}
                 </Stack>
                 <Typography
                     sx={{
                         fontSize: {
-                            xs: 55,
+                            xs: 45,
                             md: 60,
                             xl: 90
                         },
                         color: "white",
-                        fontWeight: 800,
+                        fontWeight:800,
                         whiteSpace: "pre-line",
                         width: "100%",
                         display: {
@@ -147,7 +146,7 @@ export default function BannerSS(props: any) {
                             md: 'none',
                             xs: 'flex'
                         },
-                        mb: 5,
+                        mb: 10,
                         flexDirection: "column",
                         alignItems: "center",
                         span: {
