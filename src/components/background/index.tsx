@@ -55,7 +55,7 @@ const StarsCanvas = ({ children }: { children?: any }) => {
             height: {
                 xl: "260vh",
                 md: "300vh",
-                xs: "380vh"
+                xs: "420vh"
             },
             alignItems: "center",
             position: "relative"
@@ -65,7 +65,7 @@ const StarsCanvas = ({ children }: { children?: any }) => {
                 height: {
                     xl: "260vh",
                     md: "300vh",
-                    xs: "380vh"
+                    xs: "420vh"
                 },
             }}>
                 <Canvas camera={{ position: [0, 0, 1] }}>
@@ -80,7 +80,7 @@ const StarsCanvas = ({ children }: { children?: any }) => {
                 height: {
                     xl: "260vh",
                     md: "300vh",
-                    xs: "380vh"
+                    xs: "420vh"
                 },
                 position: "absolute",
                 pt: 10

@@ -18,10 +18,11 @@ export default function BannerSS(props: any) {
             >
                 <Stack
                     sx={{
-                        height: [30],
-                        minHeight: [30],
                         img: {
-                            width: "120px",
+                            width: {
+                                xl:"120px",
+                                xs:'100px'
+                            },
                             height: "100%",
                             objectFit: "contain",
                             position: "relative",
@@ -42,9 +43,12 @@ export default function BannerSS(props: any) {
                         textAlign: "center",
                         justifyItems: "left",
                         mr: 1,
-                        fontSize: 20,
+                        fontSize: {
+                            xl:20,
+                            xs:14
+                        },
                         color: "white",
-                        fontWeight: "600",
+                        fontWeight: "700",
                         border: "1px solid transparent", // Use transparent border for layout
                         borderRadius: "23px",
                         backgroundClip: "padding-box", // Make sure the gradient doesn't overlap the border
