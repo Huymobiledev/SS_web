@@ -1,3 +1,4 @@
+import { useSafariVersion } from "@/hooks/useSafari";
 import { Stack } from "@mui/system";
 import { Points, PointMaterial, Preload } from "@react-three/drei";
 import { Canvas, type PointsProps, useFrame } from "@react-three/fiber";
@@ -46,21 +47,23 @@ const Stars = (props: PointsProps) => {
 
 // Stars Canvas
 const StarsCanvas = ({ children }: { children?: any }) => {
+    const safariVersion = useSafariVersion();
+
     return (
         <Stack sx={{
             width: "100vw",
             height: {
-                xl: "250vh",
+                xl: "260vh",
                 md: "300vh",
                 xs: "320vh"
             },
             alignItems: "center",
             position: "relative"
         }}>
-            <Stack sx={{
+            {(Number(safariVersion) > 15 || Number(safariVersion) == -1)  && <Stack sx={{
                 width: "100vw",
                 height: {
-                    xl: "250vh",
+                    xl: "260vh",
                     md: "300vh",
                     xs: "320vh"
                 },
@@ -71,11 +74,11 @@ const StarsCanvas = ({ children }: { children?: any }) => {
                     </Suspense>
                     <Preload all />
                 </Canvas>
-            </Stack>
+            </Stack>}
             <Stack sx={{
                 width: "100vw",
                 height: {
-                    xl: "250vh",
+                    xl: "260vh",
                     md: "300vh",
                     xs: "320vh"
                 },

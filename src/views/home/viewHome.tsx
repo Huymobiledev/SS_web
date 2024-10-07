@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
-import { Fragment, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import AboutSS from "./view/AboutSS";
 import { Stack } from "@mui/material";
@@ -8,11 +8,11 @@ import OurPartners from "./view/OurPartners";
 import StarsCanvas from "@/components/background";
 import Ecosystem from "./view/Ecosystem";
 import BannerSS from "./view/BannerSS";
+import { useSafariVersion } from "@/hooks/useSafari";
 
 export default function ViewHomePage(props: any) {
   const { t } = useTranslation();
   const [data, setData] = useState<any>(null);
-
   return (
 
     <Fragment>
