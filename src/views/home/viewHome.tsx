@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { Fragment, useState } from "react";
 import { useTranslation } from "react-i18next";
 import AboutSS from "./view/AboutSS";

@@ -52,7 +52,7 @@ export default function BannerSS(props: any) {
                         backgroundClip: "padding-box", // Make sure the gradient doesn't overlap the border
                     }}
                 >
-                    <Link href="/">{`White paper`.toUpperCase()}</Link>
+                    <Link href="https://singsing.gitbook.io/singsing/welcome/singsing-summary">{`White paper`.toUpperCase()}</Link>
                 </Stack>
             </Stack>
         );

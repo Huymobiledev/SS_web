@@ -89,7 +89,7 @@ export default function Ecosystem(props: any) {
                 >
                     <Stack
                         sx={{
-                            borderRadius: "26px",
+                            borderRadius: "23px",
                             alignItems: "center",
                             flexDirection: "column",
                             animation: `${glowAnimation} 1.5s infinite ease-in-out, ${moveUpDownAnimation} 2.5s infinite ease-in-out`, // Combine both animations

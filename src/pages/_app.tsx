@@ -46,15 +46,15 @@ const WebApp = (props: AppProps) => {
 
   const seoData: { [lang: string]: SeoInterface } = {
     en: {
-      title: "SingSing - Singing Socialfi Plarform",
+      title: "SingSing",
       description:
-        "SingSing (SING) is an innovative socialFi platform that combines singing, contest, virtual idol management, and blockchain technology. Users can earn rewards and compete directly on social media.",
+        "Platform for onboarding web2 users to web3 social gaming",
       image: "https://singsing.net/assets/images/bg_social_seo.png",
     },
     vi: {
-      title: "SingSing - Singing Socialfi Plarform",
+      title: "SingSing",
       description:
-        "SingSing (SING) is an innovative socialFi platform that combines singing, contest, virtual idol management, and blockchain technology. Users can earn rewards and compete directly on social media.",
+        "Platform for onboarding web2 users to web3 social gaming",
       image: "https://singsing.net/assets/images/bg_social_seo.png",
     },
   };
