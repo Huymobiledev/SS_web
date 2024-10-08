@@ -27,13 +27,19 @@ export default function ViewHomePage(props: any) {
           width: "100vw",
           height: "100vh",
           position: "relative",
-          alignItems: "center",
+          alignItems: {
+            xl: "flex-end",
+            md: "flex-end",
+            xs: 'center'
+          },
+          justifyContent:"center",
           display: "flex",
           backgroundColor: "#E13737",
           '& #imgBanner': {
-            height: "100vh",
-            width: "100vw",
-            objectFit: 'cover',
+            height: "auto",
+            width: "70vw",
+            objectFit: '100% 100%',
+            mixBlendMode: 'screen',
             display: {
               xl: 'flex',
               md: 'flex',
@@ -41,9 +47,11 @@ export default function ViewHomePage(props: any) {
             },
           },
           '& #imgBannerMb': {
-            height: "100vh",
-            width: "100vw",
+            height: "auto",
+            width: "150vw",
+            mt:'-50vw', 
             objectFit: '100% 100%',
+            mixBlendMode: 'screen',
             display: {
               xl: 'none',
               md: 'none',
@@ -52,7 +60,7 @@ export default function ViewHomePage(props: any) {
           }
         }}>
           <img id={`imgBanner`} src={'/assets/background/bg_banner.png'} />
-          <img id={`imgBannerMb`} src={'/assets/background/bg_banner_mb.png'} />
+          <img id={`imgBannerMb`} src={'/assets/background/bg_banner.png'} />
           <BannerSS />
         </Stack>
         <StarsCanvas >

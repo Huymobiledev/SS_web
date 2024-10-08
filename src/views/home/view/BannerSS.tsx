@@ -87,7 +87,7 @@ export default function BannerSS(props: any) {
                 <Typography
                     sx={{
                         fontSize: {
-                            xs: 65,
+                            xs: 55,
                             md: 90,
                             xl: 120
                         },
@@ -105,8 +105,8 @@ export default function BannerSS(props: any) {
                         span: {
                             fontSize: {
                                 xl: 32,
-                                md: 28,
-                                xs: 20
+                                md: 24,
+                                xs: 18
                             },
                             color: "white",
                             fontWeight: 500,
@@ -133,7 +133,7 @@ export default function BannerSS(props: any) {
                 <Typography
                     sx={{
                         fontSize: {
-                            xs: 65,
+                            xs: 55,
                             md: 60,
                             xl: 90
                         },
@@ -153,7 +153,7 @@ export default function BannerSS(props: any) {
                             fontSize: {
                                 xl: 24,
                                 md: 24,
-                                xs: 24
+                                xs: 18
                             },
                             color: "white",
                             fontWeight: 700,

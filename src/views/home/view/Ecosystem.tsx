@@ -64,12 +64,12 @@ export default function Ecosystem(props: any) {
                         alignItems: "center",
                         flexDirection: "column",
                         width: index == 1 ? {
-                            xs: "75vw",
+                            xs: "72vw",
                             md: "250px",
                             lg: "350px",
                             xl: "350px"
                         } : {
-                            xs: "75vw",
+                            xs: "72vw",
                             md: "200px",
                             lg: "300px",
                             xl: "300px"
